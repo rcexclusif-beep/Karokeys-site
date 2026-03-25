@@ -1,23 +1,25 @@
 # PROJECT CONTEXT — CHÂTEAU PUYGRENIER
 
-## OVERVIEW
+Premium guesthouse in Dordogne/Gironde, France. Building a complete digital ecosystem in phases.
 
-Château Puygrenier is a premium guesthouse located in Dordogne / Gironde, France.
+## TIMELINE
+- **Launch**: May 2026 (2 months from now)
+- **Current Phase**: 1 (Static website only)
+- **Availability**: 10 hours/day, 7 days/week
 
-The goal is to build a complete digital ecosystem:
-- marketing website (vitrine)
-- booking system
-- guest service app
-- automation (later)
+## PHASES
+1. **Phase 1 (NOW)** — Static marketing website (OTA handles bookings)
+2. **Phase 2** — Add guest services app (after launch)
+3. **Phase 3** — Full web app (Next.js, bookings, payments)
+4. **Phase 4** — Automation & optimization
 
 ---
 
 ## CURRENT STATUS
-
-- **Phase**: 1 (Static website)
-- **Location**: `/var/www/puygrenier` on VPS
-- **Currently serving**: karokeys.fr (dev domain)
-- **Next step**: Complete design/content → deploy to main domain
+- Location: `/var/www/puygrenier` on VPS
+- Dev domain: karokeys.fr
+- Main domain: chateaupuygrenier.fr (at launch)
+- Next: Build & style homepage, then deploy
 
 ---
 

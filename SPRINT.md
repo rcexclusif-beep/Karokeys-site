@@ -1,45 +1,43 @@
-# SPRINT — Week 1 (March 25-31, 2026)
+# SPRINT TRACKER
 
-## CURRENT PHASE
-Build static marketing website for Château Puygrenier
+Update this weekly to track progress.
 
-## COMPLETED ✅
-- [x] Project documentation cleanup (README, project_context, project_rules)
-- [x] Infrastructure & deployment plan defined
-- [x] Design vision and principles established
-- [x] Tracking system setup (this file)
+---
 
-## IN PROGRESS 🔄
-- [ ] HTML structure for home page
-- [ ] CSS design system & variables
+## WEEK 1 (March 25-31, 2026)
 
-## BLOCKED 🛑
-- None currently
+### COMPLETED ✅
+- [x] Project documentation setup
+- [x] Infrastructure & deployment plan
+- [x] Design system template created
+- [x] Tracking files created
 
-## TODO (Priority Order) ⬜
-1. **Homepage HTML structure** — Hero, about, rooms preview, footer
-2. **CSS styling** — Colors, typography, layout grid
-3. **Responsive design** — Mobile-first, tablets, desktop
-4. **Forms** — Contact inquiry form
-5. **Image optimization** — Load times, quality
-6. **Testing** — Local testing with Live Server
-7. **Deploy to dev domain** — karokeys.fr
+### IN PROGRESS 🔄
+- [ ] Homepage HTML structure
+- [ ] CSS styling & design system finalized
 
-## GOALS FOR WEEK 1
-- [ ] Complete homepage HTML (all sections)
-- [ ] Basic CSS styling complete
-- [ ] Responsive design working
-- [ ] Ready for Week 2 polish & content
+### BLOCKED 🛑
+- None
 
-## NEXT WEEK'S GOALS (Week 2)
-- Refine design details
-- Complete all content/copy
-- Image optimization
-- Deploy to karokeys.fr test domain
-- Final testing & bug fixes
+### NEXT PRIORITY (In Order)
+1. Create homepage HTML (all sections)
+2. Finalize color palette and typography (DESIGN_SYSTEM.md)
+3. Write CSS for desktop layout
+4. Make responsive (mobile breakpoints)
+5. Add form validation JS
+6. Test locally
+7. Deploy to karokeys.fr
+
+### GOALS FOR WEEK 2
+- Complete and deploy homepage to dev domain
+- All sections styled
+- Mobile responsive
+- Ready for polish
+
+---
 
 ## NOTES
-- Content planned in your head — write it down as we build
-- 10 hours/day available (7/7)
-- Using Claude Sonnet 4.6 for heavy code generation
-- Keep design minimal and premium
+- Content outline ready (in your head)
+- 10 hours/day available
+- Using Claude Sonnet 4.6 for code generation
+

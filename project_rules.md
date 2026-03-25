@@ -1,6 +1,6 @@
 # PROJECT RULES — Château Puygrenier
 
-See `project_context.md` for infrastructure, domains, and setup details.
+Build constraints, principles, and workflow.
 
 ---
 
@@ -15,10 +15,11 @@ See `project_context.md` for infrastructure, domains, and setup details.
 
 ## 🏗️ ARCHITECTURE
 
-- **Website** = static marketing site (HTML/CSS/JS)
-- **App** = dynamic next.js app (later, Phase 3)
+- **Website** = static marketing site (HTML/CSS/JS) — PHASE 1
+- **App** = dynamic Next.js app (later) — PHASE 3+
 - **Rule**: Do not mix business logic into static site
 - **Rule**: Keep clear separation between them
+- **Rule**: No hardcoded domains — always use relative URLs `/assets/...`, not `https://karokeys.fr/...`
 
 ---
 
@@ -28,58 +29,26 @@ See `project_context.md` for infrastructure, domains, and setup details.
 - No unnecessary abstraction
 - Simple structure
 - Explicit naming
-- No hardcoded domains — always use configurable URLs
-
----
-
-## 🎨 DESIGN & UX
-
-**Visual:**
-- Minimalist design
-- Premium feeling
-- Generous whitespace
-- No clutter
-- Optimized images
-
-**Interaction:**
-- Clear actions (CTAs)
-- Simple navigation
-- No friction
-- Mobile-first thinking
-
----
-
-## ⚡ PERFORMANCE
-
-- Lightweight pages
-- Avoid heavy JS
-- Fast load times
-
----
-
-## 🔒 SECURITY
-
-- Never expose credentials
-- Use environment variables (Phase 2+)
-- HTTPS ready
+- Fast page load
 
 ---
 
 ## 📝 GIT & WORKFLOW
 
-- `main` branch = production ready
+- `main` branch = production ready (deploy only from main)
 - Simple, clear commit messages
+- Commit after each feature is complete
 - No major refactors without planning first
-- Deploy to karokeys.fr (dev) before main domain
 
 ---
 
 ## 🚀 DEPLOYMENT
 
-- Test locally first
-- Deploy to karokeys.fr (test domain)
+- Test locally first (Live Server)
+- Push to git
+- Deploy to karokeys.fr (dev domain) for testing
 - Verify everything works
-- Then update main domain
+- Then update to main domain (chateaupuygrenier.fr)
 - Use PM2 for process management
 - Always check Nginx config before restart
 

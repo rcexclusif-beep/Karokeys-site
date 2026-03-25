@@ -1,33 +1,30 @@
 # Château Puygrenier — Website
 
-Premium guesthouse digital ecosystem. Currently building the marketing website (Phase 1).
+Premium guesthouse digital ecosystem. Building the marketing website in 2 months.
 
-## Quick Links
+## Quick Start
 
-- **Full context & infrastructure**: see `project_context.md`
-- **Development rules & principles**: see `project_rules.md`
+**What to read first:**
+1. `project_context.md` — Why, timeline, infrastructure
+2. `project_rules.md` — How to build, constraints
+3. `SPRINT.md` — Weekly progress
+4. `SESSION_NOTES.md` — Current status
+
+**Design reference:**
+- `DESIGN_SYSTEM.md` — Colors, fonts, spacing (decisions made here)
 
 ## Current Status
 
 - **Phase**: 1 (Static website)
 - **Stack**: HTML / CSS / JavaScript
-- **Location**: `/var/www/puygrenier` on VPS
-- **Dev domain**: karokeys.fr
-- **Main domain**: chateaupuygrenier.fr
+- **Files**:
+  - `/index.html` — Homepage
+  - `/style.css` — Styling
+  - `/script.js` — Minimal JavaScript
+  - `/assets/` — Images and media
 
-## File Structure
+## Timeline
 
-```
-/assets          - Images, icons, media
-/style.css       - Styles (minimalist, premium design)
-/script.js       - Lightweight JavaScript
-/index.html      - Main page
-```
-
-## Next Steps
-
-1. Complete website design/content
-2. Test locally
-3. Deploy to karokeys.fr (dev domain)
-4. Move to main domain when ready
-5. Phase 2: Add booking logic
+- **Launch**: May 2026 (2 months)
+- **Available**: 10 hours/day, 7 days/week
+- **Deployments**: Test on karokeys.fr, then chateaupuygrenier.fr
