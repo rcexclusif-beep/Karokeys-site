@@ -7,7 +7,7 @@ Update this after each work session.
 ---
 
 ## WHAT WE JUST BUILT
-- (Update after each session)
+- nothing i am working on my pages content and choices of colors for my "design system"
 
 ---
 

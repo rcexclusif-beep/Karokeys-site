@@ -1,13 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Château Puygrenier</title>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chateau Puygrenier, maison d'hotes de charme entre Dordogne et Gironde.">
+  <title>Chateau Puygrenier | Maison d'hotes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Château Puygrenier</h1>
-  <p>Maison d’hôtes de charme en Dordogne</p>
-  <p>Site en préparation</p>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Retour a l'accueil Chateau Puygrenier">
+        <span class="brand-kicker">Maison d'hotes</span>
+        <span class="brand-name">Chateau Puygrenier</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#chambres">Chambres</a>
+        <a href="#experience">Experience</a>
+        <a href="#destination">Destination</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="accueil" class="hero" aria-label="Presentation principale">
+      <div class="hero-carousel" aria-roledescription="carrousel">
+        <div class="slides" id="slides">
+          <article class="slide is-active" aria-label="Vue du domaine">
+            <div class="slide-media" role="img" aria-label="Emplacement image hero 1">
+              <span>Placeholder photo hero 1</span>
+            </div>
+            <div class="slide-overlay"></div>
+          </article>
+
+          <article class="slide" aria-label="Ambiance du chateau">
+            <div class="slide-media" role="img" aria-label="Emplacement image hero 2">
+              <span>Placeholder photo hero 2</span>
+            </div>
+            <div class="slide-overlay"></div>
+          </article>
+
+          <article class="slide" aria-label="Jardins et nature">
+            <div class="slide-media" role="img" aria-label="Emplacement image hero 3">
+              <span>Placeholder photo hero 3</span>
+            </div>
+            <div class="slide-overlay"></div>
+          </article>
+        </div>
+
+        <div class="hero-content container">
+          <p class="eyebrow">Entre Dordogne et Gironde</p>
+          <h1>Une parenthese elegante au coeur de la nature</h1>
+          <p>
+            Sejournez dans une maison d'hotes de caractere, pensee pour le calme,
+            le confort et l'art de recevoir.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Nous contacter</a>
+            <a class="btn btn-secondary" href="#chambres">Voir les chambres</a>
+          </div>
+        </div>
+
+        <button class="carousel-control prev" id="prev-slide" aria-label="Image precedente">&#10094;</button>
+        <button class="carousel-control next" id="next-slide" aria-label="Image suivante">&#10095;</button>
+
+        <div class="carousel-dots" id="carousel-dots" aria-label="Choix des images hero"></div>
+      </div>
+    </section>
+
+    <section id="chambres" class="section section-surface">
+      <div class="container grid-2">
+        <div>
+          <p class="section-label">Chambres</p>
+          <h2>Des espaces sobres, lumineux et reposants</h2>
+          <p>
+            Chaque chambre est concue pour offrir une experience apaisante: literie de qualite,
+            materiaux naturels, et une atmosphere intime.
+          </p>
+          <a class="text-link" href="#contact">Demander les disponibilites</a>
+        </div>
+        <div class="image-placeholder" role="img" aria-label="Emplacement photo chambres">
+          Placeholder photo chambres
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-label">Experience</p>
+        <h2>Petits dejeuners, dners et attentions sur mesure</h2>
+        <div class="cards-3">
+          <article class="card">
+            <h3>Petit dejeuner</h3>
+            <p>Produits locaux, saisonniers et service doux pour commencer la journee.</p>
+          </article>
+          <article class="card">
+            <h3>Diner d'hotes</h3>
+            <p>Une table conviviale, simple et raffinee, selon les disponibilites.</p>
+          </article>
+          <article class="card">
+            <h3>Services</h3>
+            <p>Conseils sur les activites, recommandations et organisation sur demande.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="qui-sommes-nous" class="section section-surface">
+      <div class="container grid-2">
+        <div class="image-placeholder" role="img" aria-label="Emplacement photo equipe">
+          Placeholder photo qui sommes-nous
+        </div>
+        <div>
+          <p class="section-label">Qui sommes-nous</p>
+          <h2>Un lieu de vie pense pour accueillir avec justesse</h2>
+          <p>
+            Chateau Puygrenier est ne d'une envie simple: proposer une hospitalite chaleureuse,
+            sincere et elegante dans un cadre naturel preserve.
+          </p>
+          <a class="text-link" href="#destination">Decouvrir la region</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="destination" class="section">
+      <div class="container grid-2">
+        <div>
+          <p class="section-label">Destination</p>
+          <h2>Dordogne et Gironde, entre patrimoine et art de vivre</h2>
+          <p>
+            Villages de caractere, vignobles, marches et chemins nature: un territoire riche a explorer
+            au rythme de vos envies.
+          </p>
+          <a class="text-link" href="#contact">Preparer votre sejour</a>
+        </div>
+        <div class="image-placeholder" role="img" aria-label="Emplacement photo destination">
+          Placeholder photo destination
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-surface">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact et acces</p>
+          <h2>Parlons de votre sejour</h2>
+          <p>Decrivez vos dates et vos besoins. Nous revenons vers vous rapidement.</p>
+          <ul class="contact-list">
+            <li>Telephone: +33 (0)0 00 00 00 00</li>
+            <li>Email: contact@chateaupuygrenier.fr</li>
+            <li>Adresse: Dordogne/Gironde, France</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Votre nom" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="votre@email.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre demande..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Chateau Puygrenier. Tous droits reserves.</p>
+      <div class="footer-links">
+        <a href="#">Mentions legales</a>
+        <a href="#">Politique de confidentialite</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
