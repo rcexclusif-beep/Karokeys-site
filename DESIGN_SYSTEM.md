@@ -215,44 +215,24 @@ Total page size:       <= 1700KB
 
 ---
 
-## CONTENT GUIDELINES (PHASE 1)
+## CONTENT GUIDELINES
 
-To keep the site simple and premium:
-
-1. One clear message per section
-2. Short paragraphs (2-4 lines max on desktop)
-3. One main CTA per screen area
-4. Avoid decorative text with no booking/contact value
-5. Keep bilingual strategy simple (FR first, EN later if needed)
-
-Recommended page structure for Phase 1:
-- Homepage (core story + highlights + CTA)
-- Rooms (types, photos, key details)
-- Experience (services, breakfast/dinner, ambiance)
-- Contact & Access (form, map, practical info)
-- Legal pages (Mentions legales + Politique de confidentialite)
+1. Un message clair par section
+2. Paragraphes courts (2–4 lignes max sur desktop)
+3. Un seul CTA principal par zone écran
+4. Pas de texte décoratif sans valeur réservation/contact
+5. FR en priorité, EN plus tard si besoin
 
 ---
 
 ## DECISIONS TRACKER
 
-Update as we decide each element:
-
-- [x] Project philosophy established (minimalist, premium, nature-focused)
-- [x] Primary color palette chosen
-- [x] Typography/fonts chosen
-- [x] Spacing scale defined
-- [x] Button styles finalized
-- [x] Responsive breakpoints confirmed
-- [x] Image optimization targets set
-- [x] Navigation behavior defined
-- [x] All sections designed (V1)
-
----
-
-## OPEN POINTS TO VALIDATE DURING FIRST MOCKUP
-
-- Validate hero image art direction (bright morning vs golden sunset)
-- Confirm if accent color should be slightly lighter for CTA visibility
-- Decide if homepage has 1 or 2 CTA buttons above the fold
-- Confirm if EN version is needed at launch
+- [x] Philosophie projet (minimaliste, premium, nature)
+- [x] Palette de couleurs finalisée
+- [x] Typographie choisie
+- [x] Échelle d'espacement définie
+- [x] Styles boutons finalisés
+- [x] Breakpoints responsives confirmés
+- [x] Objectifs optimisation images définis
+- [x] Comportement navigation défini
+- [x] Toutes les sections designées (V1 livrée)

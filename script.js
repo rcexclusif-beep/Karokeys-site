@@ -122,3 +122,134 @@ if (slides.length > 0) {
 		hero.addEventListener("focusout", startAutoplay);
 	}
 }
+
+// ══════════════════════════════════════════════
+// LIGHTBOX
+// ══════════════════════════════════════════════
+(function () {
+	var lb = document.getElementById("lightbox");
+	if (!lb) return;
+
+	// Sécurité : forcer masquage au chargement (cas bfcache ou attribut manquant)
+	lb.hidden = true;
+
+	var lbImg = lb.querySelector(".lb-img");
+	var lbCaption = lb.querySelector(".lb-caption");
+	var lbDots = lb.querySelector(".lb-dots");
+	var lbClose = lb.querySelector(".lb-close");
+	var lbPrev = lb.querySelector(".lb-prev");
+	var lbNext = lb.querySelector(".lb-next");
+	var gallery = [];
+	var current = 0;
+
+	function open(images, index) {
+		gallery = images;
+		current = index;
+		render();
+		lb.hidden = false;
+		document.body.style.overflow = "hidden";
+		lbImg.focus();
+	}
+
+	function close() {
+		lb.hidden = true;
+		document.body.style.overflow = "";
+		lbImg.src = ""; // reset pour éviter l'image persistante
+	}
+
+	// Fermer la lightbox si la page est restaurée depuis le bfcache
+	window.addEventListener("pageshow", function (e) {
+		if (e.persisted) { close(); }
+	});
+
+	function render() {
+		var item = gallery[current];
+		lbImg.src = item.src;
+		lbImg.alt = item.alt;
+		if (lbCaption) lbCaption.textContent = item.alt;
+
+		lbPrev.style.visibility = gallery.length < 2 ? "hidden" : "";
+		lbNext.style.visibility = gallery.length < 2 ? "hidden" : "";
+
+		lbDots.innerHTML = "";
+		gallery.forEach(function (_, i) {
+			var btn = document.createElement("button");
+			btn.type = "button";
+			btn.className = "lb-dot" + (i === current ? " is-active" : "");
+			btn.setAttribute("aria-label", "Photo " + (i + 1) + " sur " + gallery.length);
+			(function (idx) {
+				btn.addEventListener("click", function () { current = idx; render(); });
+			})(i);
+			lbDots.appendChild(btn);
+		});
+	}
+
+	lbClose.addEventListener("click", close);
+	lbPrev.addEventListener("click", function () {
+		current = (current - 1 + gallery.length) % gallery.length;
+		render();
+	});
+	lbNext.addEventListener("click", function () {
+		current = (current + 1) % gallery.length;
+		render();
+	});
+	lb.addEventListener("click", function (e) {
+		if (e.target === lb) close();
+	});
+	document.addEventListener("keydown", function (e) {
+		if (lb.hidden) return;
+		if (e.key === "Escape") { close(); return; }
+		if (e.key === "ArrowLeft") { current = (current - 1 + gallery.length) % gallery.length; render(); }
+		if (e.key === "ArrowRight") { current = (current + 1) % gallery.length; render(); }
+	});
+
+	// Attach click handlers to all [data-lb-group] containers
+	document.querySelectorAll("[data-lb-group]").forEach(function (container) {
+		var allImgs = Array.from(container.querySelectorAll("img"));
+		var galleryData = allImgs.map(function (img) {
+			return { src: img.getAttribute("src"), alt: img.alt || "" };
+		});
+		allImgs.forEach(function (img, idx) {
+			if (img.classList.contains("lb-only")) return;
+			img.addEventListener("click", function () { open(galleryData, idx); });
+		});
+	});
+
+	// Cliquer sur la photo principale ferme la lightbox
+	lbImg.addEventListener("click", close);
+}());
+
+// ══════════════════════════════════════════════
+// SCROLL REVEAL
+// ══════════════════════════════════════════════
+(function () {
+	var revealEls = document.querySelectorAll(".reveal");
+	var unitDetails = document.querySelectorAll(".unit-detail");
+
+	if (!revealEls.length && !unitDetails.length) return;
+
+	if (!("IntersectionObserver" in window)) {
+		revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+		return;
+	}
+
+	var observer = new IntersectionObserver(
+		function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("is-visible");
+					observer.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+	);
+
+	revealEls.forEach(function (el) { observer.observe(el); });
+
+	// Reveal automatique sur les fiches hébergements / expériences
+	unitDetails.forEach(function (el) {
+		el.classList.add("reveal");
+		observer.observe(el);
+	});
+}());

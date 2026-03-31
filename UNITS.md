@@ -138,26 +138,50 @@ Référence complète des 7 unités. À mettre à jour si changement.
 
 ---
 
-## ESPACES COMMUNS
+## ESPACES & EXPÉRIENCES
 
-| Espace | Accès | Inclus |
-|--------|-------|--------|
-| **Piscine** | Toutes les unités, libre | Oui |
-| **Restaurant** | Tous (avec min. 1 résident sur place) | Consommations à la carte |
-| **SPA + Sauna** | Toutes les unités, sur réservation | Non — service payant |
-| **Petit-déjeuner premium** | Toutes les suites | Non — supplément |
+| # | Espace / Expérience | Accès | Inclus |
+|---|----------------------|-------|--------|
+| 1 | **Piscine** | Toutes les unités, libre | ✅ Oui |
+| 2 | **Petit-déjeuner** | Suites : obligatoire. Gîtes : option | ✅ Suites / 💶 Option gîtes |
+| 3 | **Table d'hôtes (dîner)** | Résidents + invités (min. 1 résident) | 💶 À la carte |
+| 4 | **Spa & Sauna** | Toutes les unités, sur réservation | 💶 Service payant |
+| 5 | **Panier pique-nique terroir** | Toutes les unités, sur commande (veille) | 💶 Service payant |
+| 6 | **Vie de la ferme** | Toutes les unités, libère | ✅ Inclus |
+| 7 | **Salle de réception** | Sur réservation, privatisable | 💶 Service payant |
 
-### SPA
-- Bâtiment séparé
-- Très belle vue
-- Réservable par toutes les unités (service payant, tarif à définir)
+### Détail Spa & Sauna
+- Bâtiment indépendant séparé du château
+- Vue panoramique sur le domaine
+- Privatif — réservation obligatoire
+- Tarif à définir
+
+### Détail Panier pique-nique terroir
+- Panier en osier isotherme fourni
+- Contenu variable selon arrivages de la semaine : fromages, charcuteries, pain artisanal, fruits/légumes du potager, dessert maison
+- Option vin du château disponible
+- Commande à passer la veille
+- Prix suggéré : 18–28 € / personne
+
+### Détail Vie de la ferme
+- Poulailler en accès libre (récolte des œufs selon saison)
+- Potager du domaine (produits utilisés en cuisine)
+- 1 cheval + 4 chèvres naines dans la prairie
+- Accompagnement par les propriétaires sur demande
+- Argument clé familles avec enfants
+
+### Détail Salle de réception
+- Surface : 80 m²
+- Usages : soirées à thème, jeux de société, projection de films, animations sur mesure
+- Idéal pour groupes 6–12 personnes, CE, année
+- Équipements à définir (tables modulables, écran, sono)
 
 ---
 
-## PHOTOS ESPACES COMMUNS
+## PHOTOS — RÉFÉRENCE COMPLÈTE
 
 | Sujet | Fichiers |
-|-------|---------|
+|-------|----------|
 | Façade | `Ext Facade - IMG_20251120_173051.jpg`, `Ext Facade - IMG_20260228_132639.jpg`, `Ext Facade - IMG_20260228_132708.jpg` |
 | Extérieur arrière | `Ext Arrière - IMG_20260228_120357.jpg` |
 | Parc | `Ext Parc - IMG_20260228_132713.jpg`, `Ext Parc - IMG_20260228_132909.jpg` |
@@ -167,4 +191,9 @@ Référence complète des 7 unités. À mettre à jour si changement.
 | Restaurant | `Restaurant - IMG_20260228_115837.jpg` |
 | Entrée | `chateau-puygrenier-entree-resize.jpg` |
 | Privé RDC | `Privé RDC - IMG_20260228_113204.jpg` |
+| Pique-nique | `Pique-nique - panier-terroir.jpg`, `Pique-nique - produits-locaux.jpg` |
+| Basse-cour | `Basse-cour - poulailler.jpg`, `Basse-cour - poules.jpg` |
+| Animaux | `Animaux - cheval-prairie.jpg`, `Animaux - chevres-naines.jpg` |
+| Potager | `Potager - jardin-legumes.jpg`, `Potager - recolte.jpg` |
+| Salle réception | `Salle-reception - salle.jpg`, `Salle-reception - soiree.jpg` |
 | Logo (blanc) | `logo_puygrenier_solo_blanc.png` |

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Château Puygrenier — Maison d'hôtes de caractère entre Dordogne et Gironde. 7 hébergements uniques, piscine, spa, table d'hôtes.">
   <title>Château Puygrenier | Maison d'hôtes entre Dordogne et Gironde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -96,12 +99,12 @@
     ══════════════════════════════════════════════ -->
     <section id="domaine" class="section section-surface">
       <div class="container grid-2">
-        <div class="domaine-photo">
+        <div class="domaine-photo reveal">
           <img src="assets/images/chateau-puygrenier-entree-resize.jpg"
                alt="Entrée du Château Puygrenier"
                loading="lazy">
         </div>
-        <div>
+        <div class="reveal" style="transition-delay:120ms">
           <p class="section-label">Le domaine</p>
           <h2>Pas un hôtel. Une maison où l'on vous attend.</h2>
           <p>
@@ -133,8 +136,8 @@
     <section id="hebergements" class="section">
       <div class="container">
         <p class="section-label">Hébergements</p>
-        <h2>Choisissez votre façon de séjourner.</h2>
-        <p class="section-intro">
+        <h2 class="reveal">Choisissez votre façon de séjourner.</h2>
+        <p class="section-intro reveal" style="transition-delay:80ms">
           Des suites de maison d'hôtes aux gîtes indépendants — chaque unité a
           son caractère, son espace, sa lumière.
         </p>
@@ -142,11 +145,15 @@
         <div class="units-grid">
 
           <!-- Suite Margaux + Saint-Émilion — featured, span 2 -->
-          <article class="unit-card unit-card--featured">
-            <div class="unit-card-photo">
-              <img src="assets/images/chateau-puygrenier-chambre-margaux-11.jpg"
-                   alt="Suite Margaux et Saint-Émilion"
+          <article class="unit-card unit-card--featured reveal">
+            <div class="unit-card-photo" data-lb-group="lb-margaux">
+              <img src="assets/images/chateau-puygrenier-chambre-saint-emilion-2.jpg"
+                   alt="Suite Margaux &amp; Saint-Émilion — vue générale"
                    loading="lazy">
+              <img src="assets/images/chateau-puygrenier-chambre-margaux-4-e1567083982603.jpg" alt="Suite Margaux — baldaquin et cheminée" loading="lazy" class="lb-only">
+              <img src="assets/images/chateau-puygrenier-chambre-margaux-8.jpg" alt="Suite Margaux — salon extérieur privatif" loading="lazy" class="lb-only">
+              <img src="assets/images/chateau-puygrenier-chambre-margaux-11.jpg" alt="Suite Margaux — salle de bain" loading="lazy" class="lb-only">
+              <img src="assets/images/chateau-puygrenier-chambre-saint-emilion-7.jpg" alt="Suite Saint-Émilion — salle de bain" loading="lazy" class="lb-only">
             </div>
             <div class="unit-card-body">
               <div class="unit-meta">
@@ -161,11 +168,12 @@
           </article>
 
           <!-- Suite Sauternes — 1 col -->
-          <article class="unit-card">
-            <div class="unit-card-photo">
+          <article class="unit-card reveal" style="transition-delay:120ms">
+            <div class="unit-card-photo" data-lb-group="lb-sauternes">
               <img src="assets/images/chateau-puygrenier-chambre-sauternes-3.jpg"
-                   alt="Suite Sauternes"
+                   alt="Suite Sauternes — vue générale"
                    loading="lazy">
+              <img src="assets/images/chateau-puygrenier-chambre-sauternes-12.jpg" alt="Suite Sauternes — détail" loading="lazy" class="lb-only">
             </div>
             <div class="unit-card-body">
               <div class="unit-meta">
@@ -179,50 +187,13 @@
             </div>
           </article>
 
-          <!-- Suite Puygrenier — featured, span 2 -->
-          <article class="unit-card unit-card--featured">
-            <div class="unit-card-photo">
-              <img src="assets/images/chateau-puygrenier-suite-puygrenier-1.jpg"
-                   alt="Suite Puygrenier"
-                   loading="lazy">
-            </div>
-            <div class="unit-card-body">
-              <div class="unit-meta">
-                <span class="unit-badge">Suite — 1er étage</span>
-                <span class="unit-badge">4 personnes</span>
-                <span class="unit-badge">~50 m²</span>
-              </div>
-              <h3>Suite Puygrenier</h3>
-              <p>La suite signature du château. Vue des deux côtés, lit king size, deux canapés convertibles. La lumière du matin au soir, l'espace pour souffler.</p>
-              <a class="text-link" href="hebergements.html#puygrenier">Découvrir →</a>
-            </div>
-          </article>
-
-          <!-- Suite Pomerol — 1 col -->
-          <article class="unit-card">
-            <div class="unit-card-photo">
-              <img src="assets/images/chateau-puygrenier-chambre-pomerol-1.jpg"
-                   alt="Suite Pomerol"
-                   loading="lazy">
-            </div>
-            <div class="unit-card-body">
-              <div class="unit-meta">
-                <span class="unit-badge">Suite — 2e étage</span>
-                <span class="unit-badge">2 personnes</span>
-                <span class="unit-badge">21 m²</span>
-              </div>
-              <h3>Suite Pomerol</h3>
-              <p>Élégante et intimiste. Tout le confort en format cosy : lit queen, salle de bain privée, climatisation réversible.</p>
-              <a class="text-link" href="hebergements.html#pomerol">Découvrir →</a>
-            </div>
-          </article>
-
-          <!-- Suite Puisseguin — 1 col -->
-          <article class="unit-card">
-            <div class="unit-card-photo">
+          <!-- Suite Puisseguin — full width -->
+          <article class="unit-card unit-card--full reveal" style="transition-delay:240ms">
+            <div class="unit-card-photo" data-lb-group="lb-puisseguin">
               <img src="assets/images/chateau-puygrenier-chambre-puisseguin-2.jpg"
-                   alt="Suite Puisseguin"
+                   alt="Suite Puisseguin — vue générale"
                    loading="lazy">
+              <img src="assets/images/chateau-puygrenier-chambre-puisseguin-5.jpg" alt="Suite Puisseguin — détail" loading="lazy" class="lb-only">
             </div>
             <div class="unit-card-body">
               <div class="unit-meta">
@@ -236,46 +207,7 @@
             </div>
           </article>
 
-          <!-- Gîte Pécharmant — featured, span 2 -->
-          <article class="unit-card unit-card--featured">
-            <div class="unit-card-photo">
-              <img src="assets/images/chateau-puygrenier-gite-pecharment-1.jpg"
-                   alt="Gîte Pécharmant"
-                   loading="lazy">
-            </div>
-            <div class="unit-card-body">
-              <div class="unit-meta">
-                <span class="unit-badge unit-badge--gite">Gîte — Attenant</span>
-                <span class="unit-badge">6 personnes</span>
-                <span class="unit-badge">~60 m²</span>
-              </div>
-              <h3>Gîte Pécharmant</h3>
-              <p>Accès totalement indépendant, deux niveaux. Deux chambres, salon, cuisine équipée. L'option idéale pour les familles ou les groupes qui veulent leur propre espace.</p>
-              <a class="text-link" href="hebergements.html#pecharment">Découvrir →</a>
-            </div>
-          </article>
-
-          <!-- Gîte Montravel — full width, span 3 -->
-          <article class="unit-card unit-card--full">
-            <div class="unit-card-photo">
-              <img src="assets/images/gite-montravel-1.jpg"
-                   alt="Gîte Montravel"
-                   loading="lazy">
-            </div>
-            <div class="unit-card-body">
-              <div class="unit-meta">
-                <span class="unit-badge unit-badge--gite">Gîte — De plain-pied</span>
-                <span class="unit-badge">2 personnes</span>
-                <span class="unit-badge">18 m²</span>
-              </div>
-              <h3>Gîte Montravel</h3>
-              <p>Intimiste et totalement indépendant. Lit en mezzanine, salle de bain, cuisine équipée — une parenthèse à deux, avec accès direct depuis l'extérieur.</p>
-              <a class="text-link" href="hebergements.html#montravel">Découvrir →</a>
-            </div>
-          </article>
-
         </div>
-
         <p class="units-cta-wrapper">
           <a class="btn btn-outline" href="hebergements.html">Voir tous les hébergements en détail</a>
         </p>
@@ -288,15 +220,15 @@
     <section id="experiences" class="section section-surface">
       <div class="container">
         <p class="section-label">Sur place</p>
-        <h2>Tout pour ne pas avoir besoin de partir.</h2>
-        <p class="section-intro">
+        <h2 class="reveal">Tout pour ne pas avoir besoin de partir.</h2>
+        <p class="section-intro reveal" style="transition-delay:80ms">
           Piscine, table d'hôtes, spa avec vue, vie de la ferme, pique-nique terroir
           — les à-côtés qui font la différence entre une nuit et un vrai séjour.
         </p>
 
         <div class="experience-grid">
 
-          <article class="experience-card">
+          <article class="experience-card reveal">
             <div class="experience-card-photo">
               <img src="assets/images/Piscine - IMG_20260228_120734.jpg"
                    alt="Piscine du domaine"
@@ -309,7 +241,7 @@
             </div>
           </article>
 
-          <article class="experience-card">
+          <article class="experience-card reveal" style="transition-delay:80ms">
             <div class="experience-card-photo">
               <img src="assets/images/Spa - IMG_20260228_133935.jpg"
                    alt="Spa et sauna"
@@ -322,7 +254,7 @@
             </div>
           </article>
 
-          <article class="experience-card">
+          <article class="experience-card reveal" style="transition-delay:160ms">
             <div class="experience-card-photo">
               <img src="assets/images/Restaurant - IMG_20260228_115837.jpg"
                    alt="Table d'hôtes"
@@ -335,55 +267,16 @@
             </div>
           </article>
 
-          <article class="experience-card">
+          <article class="experience-card reveal" style="transition-delay:240ms">
             <div class="experience-card-photo">
-              <img src="assets/images/Privé RDC - IMG_20260228_113204.jpg"
-                   alt="Petit-déjeuner maison"
-                   loading="lazy">
-            </div>
-            <div class="experience-card-body">
-              <h3>Petit-déjeuner</h3>
-              <p>Produits locaux, fait maison chaque matin. Inclus dans les suites, disponible en option pour les gîtes.</p>
-              <span class="experience-badge">Inclus (suites)</span>
-            </div>
-          </article>
-
-          <article class="experience-card">
-            <div class="experience-card-photo">
-              <img src="assets/images/Pique-nique - panier-terroir.jpg"
-                   alt="Panier pique-nique terroir"
-                   loading="lazy">
-            </div>
-            <div class="experience-card-body">
-              <h3>Panier pique-nique</h3>
-              <p>Panier en osier isotherme garni de produits du terroir, à emporter le matin pour déjeuner dans la nature.</p>
-              <span class="experience-badge experience-badge--option">Sur commande</span>
-            </div>
-          </article>
-
-          <article class="experience-card">
-            <div class="experience-card-photo">
-              <img src="assets/images/Animaux - cheval-prairie.jpg"
-                   alt="Cheval et animaux du domaine"
+              <img src="assets/images/Ext Pré - IMG_20260228_120428.jpg"
+                   alt="Le pré du domaine"
                    loading="lazy">
             </div>
             <div class="experience-card-body">
               <h3>Vie de la ferme</h3>
               <p>Poulailler, potager, cheval et chèvres naines en accès libre. Le domaine vit et respire.</p>
               <span class="experience-badge">Inclus</span>
-            </div>
-          </article>
-
-          <article class="experience-card">
-            <div class="experience-card-photo">
-              <img src="assets/images/Salle-reception - salle.jpg"
-                   alt="Salle de réception"
-                   loading="lazy">
-            </div>
-            <div class="experience-card-body">
-              <h3>Salle de réception</h3>
-              <p>80 m² pour soirées à thème, cinéma, jeux de société ou animations privées.</p>
-              <span class="experience-badge experience-badge--option">Sur réservation</span>
             </div>
           </article>
 
@@ -402,13 +295,13 @@
       <div class="container">
         <div class="destination-layout">
 
-          <div class="destination-photo">
+          <div class="destination-photo reveal">
             <img src="assets/images/Ext Parc - IMG_20260228_132909.jpg"
                  alt="Le parc du Château Puygrenier"
                  loading="lazy">
           </div>
 
-          <div class="destination-content">
+          <div class="destination-content reveal" style="transition-delay:120ms">
             <p class="section-label">Destination</p>
             <h2>Deux régions.<br>Un point de chute idéal.</h2>
             <p>
@@ -431,6 +324,46 @@
             </div>
             <a class="btn btn-outline" href="destination.html">Explorer la région</a>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         TÉMOIGNAGES — À remplacer par de vrais avis avant le lancement
+    ══════════════════════════════════════════════ -->
+    <section id="temoignages" class="section">
+      <div class="container">
+        <p class="section-label">Témoignages</p>
+        <h2 class="reveal">Ce que nos invités en disent.</h2>
+        <p class="section-intro reveal" style="transition-delay:80ms">
+          Quelques mots de ceux qui ont séjourné à Château Puygrenier.
+        </p>
+        <div class="testimonials-grid">
+
+          <blockquote class="testimonial-card reveal">
+            <p>« Un endroit hors du temps. Le spa avec vue sur le parc, le petit-déjeuner fait maison, l'accueil de la famille propriétaire — on ne voulait plus repartir. »</p>
+            <footer>
+              <strong>Sophie &amp; Marc T.</strong>
+              <span>Suite Puygrenier — juillet 2025</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal" style="transition-delay:100ms">
+            <p>« Idéal pour les enfants. Ils ont adoré le poulailler et les chèvres. Les adultes ont profité de la piscine en toute liberté. Un vrai séjour en famille, dans un cadre exceptionnel. »</p>
+            <footer>
+              <strong>Famille Dupont</strong>
+              <span>Gîte Pécharmant — août 2025</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal" style="transition-delay:200ms">
+            <p>« La table d'hôtes le soir, les vins du terroir, le calme absolu — on est repartis avec l'envie de revenir dès l'année prochaine. »</p>
+            <footer>
+              <strong>Claire &amp; Antoine V.</strong>
+              <span>Suite Margaux — mai 2025</span>
+            </footer>
+          </blockquote>
 
         </div>
       </div>
@@ -502,6 +435,18 @@
   </footer>
 
   <script src="script.js" defer></script>
+
+  <!-- ══ LIGHTBOX ══ -->
+  <div id="lightbox" class="lb" role="dialog" aria-modal="true" aria-label="Visionneuse de photos" hidden>
+    <button class="lb-close" type="button" aria-label="Fermer la visionneuse">&#215;</button>
+    <button class="lb-prev" type="button" aria-label="Photo précédente">&#8249;</button>
+    <button class="lb-next" type="button" aria-label="Photo suivante">&#8250;</button>
+    <figure class="lb-fig">
+      <img class="lb-img" src="" alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <div class="lb-dots"></div>
+  </div>
 </body>
 </html>
 

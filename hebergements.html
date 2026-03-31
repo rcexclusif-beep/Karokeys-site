@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Hébergements du Château Puygrenier — 5 suites de maison d'hôtes et 2 gîtes indépendants entre Dordogne et Gironde. Petit-déjeuner inclus, piscine, spa.">
   <title>Hébergements | Château Puygrenier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -91,28 +94,28 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-margaux">
             <figure class="gallery-main">
-              <img src="assets/images/chateau-puygrenier-chambre-margaux-11.jpg"
-                   alt="Suite Margaux — vue générale"
+              <img src="assets/images/chateau-puygrenier-chambre-saint-emilion-2.jpg"
+                   alt="Suite Margaux &amp; Saint-Émilion — vue générale"
                    loading="lazy">
             </figure>
             <div class="gallery-thumbs">
               <figure>
                 <img src="assets/images/chateau-puygrenier-chambre-margaux-4-e1567083982603.jpg"
-                     alt="Suite Margaux — détail" loading="lazy">
+                     alt="Suite Margaux — baldaquin et cheminée" loading="lazy">
               </figure>
               <figure>
                 <img src="assets/images/chateau-puygrenier-chambre-margaux-8.jpg"
+                     alt="Suite Margaux — accès extérieur privatif" loading="lazy">
+              </figure>
+              <figure>
+                <img src="assets/images/chateau-puygrenier-chambre-margaux-11.jpg"
                      alt="Suite Margaux — salle de bain" loading="lazy">
               </figure>
               <figure>
-                <img src="assets/images/chateau-puygrenier-chambre-saint-emilion-2.jpg"
-                     alt="Suite Saint-Émilion — vue générale" loading="lazy">
-              </figure>
-              <figure>
                 <img src="assets/images/chateau-puygrenier-chambre-saint-emilion-7.jpg"
-                     alt="Suite Saint-Émilion — détail" loading="lazy">
+                     alt="Suite Saint-Émilion — salle de bain ornementée" loading="lazy">
               </figure>
             </div>
           </div>
@@ -154,7 +157,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-sauternes">
             <figure class="gallery-main">
               <img src="assets/images/chateau-puygrenier-chambre-sauternes-3.jpg"
                    alt="Suite Sauternes — vue générale"
@@ -209,20 +212,20 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-puygrenier">
             <figure class="gallery-main">
-              <img src="assets/images/chateau-puygrenier-suite-puygrenier-1.jpg"
-                   alt="Suite Puygrenier — vue principale"
+              <img src="assets/images/chateau-puygrenier-suite-puygrenier-3.jpg"
+                   alt="Suite Puygrenier — espace lounge et baignoire rhétro"
                    loading="lazy">
             </figure>
             <div class="gallery-thumbs">
               <figure>
                 <img src="assets/images/chateau-puygrenier-suite-puygrenier-2.jpg"
-                     alt="Suite Puygrenier — vue 2" loading="lazy">
+                     alt="Suite Puygrenier — chambre king size" loading="lazy">
               </figure>
               <figure>
-                <img src="assets/images/chateau-puygrenier-suite-puygrenier-3.jpg"
-                     alt="Suite Puygrenier — vue 3" loading="lazy">
+                <img src="assets/images/chateau-puygrenier-suite-puygrenier-1.jpg"
+                     alt="Suite Puygrenier — vue d'ensemble" loading="lazy">
               </figure>
               <figure>
                 <img src="assets/images/chateau-puygrenier-suite-puygrenier-4.jpg"
@@ -273,7 +276,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-pomerol">
             <figure class="gallery-main">
               <img src="assets/images/chateau-puygrenier-chambre-pomerol-1.jpg"
                    alt="Suite Pomerol — vue générale"
@@ -328,7 +331,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-puisseguin">
             <figure class="gallery-main">
               <img src="assets/images/chateau-puygrenier-chambre-puisseguin-2.jpg"
                    alt="Suite Puisseguin — vue générale"
@@ -397,7 +400,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-pecharment">
             <figure class="gallery-main">
               <img src="assets/images/chateau-puygrenier-gite-pecharment-1.jpg"
                    alt="Gîte Pécharmant — vue principale"
@@ -460,7 +463,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-montravel">
             <figure class="gallery-main">
               <img src="assets/images/gite-montravel-1.jpg"
                    alt="Gîte Montravel — vue générale"
@@ -545,5 +548,17 @@
   </footer>
 
   <script src="script.js" defer></script>
+
+  <!-- ══ LIGHTBOX ══ -->
+  <div id="lightbox" class="lb" role="dialog" aria-modal="true" aria-label="Visionneuse de photos" hidden>
+    <button class="lb-close" type="button" aria-label="Fermer la visionneuse">&#215;</button>
+    <button class="lb-prev" type="button" aria-label="Photo précédente">&#8249;</button>
+    <button class="lb-next" type="button" aria-label="Photo suivante">&#8250;</button>
+    <figure class="lb-fig">
+      <img class="lb-img" src="" alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <div class="lb-dots"></div>
+  </div>
 </body>
 </html>

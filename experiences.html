@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Expériences au Château Puygrenier — piscine, spa &amp; sauna, table d'hôtes, petit-déjeuner maison. Tout ce qu'il faut pour un séjour complet entre Dordogne et Gironde.">
   <title>Expériences &amp; Services | Château Puygrenier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -51,7 +54,7 @@
       <div class="page-hero-content container">
         <p class="eyebrow">Sur place</p>
         <h1>Tout pour ne pas avoir besoin de partir.</h1>
-        <p>Piscine, spa, table d'hôtes, vie de la ferme, pique-nique terroir — tout ce qu'il faut pour ne jamais avoir besoin de partir.</p>
+        <p>Piscine, spa, table d'hôtes, vie de la ferme, pique-nique terroir — sept façons de prolonger le plaisir sans quitter le domaine.</p>
       </div>
     </section>
 
@@ -77,7 +80,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-piscine">
             <figure class="gallery-main">
               <img src="assets/images/Piscine - IMG_20260228_133543.jpg"
                    alt="Piscine du Château Puygrenier"
@@ -127,7 +130,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-spa">
             <figure class="gallery-main">
               <img src="assets/images/Spa - IMG_20260228_133935.jpg"
                    alt="Spa — vue générale"
@@ -183,7 +186,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-restaurant">
             <figure class="gallery-main">
               <img src="assets/images/Restaurant - IMG_20260228_115837.jpg"
                    alt="Table d'hôtes du Château Puygrenier"
@@ -235,7 +238,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-petitdej">
             <figure class="gallery-main">
               <img src="assets/images/Privé RDC - IMG_20260228_113204.jpg"
                    alt="Petit-déjeuner au Château Puygrenier"
@@ -285,7 +288,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-piquenique">
             <figure class="gallery-main">
               <img src="assets/images/Pique-nique - panier-terroir.jpg"
                    alt="Panier pique-nique terroir du Château Puygrenier"
@@ -339,10 +342,10 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-ferme">
             <figure class="gallery-main">
-              <img src="assets/images/Animaux - cheval-prairie.jpg"
-                   alt="Cheval dans la prairie du domaine"
+              <img src="assets/images/Ext Pré - IMG_20260228_120428.jpg"
+                   alt="Le pré du domaine"
                    loading="lazy">
             </figure>
             <div class="gallery-thumbs gallery-thumbs--3">
@@ -395,7 +398,7 @@
       <div class="container">
         <div class="unit-detail-layout">
 
-          <div class="unit-detail-gallery">
+          <div class="unit-detail-gallery" data-lb-group="lb-reception">
             <figure class="gallery-main">
               <img src="assets/images/Salle-reception - salle.jpg"
                    alt="Salle de réception du Château Puygrenier"
@@ -535,5 +538,17 @@
   </footer>
 
   <script src="script.js" defer></script>
+
+  <!-- ══ LIGHTBOX ══ -->
+  <div id="lightbox" class="lb" role="dialog" aria-modal="true" aria-label="Visionneuse de photos" hidden>
+    <button class="lb-close" type="button" aria-label="Fermer la visionneuse">&#215;</button>
+    <button class="lb-prev" type="button" aria-label="Photo précédente">&#8249;</button>
+    <button class="lb-next" type="button" aria-label="Photo suivante">&#8250;</button>
+    <figure class="lb-fig">
+      <img class="lb-img" src="" alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <div class="lb-dots"></div>
+  </div>
 </body>
 </html>
