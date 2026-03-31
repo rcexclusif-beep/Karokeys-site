@@ -8,9 +8,9 @@ Living design guide. Update as we make design decisions together.
 
 ### Primary Colors
 ```
-Primary Color:      #2F3A2F (Used for: headlines, text forts, navigation)
-Accent Color:       #B68A52 (Used for: buttons, highlights, CTAs)
-Background:         #F5F1E8 (Used for: page background, cards)
+Primary Color:      #3A4A35 (Used for: headlines, text forts, navigation — vert sauge, plus doux)
+Accent Color:       #B68A52 (Used for: buttons, highlights, CTAs — or chaud, noble)
+Background:         #F7F4EE (Used for: page background — légèrement plus lumineux)
 Text Color:         #2B2620 (Used for: body text)
 ```
 
@@ -18,13 +18,15 @@ Text Color:         #2B2620 (Used for: body text)
 ```
 Secondary Text:     #6F665B (Used for: descriptions, meta text)
 Borders:            #D9CFBE (Used for: dividers, subtle lines)
+Terracotta:         #8B6F5E (Used for: section labels, accents de détail — pierre du Périgord)
 Success/Error:      #2F6B4F / #A1462E (If needed for forms)
 ```
 
 **Design Philosophy for Colors:**
-- Premium, minimalist aesthetic
-- Warm, nature-inspired palette
-- Calm and elegant (no bright colors)
+- Nature + confort + authenticité — pas un hôtel générique
+- Vert sauge (#3A4A35) : plus sage et sage que l'ancien vert forêt
+- Terracotta (#8B6F5E) : ancre visuellement dans la pierre et la terre du Périgord
+- Or chaud (#B68A52) : noblesse sans ostentation
 - Contrast first: body text must stay highly readable on light backgrounds
 
 ---
@@ -118,12 +120,13 @@ Use these tokens in `:root` to keep future updates fast and safe.
 
 ```css
 :root {
-	--color-primary: #2F3A2F;
+	--color-primary: #3A4A35;
 	--color-accent: #B68A52;
-	--color-bg: #F5F1E8;
+	--color-bg: #F7F4EE;
 	--color-surface: #FBF8F2;
 	--color-text: #2B2620;
 	--color-text-muted: #6F665B;
+	--color-terracotta: #8B6F5E;
 	--color-border: #D9CFBE;
 	--color-success: #2F6B4F;
 	--color-error: #A1462E;
