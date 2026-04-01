@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Aller au contenu</a>
@@ -44,11 +45,45 @@
          PAGE HERO
     ══════════════════════════════════════════════ -->
     <section class="page-hero" aria-label="En-tête hébergements">
-      <div class="page-hero-media">
-        <img src="assets/images/Ext Facade - IMG_20260228_132708.jpg"
-             alt="Vue du Château Puygrenier"
-             loading="eager"
-             fetchpriority="high">
+      <div class="slides" id="slides">
+
+        <article class="slide is-active" aria-label="Suite Sauternes">
+          <div class="slide-media">
+            <img src="assets/images/chateau-puygrenier-chambre-sauternes-3.jpg"
+                 alt="Suite Sauternes — Château Puygrenier"
+                 loading="eager"
+                 fetchpriority="high">
+          </div>
+          <div class="slide-overlay"></div>
+        </article>
+
+        <article class="slide" aria-label="Suite Puisseguin">
+          <div class="slide-media">
+            <img src="assets/images/chateau-puygrenier-chambre-puisseguin-2.jpg"
+                 alt="Suite Puisseguin — Château Puygrenier"
+                 loading="lazy">
+          </div>
+          <div class="slide-overlay"></div>
+        </article>
+
+        <article class="slide" aria-label="Entrée du château">
+          <div class="slide-media slide-media--entree">
+            <img src="assets/images/chateau-puygrenier-entree-resize.jpg"
+                 alt="Entrée du Château Puygrenier"
+                 loading="lazy">
+          </div>
+          <div class="slide-overlay"></div>
+        </article>
+
+        <article class="slide" aria-label="Suite Saint-Émilion">
+          <div class="slide-media">
+            <img src="assets/images/chateau-puygrenier-chambre-saint-emilion-2.jpg"
+                 alt="Suite Saint-Émilion — Château Puygrenier"
+                 loading="lazy">
+          </div>
+          <div class="slide-overlay"></div>
+        </article>
+
       </div>
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content container">
@@ -56,6 +91,9 @@
         <h1>Nos hébergements</h1>
         <p>7 façons de séjourner à Château Puygrenier — du week-end en tête-à-tête au séjour en famille.</p>
       </div>
+      <button class="carousel-control prev" id="prev-slide" aria-label="Image précédente">&#10094;</button>
+      <button class="carousel-control next" id="next-slide" aria-label="Image suivante">&#10095;</button>
+      <div class="carousel-dots" id="carousel-dots" aria-label="Sélection des images"></div>
     </section>
 
     <!-- ══════════════════════════════════════════════
@@ -121,7 +159,6 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Suite — RDC · Maison d'hôtes</p>
             <h2>Suite Margaux &amp; Saint-Émilion</h2>
             <p class="unit-tagline">
               Deux suites communicantes, une seule location. L'espace idéal pour deux couples
@@ -176,10 +213,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Suite — 2e étage · Maison d'hôtes</p>
             <h2>Suite Sauternes</h2>
             <p class="unit-tagline">
-              La plus spacieuse du deuxième étage. Un lit queen, un lit d'appoint, de la lumière
+              La plus spacieuse du deuxième étage. Un lit queen size, un lit d'appoint, de la lumière
               naturelle et une climatisation réversible pour toutes les saisons.
             </p>
             <div class="unit-meta">
@@ -239,7 +275,6 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Suite signature — 1er étage · Maison d'hôtes</p>
             <h2>Suite Puygrenier</h2>
             <p class="unit-tagline">
               La suite signature du château. Vue de deux côtés, lit king size,
@@ -295,7 +330,6 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Suite — 2e étage · Maison d'hôtes</p>
             <h2>Suite Pomerol</h2>
             <p class="unit-tagline">
               Élégante et intimiste. Tout le confort en format cosy, avec salle de bain
@@ -350,7 +384,6 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Suite — 2e étage · Maison d'hôtes</p>
             <h2>Suite Puisseguin</h2>
             <p class="unit-tagline">
               Cosy et lumineuse. Le format idéal pour un séjour à deux, avec tout ce qu'il faut
@@ -383,7 +416,7 @@
          SECTION : GÎTES
     ══════════════════════════════════════════════ -->
     <div class="container">
-      <div class="units-section-divider">
+      <div class="units-section-divider" style="border-top: 2px solid var(--color-terracotta); padding-top: 2.5rem;">
         <p class="section-label">Gîtes</p>
         <h2>2 gîtes indépendants avec cuisine équipée</h2>
         <p>
@@ -427,7 +460,6 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Gîte — Attenant au château</p>
             <h2>Gîte Pécharmant</h2>
             <p class="unit-tagline">
               Le gîte idéal pour les familles ou groupes d'amis. Deux niveaux,
@@ -440,7 +472,7 @@
               <span class="unit-badge unit-badge--gite">Accès indépendant</span>
             </div>
             <ul class="unit-amenities">
-              <li>2 chambres (lit queen + lit simple chacune)</li>
+              <li>2 chambres (lit queen size + lit simple chacune)</li>
               <li>Salon / séjour avec canapés</li>
               <li>Cuisine entièrement équipée</li>
               <li>Salle de bain complète</li>
@@ -486,7 +518,6 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Gîte — De plain-pied · Attenant au château</p>
             <h2>Gîte Montravel</h2>
             <p class="unit-tagline">
               Une parenthèse à deux. Intimiste, entièrement indépendant, avec son lit en

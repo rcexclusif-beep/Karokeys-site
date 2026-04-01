@@ -199,11 +199,13 @@ a {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 480ms ease;
+  z-index: 0;
+  transition: opacity 1400ms cubic-bezier(0.45, 0, 0.15, 1);
 }
 
 .slide.is-active {
   opacity: 1;
+  z-index: 1;
 }
 
 .slide-overlay {
@@ -321,7 +323,7 @@ a {
 }
 
 .section {
-  padding-block: var(--space-5);
+  padding-block: 45px;
 }
 
 .section-surface {
@@ -469,7 +471,7 @@ a {
   }
 
   .section {
-    padding-block: var(--space-6);
+    padding-block: 78px;
   }
 
   .footer-inner {
@@ -493,6 +495,10 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.slide-media--entree img {
+  object-position: center 30%;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -865,7 +871,7 @@ a {
 ═══════════════════════════════════════════════════════ */
 .page-hero {
   position: relative;
-  min-height: 42vh;
+  min-height: 48vh;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -959,7 +965,6 @@ a {
 ═══════════════════════════════════════════════════════ */
 .units-section-divider {
   padding-block: var(--space-4) var(--space-3);
-  border-top: 2px solid var(--color-terracotta);
   margin-top: var(--space-4);
 }
 
@@ -1107,9 +1112,30 @@ a {
 }
 
 /* ═══════════════════════════════════════════════════════
+   MOBILE — unit detail : titre au-dessus des photos
+═══════════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+  /* display:contents "dissout" le wrapper info dans la grille :
+     ses enfants deviennent des items directs de unit-detail-layout */
+  .unit-detail-info {
+    display: contents;
+  }
+
+  /* section-label + h2 passent en tête (order négatif = avant la galerie) */
+  .unit-detail-info > .section-label,
+  .unit-detail-info > h2 {
+    order: -1;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
    DESKTOP — unit detail
 ═══════════════════════════════════════════════════════ */
 @media (min-width: 768px) {
+  /* Rétablir le display normal sur desktop */
+  .unit-detail-info {
+    display: block;
+  }
   .page-hero {
     min-height: 52vh;
   }
