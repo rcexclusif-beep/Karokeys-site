@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Château Puygrenier — demande de réservation, questions sur les hébergements et le domaine. Réponse en moins de 24h.">
+  <title>Contact &amp; Réservation | Château Puygrenier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil Château Puygrenier">
+        <img src="assets/images/logo_puygrenier_solo_blanc.png"
+             alt="Château Puygrenier"
+             class="brand-logo"
+             width="120" height="48">
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="hebergements.html">Hébergements</a>
+        <a href="experiences.html">Expériences</a>
+        <a href="destination.html">Destination</a>
+        <a href="contact.html" class="nav-cta" aria-current="page">Réserver</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════
+         PAGE HERO
+    ══════════════════════════════════════════════ -->
+    <section class="page-hero" aria-label="En-tête contact">
+      <div class="page-hero-media">
+        <img src="assets/images/Ext Facade - IMG_20260228_132708.jpg"
+             alt="Château Puygrenier — façade"
+             loading="eager"
+             fetchpriority="high">
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content container">
+        <p class="eyebrow">Contact &amp; Réservation</p>
+        <h1>Une question&nbsp;?<br>On répond en&nbsp;24h.</h1>
+        <p>Pas de formulaire complexe — juste un message, et on s'occupe du reste.</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         CONTACT GRID
+    ══════════════════════════════════════════════ -->
+    <section id="contact" class="section section-surface" aria-label="Formulaire de contact">
+      <div class="container contact-grid">
+
+        <!-- Infos + coordonnées -->
+        <div>
+          <p class="section-label">Nous contacter</p>
+          <h2>Votre séjour commence ici</h2>
+          <p>
+            Disponibilités, demandes spéciales, privatisation du domaine —
+            écrivez-nous ou appelez, nous adaptons chaque séjour.
+          </p>
+          <ul class="contact-list">
+            <li>Téléphone : <a href="tel:+33000000000">+33 (0)0 00 00 00 00</a></li>
+            <li>Email : <a href="mailto:contact@chateaupuygrenier.fr">contact@chateaupuygrenier.fr</a></li>
+            <li>Adresse : Dordogne / Gironde, France</li>
+          </ul>
+        </div>
+
+        <!-- Formulaire -->
+        <form class="contact-form" action="#" method="post" novalidate>
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Votre nom" required autocomplete="name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="votre@email.com" required autocomplete="email">
+
+          <div class="form-row">
+            <div>
+              <label for="dates">Dates envisagées</label>
+              <input id="dates" name="dates" type="text" placeholder="ex : 12 au 15 juillet">
+            </div>
+            <div>
+              <label for="guests">Nombre de personnes</label>
+              <select id="guests" name="guests">
+                <option value="">–</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6 et plus</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="hebergement">Hébergement souhaité</label>
+          <select id="hebergement" name="hebergement">
+            <option value="">Je ne sais pas encore</option>
+            <option value="margaux">Suite Margaux</option>
+            <option value="saint-emilion">Suite Saint-Émilion</option>
+            <option value="margaux-saint-emilion">Suite Margaux &amp; Saint-Émilion (communicantes)</option>
+            <option value="sauternes">Suite Sauternes</option>
+            <option value="puisseguin">Suite Puisseguin</option>
+            <option value="fronsac">Suite Fronsac</option>
+            <option value="gite-cognac">Gîte Cognac</option>
+            <option value="gite-armagnac">Gîte Armagnac</option>
+            <option value="domaine-entier">Domaine entier (privatisation)</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre demande, vos questions..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════ -->
+    <section id="faq" class="section" aria-label="Questions fréquentes">
+      <div class="container">
+        <p class="section-label">Questions fréquentes</p>
+        <h2>Tout ce que vous voulez savoir</h2>
+
+        <div class="faq-list" role="list">
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Quelles sont les heures d'arrivée et de départ&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                L'arrivée se fait à partir de <strong>16h</strong> et le départ avant
+                <strong>11h</strong>. En dehors de ces horaires, n'hésitez pas à nous contacter —
+                nous faisons notre possible pour accommoder des horaires différents selon
+                les disponibilités.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Le petit-déjeuner est-il inclus&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Le petit-déjeuner est inclus dans le tarif de toutes les
+                <strong>suites de la maison d'hôtes</strong>. Pour les <strong>gîtes
+                Cognac et Armagnac</strong>, la formule est en self-catering — cuisine
+                entièrement équipée à disposition.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">La piscine et le spa sont-ils accessibles à tous&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Oui. La piscine extérieure et le spa (jacuzzi, sauna, hammam) sont
+                inclus et accessibles à tous les hébergements. Des plages horaires
+                peuvent être organisées en cas de forte occupation du domaine pour
+                garantir la tranquillité de chacun.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Y a-t-il une connexion WiFi&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Oui, le WiFi haut débit est inclus dans tous les hébergements,
+                à l'intérieur comme dans les espaces extérieurs du domaine.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Les animaux de compagnie sont-ils acceptés&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Contactez-nous directement pour en discuter. L'acceptation dépend
+                de l'hébergement choisi et des autres résidents présents pendant
+                votre séjour.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Quelle est la capacité totale du domaine&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Le domaine peut accueillir jusqu'à <strong>20 personnes</strong> en
+                combinant les 5 suites de la maison d'hôtes et les 2 gîtes.
+                Pour les événements privatisés (mariages, séminaires, week-ends
+                en groupe), contactez-nous pour un devis personnalisé.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Peut-on privatiser l'intégralité du domaine&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Absolument. La privatisation complète est possible pour mariages,
+                anniversaires, séminaires ou week-ends en famille ou entre amis.
+                Contactez-nous pour que nous construisions ensemble la formule
+                adaptée à votre projet.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Quelles sont les conditions d'annulation&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                Les conditions d'annulation varient selon le canal de réservation
+                (Booking, Airbnb, réservation directe). Pour les réservations
+                directes, les conditions vous sont communiquées lors de la
+                confirmation. N'hésitez pas à nous contacter pour plus de détails.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">La table d'hôtes est-elle disponible tous les soirs&nbsp;?</summary>
+            <div class="faq-answer">
+              <p>
+                La table d'hôtes est proposée sur réservation, idéalement la veille
+                au plus tard. Elle n'est pas disponible tous les soirs — merci de
+                préciser votre intérêt lors de votre demande de séjour.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

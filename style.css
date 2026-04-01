@@ -1406,3 +1406,242 @@ a {
 [data-lb-group] img:not(.lb-only):hover {
   opacity: 0.88;
 }
+
+/* ═══════════════════════════════════════════════════════
+   PAGE DESTINATION — accès & CTA
+═══════════════════════════════════════════════════════ */
+.acces-layout {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.acces-distances h3 {
+  margin-bottom: var(--space-3);
+}
+
+.acces-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.acces-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-2);
+}
+
+.acces-lieu {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.acces-temps {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.acces-note {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+  font-style: italic;
+}
+
+.acces-map {
+  display: flex;
+  flex-direction: column;
+}
+
+.acces-map iframe {
+  width: 100%;
+  flex: 1;
+}
+
+.acces-map-caption {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 8px;
+  text-align: right;
+}
+
+.acces-map-caption a {
+  color: var(--color-terracotta);
+  text-decoration: underline;
+}
+
+.destination-cta {
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.destination-cta h2 {
+  margin-bottom: var(--space-2);
+}
+
+.destination-cta p {
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+}
+
+.destination-cta .hero-actions {
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .acces-layout {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   PAGES LÉGALES (mentions légales, politique confidentialité)
+═══════════════════════════════════════════════════════ */
+
+.legal-section {
+  padding-block: var(--space-5);
+}
+
+.legal-content {
+  max-width: 760px;
+}
+
+.legal-content h1 {
+  margin-bottom: var(--space-1);
+}
+
+.legal-updated {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-4);
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.legal-content p,
+.legal-content ul,
+.legal-content table {
+  margin-bottom: var(--space-2);
+  line-height: 1.75;
+}
+
+.legal-content ul {
+  padding-left: var(--space-3);
+}
+
+.legal-content ul li {
+  margin-bottom: 6px;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.legal-table th,
+.legal-table td {
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-table thead th {
+  background: #f0e8db;
+  font-weight: 600;
+}
+
+.legal-back {
+  margin-top: var(--space-5);
+}
+
+/* ═══════════════════════════════════════════════════════
+   FAQ ACCORDION (contact.html)
+═══════════════════════════════════════════════════════ */
+
+.faq-list {
+  margin-top: var(--space-4);
+  max-width: 800px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  gap: var(--space-2);
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-question::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.faq-answer p {
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Contact page — select field (copie depuis .contact-form) */
+.contact-form select {
+  width: 100%;
+  border: 1px solid #c7bca9;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font: inherit;
+  margin-bottom: var(--space-2);
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238c7a6b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  cursor: pointer;
+}
