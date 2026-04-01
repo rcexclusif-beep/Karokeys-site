@@ -173,10 +173,123 @@ a {
   background: #eee7d8;
 }
 
+.main-nav a[aria-current="page"] {
+  background: rgba(139, 111, 94, 0.12);
+  color: inherit;
+}
+
 .nav-cta {
   color: #1f1a14;
   background: #e9dcc6;
   font-weight: 600;
+}
+
+/* ── Language Switcher ──────────────────────────────────────────────────── */
+.lang-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 4px;
+}
+
+.lang-switcher .lang-face {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--color-cream);
+  transition: background 200ms;
+  white-space: nowrap;
+}
+
+.lang-switcher:hover .lang-face,
+.lang-switcher:focus-within .lang-face {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.lang-arrow {
+  font-size: 0.55rem;
+  opacity: 0.7;
+  transition: transform 200ms;
+}
+
+.lang-switcher:hover .lang-arrow,
+.lang-switcher:focus-within .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-cream, #f5f0e8);
+  border: 1px solid rgba(139, 111, 94, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms;
+  z-index: 100;
+  min-width: 52px;
+}
+
+.lang-switcher:hover .lang-dropdown,
+.lang-switcher:focus-within .lang-dropdown {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lang-option {
+  display: block;
+  width: 100%;
+  padding: 7px 14px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--color-terracotta);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--font-body);
+  transition: background 150ms;
+}
+
+.lang-option:hover {
+  background: var(--color-terracotta);
+  color: var(--color-cream);
+}
+
+/* Sur mobile : switcher intégré dans le menu déplié */
+@media (max-width: 767px) {
+  .lang-switcher {
+    margin: 4px 0 0;
+    justify-content: center;
+  }
+  .lang-dropdown {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: all;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  .lang-option {
+    color: var(--color-forest, #3a4a35);
+    padding: 4px 10px;
+  }
+  .lang-face {
+    color: var(--color-forest, #3a4a35) !important;
+  }
 }
 
 .hero {

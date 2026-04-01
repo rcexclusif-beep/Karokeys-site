@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="translations.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <a class="skip-link" href="#main-content" data-i18n="nav.skip">Aller au contenu</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -23,18 +24,27 @@
              width="120" height="48">
       </a>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu" data-i18n-label="nav.toggle.open">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="hebergements.html">Hébergements</a>
-        <a href="experiences.html" aria-current="page">Expériences</a>
-        <a href="destination.html">Destination</a>
-        <a href="contact.html" class="nav-cta">Réserver</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="hebergements.html" data-i18n="nav.lodging">Hébergements</a>
+        <a href="experiences.html" aria-current="page" data-i18n="nav.experiences">Expériences</a>
+        <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.book">Réserver</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-face">
+            <span id="lang-current-text">FR</span>
+            <span class="lang-arrow">▾</span>
+          </div>
+          <div class="lang-dropdown">
+            <button class="lang-option" id="lang-option-btn" data-lang="en">EN</button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -53,9 +63,9 @@
       </div>
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content container">
-        <p class="eyebrow">Sur place</p>
-        <h1>Tout pour ne pas avoir besoin de partir.</h1>
-        <p>Piscine, spa, table d'hôtes, vie de la ferme, pique-nique terroir — sept façons de prolonger le plaisir sans quitter le domaine.</p>
+        <p class="eyebrow" data-i18n="exp.hero.eyebrow">Sur place</p>
+        <h1 data-i18n="exp.hero.title">Tout pour ne pas avoir besoin de partir.</h1>
+        <p data-i18n="exp.hero.subtitle">Piscine, spa, table d'hôtes, vie de la ferme, pique-nique terroir — sept façons de prolonger le plaisir sans quitter le domaine.</p>
       </div>
     </section>
 
@@ -100,9 +110,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Inclus pour tous</p>
+            <p class="section-label" data-i18n="exp.piscine.label">Inclus pour tous</p>
             <h2>Piscine</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.piscine.tagline">
               Accès libre pour tous les hébergements, sans supplément.
               Se poser au bord de l'eau, sans avoir à rien planifier.
             </p>
@@ -111,13 +121,13 @@
               <span class="unit-badge">Toutes les unités</span>
               <span class="unit-badge">Accès libre</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.piscine.amenities">
               <li>Accès sans réservation</li>
               <li>Disponible pour les 7 hébergements</li>
               <li>Cadre naturel préservé</li>
               <li>Transats et espace détente</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Réserver un séjour</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.piscine.cta">Réserver un séjour</a>
           </div>
 
         </div>
@@ -154,9 +164,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Sur réservation — service payant</p>
+            <p class="section-label" data-i18n="exp.spa.label">Sur réservation — service payant</p>
             <h2>Spa &amp; Sauna</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.spa.tagline">
               Dans son propre bâtiment, avec une vue panoramique sur le domaine.
               Un espace pensé pour le silence, la chaleur, et le vide volontaire.
             </p>
@@ -165,7 +175,7 @@
               <span class="unit-badge">Bâtiment indépendant</span>
               <span class="unit-badge">Vue panoramique</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.spa.amenities">
               <li>Sauna</li>
               <li>Espace spa</li>
               <li>Vue sur le domaine</li>
@@ -173,7 +183,7 @@
               <li>Accessible à tous les hébergements</li>
               <li>Réservation requise</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.spa.cta">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -206,9 +216,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">À la carte — résidents et invités</p>
+            <p class="section-label" data-i18n="exp.resto.label">À la carte — résidents et invités</p>
             <h2>Table d'hôtes</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.resto.tagline">
               Un dîner convivial, ouvert à tous les résidents et à leurs invités.
               Cuisine de terroir, produits locaux, ambiance de maison.
             </p>
@@ -217,7 +227,7 @@
               <span class="unit-badge">Résidents + invités</span>
               <span class="unit-badge">Sur place</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.resto.amenities">
               <li>Ouvert le soir</li>
               <li>Cuisine du terroir périgourdin</li>
               <li>Produits locaux et de saison</li>
@@ -225,7 +235,7 @@
               <li>Réservation conseillée</li>
               <li>Ambiance conviviale</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Réserver une table</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.resto.cta">Réserver une table</a>
           </div>
 
         </div>
@@ -258,24 +268,24 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Inclus dans les suites — option pour les gîtes</p>
+            <p class="section-label" data-i18n="exp.petitdej.label">Inclus dans les suites — option pour les gîtes</p>
             <h2>Petit-déjeuner</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.petitdej.tagline">
               Préparé chaque matin avec des produits locaux et de saison.
               Servi dans les règles de l'art de la maison d'hôtes.
             </p>
             <div class="unit-meta">
-              <span class="experience-badge">Inclus (suites)</span>
-              <span class="experience-badge experience-badge--option">Option (gîtes)</span>
+              <span class="experience-badge" data-i18n="exp.petitdej.badge1">Inclus (suites)</span>
+              <span class="experience-badge experience-badge--option" data-i18n="exp.petitdej.badge2">Option (gîtes)</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.petitdej.amenities">
               <li>Produits locaux et de saison</li>
               <li>Fait maison chaque matin</li>
               <li>Inclus légalement dans les suites</li>
               <li>Disponible en option pour les gîtes</li>
               <li>Formule premium sur demande</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Nous contacter</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.petitdej.cta">Nous contacter</a>
           </div>
 
         </div>
@@ -308,9 +318,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Sur commande la veille — service payant</p>
+            <p class="section-label" data-i18n="exp.piquenique.label">Sur commande la veille — service payant</p>
             <h2>Panier pique-nique terroir</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.piquenique.tagline">
               Un panier en osier isotherme, garni de produits du terroir local,
               à emporter le matin pour déjeuner dans les vignes, au bord de la Dordogne
               ou à l'ombre des chênes du domaine.
@@ -320,7 +330,7 @@
               <span class="unit-badge">Produits locaux</span>
               <span class="unit-badge">Toutes les unités</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.piquenique.amenities">
               <li>Panier en osier isotherme fourni</li>
               <li>Fromages et charcuteries régionaux</li>
               <li>Pain artisanal, fruits de saison</li>
@@ -329,7 +339,7 @@
               <li>Menu variable selon les arrivages de la semaine</li>
               <li>Commande à passer la veille</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Commander un panier</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.piquenique.cta">Commander un panier</a>
           </div>
 
         </div>
@@ -366,9 +376,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Accès libre — inclus dans tous les séjours</p>
+            <p class="section-label" data-i18n="exp.ferme.label">Accès libre — inclus dans tous les séjours</p>
             <h2>Vie de la ferme</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.ferme.tagline">
               Poules, cheval, chèvres naines et potager — le domaine vit et respire.
               Un cadre rare pour les enfants, un retour aux sources pour les adultes.
             </p>
@@ -377,7 +387,7 @@
               <span class="unit-badge">Familles bienvenues</span>
               <span class="unit-badge">Toutes les unités</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.ferme.amenities">
               <li>Poulailler en accès libre</li>
               <li>Possibilité de ramasser les œufs (selon saison)</li>
               <li>Potager du domaine (produits utilisés en cuisine)</li>
@@ -385,7 +395,7 @@
               <li>4 chèvres naines accessibles</li>
               <li>Accompagnement par les propriétaires sur demande</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Nous contacter</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.ferme.cta">Nous contacter</a>
           </div>
 
         </div>
@@ -418,9 +428,9 @@
           </div>
 
           <div class="unit-detail-info">
-            <p class="section-label">Sur réservation — espace privatisable</p>
+            <p class="section-label" data-i18n="exp.reception.label">Sur réservation — espace privatisable</p>
             <h2>Salle de réception</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="exp.reception.tagline">
               80 m² pour réunir vos proches, organiser une soirée thématique,
               une projection de film ou une soirée jeux. Le château devient votre terrain de jeu.
             </p>
@@ -429,7 +439,7 @@
               <span class="unit-badge">80 m²</span>
               <span class="unit-badge">Privatisable</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="exp.reception.amenities">
               <li>Salle de 80 m²</li>
               <li>Soirées à thème (libre ou organisées)</li>
               <li>Jeux de société disponibles</li>
@@ -438,7 +448,7 @@
               <li>Animations sur mesure possibles</li>
               <li>Idéal pour groupes et événements privés</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Organiser un événement</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.reception.cta">Organiser un événement</a>
           </div>
 
         </div>
@@ -450,9 +460,9 @@
     ══════════════════════════════════════════════ -->
     <section class="section">
       <div class="container">
-        <p class="section-label">Récapitulatif</p>
-        <h2>Ce qui est inclus dans votre séjour</h2>
-        <p class="section-intro">
+        <p class="section-label" data-i18n="exp.recap.label">Récapitulatif</p>
+        <h2 data-i18n="exp.recap.title">Ce qui est inclus dans votre séjour</h2>
+        <p class="section-intro" data-i18n="exp.recap.intro">
           Un aperçu rapide de ce qui est compris selon votre hébergement.
         </p>
 
@@ -460,46 +470,46 @@
           <table class="services-table">
             <thead>
               <tr>
-                <th scope="col">Service</th>
-                <th scope="col">Suites (maison d'hôtes)</th>
-                <th scope="col">Gîtes</th>
+                <th scope="col" data-i18n="exp.table.th1">Service</th>
+                <th scope="col" data-i18n="exp.table.th2">Suites (maison d'hôtes)</th>
+                <th scope="col" data-i18n="exp.table.th3">Gîtes</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Piscine</td>
-                <td><span class="svc-yes">Inclus</span></td>
-                <td><span class="svc-yes">Inclus</span></td>
+                <td data-i18n="exp.table.pool">Piscine</td>
+                <td><span class="svc-yes" data-i18n="svc.yes">Inclus</span></td>
+                <td><span class="svc-yes" data-i18n="svc.yes">Inclus</span></td>
               </tr>
               <tr>
-                <td>Petit-déjeuner</td>
-                <td><span class="svc-yes">Inclus</span></td>
-                <td><span class="svc-option">Option</span></td>
+                <td data-i18n="exp.table.breakfast">Petit-déjeuner</td>
+                <td><span class="svc-yes" data-i18n="svc.yes">Inclus</span></td>
+                <td><span class="svc-option" data-i18n="svc.option">Option</span></td>
               </tr>
               <tr>
-                <td>Table d'hôtes (dîner)</td>
-                <td><span class="svc-option">À la carte</span></td>
-                <td><span class="svc-option">À la carte</span></td>
+                <td data-i18n="exp.table.dinner">Table d'hôtes (dîner)</td>
+                <td><span class="svc-option" data-i18n="svc.alacarte">À la carte</span></td>
+                <td><span class="svc-option" data-i18n="svc.alacarte">À la carte</span></td>
               </tr>
               <tr>
-                <td>Spa &amp; Sauna</td>
-                <td><span class="svc-option">Sur réservation</span></td>
-                <td><span class="svc-option">Sur réservation</span></td>
+                <td data-i18n="exp.table.spa">Spa &amp; Sauna</td>
+                <td><span class="svc-option" data-i18n="svc.onrequest">Sur réservation</span></td>
+                <td><span class="svc-option" data-i18n="svc.onrequest">Sur réservation</span></td>
               </tr>
               <tr>
-                <td>Panier pique-nique terroir</td>
-                <td><span class="svc-option">Sur commande</span></td>
-                <td><span class="svc-option">Sur commande</span></td>
+                <td data-i18n="exp.table.picnic">Panier pique-nique terroir</td>
+                <td><span class="svc-option" data-i18n="svc.onorder">Sur commande</span></td>
+                <td><span class="svc-option" data-i18n="svc.onorder">Sur commande</span></td>
               </tr>
               <tr>
-                <td>Vie de la ferme</td>
-                <td><span class="svc-yes">Inclus</span></td>
-                <td><span class="svc-yes">Inclus</span></td>
+                <td data-i18n="exp.table.farm">Vie de la ferme</td>
+                <td><span class="svc-yes" data-i18n="svc.yes">Inclus</span></td>
+                <td><span class="svc-yes" data-i18n="svc.yes">Inclus</span></td>
               </tr>
               <tr>
-                <td>Salle de réception</td>
-                <td><span class="svc-option">Sur réservation</span></td>
-                <td><span class="svc-option">Sur réservation</span></td>
+                <td data-i18n="exp.table.hall">Salle de réception</td>
+                <td><span class="svc-option" data-i18n="svc.onrequest">Sur réservation</span></td>
+                <td><span class="svc-option" data-i18n="svc.onrequest">Sur réservation</span></td>
               </tr>
             </tbody>
           </table>
@@ -513,14 +523,14 @@
     <section class="section section-surface">
       <div class="container">
         <div class="unit-cta-band">
-          <p class="section-label">Réservation</p>
-          <h2>Prêt à vivre l'expérience&nbsp;?</h2>
-          <p>
+          <p class="section-label" data-i18n="exp.cta.label">Réservation</p>
+          <h2 data-i18n="exp.cta.title">Prêt à vivre l'expérience ?</h2>
+          <p data-i18n="exp.cta.text">
             Parlez-nous de votre projet de séjour — on s'occupe du reste.
           </p>
           <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-            <a class="btn btn-primary" href="index.html#contact">Nous contacter</a>
-            <a class="btn btn-outline" href="hebergements.html">Voir les hébergements</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="exp.cta.btn1">Nous contacter</a>
+            <a class="btn btn-outline" href="hebergements.html" data-i18n="exp.cta.btn2">Voir les hébergements</a>
           </div>
         </div>
       </div>
@@ -530,10 +540,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <p data-i18n="footer.copyright">© 2026 Château Puygrenier. Tous droits réservés.</p>
       <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="mentions-legales.html" data-i18n="footer.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a>
       </div>
     </div>
   </footer>

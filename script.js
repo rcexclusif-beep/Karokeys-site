@@ -253,3 +253,75 @@ if (slides.length > 0) {
 		observer.observe(el);
 	});
 }());
+
+// ══════════════════════════════════════════════
+// I18N — Moteur de traduction
+// ══════════════════════════════════════════════
+(function () {
+	var currentLang = localStorage.getItem("lang") || "fr";
+
+	function applyTranslations(lang) {
+		if (!window.TRANSLATIONS || !window.TRANSLATIONS[lang]) return;
+		var t = window.TRANSLATIONS[lang];
+
+		// textContent simple
+		document.querySelectorAll("[data-i18n]").forEach(function (el) {
+			var key = el.getAttribute("data-i18n");
+			if (t[key] !== undefined) el.textContent = t[key];
+		});
+
+		// innerHTML (éléments avec <br>, <strong>, etc.)
+		document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+			var key = el.getAttribute("data-i18n-html");
+			if (t[key] !== undefined) el.innerHTML = t[key];
+		});
+
+		// Attribut placeholder
+		document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+			var key = el.getAttribute("data-i18n-placeholder");
+			if (t[key] !== undefined) el.placeholder = t[key];
+		});
+
+		// Attribut aria-label
+		document.querySelectorAll("[data-i18n-label]").forEach(function (el) {
+			var key = el.getAttribute("data-i18n-label");
+			if (t[key] !== undefined) el.setAttribute("aria-label", t[key]);
+		});
+
+		// Attribut html lang
+		document.documentElement.lang = lang;
+	}
+
+	function updateSwitcher(lang) {
+		var currentText = document.getElementById("lang-current-text");
+		var optionBtn   = document.getElementById("lang-option-btn");
+		if (!currentText || !optionBtn) return;
+		var other = lang === "fr" ? "en" : "fr";
+		currentText.textContent = lang.toUpperCase();
+		optionBtn.textContent   = other.toUpperCase();
+		optionBtn.setAttribute("data-lang", other);
+	}
+
+	function setLang(lang) {
+		currentLang = lang;
+		localStorage.setItem("lang", lang);
+		applyTranslations(lang);
+		updateSwitcher(lang);
+	}
+
+	// Init au chargement
+	document.addEventListener("DOMContentLoaded", function () {
+		var optionBtn = document.getElementById("lang-option-btn");
+		if (optionBtn) {
+			optionBtn.addEventListener("click", function () {
+				setLang(this.getAttribute("data-lang"));
+			});
+		}
+		// Toujours initialiser le switcher (affichage FR / EN)
+		updateSwitcher(currentLang);
+		// Appliquer les traductions si langue ≠ fr
+		if (currentLang !== "fr") {
+			applyTranslations(currentLang);
+		}
+	});
+}());

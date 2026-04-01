@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="translations.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Aller au contenu</a>
@@ -30,11 +31,20 @@
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="hebergements.html">Hébergements</a>
-        <a href="experiences.html">Expériences</a>
-        <a href="destination.html">Destination</a>
-        <a href="contact.html" class="nav-cta">Réserver</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="hebergements.html" data-i18n="nav.stays">Hébergements</a>
+        <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
+        <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.book">Réserver</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-face">
+            <span id="lang-current-text">FR</span>
+            <span class="lang-arrow">▾</span>
+          </div>
+          <div class="lang-dropdown">
+            <button class="lang-option" id="lang-option-btn" data-lang="en">EN</button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>

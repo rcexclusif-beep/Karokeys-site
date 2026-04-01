@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="translations.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <a class="skip-link" href="#main-content" data-i18n="nav.skip">Aller au contenu</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -23,18 +24,27 @@
              width="120" height="48">
       </a>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu" data-i18n-label="nav.toggle.open">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="hebergements.html" aria-current="page">Hébergements</a>
-        <a href="experiences.html">Expériences</a>
-        <a href="destination.html">Destination</a>
-        <a href="contact.html" class="nav-cta">Réserver</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="hebergements.html" aria-current="page" data-i18n="nav.lodging">Hébergements</a>
+        <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
+        <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.book">Réserver</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-face">
+            <span id="lang-current-text">FR</span>
+            <span class="lang-arrow">▾</span>
+          </div>
+          <div class="lang-dropdown">
+            <button class="lang-option" id="lang-option-btn" data-lang="en">EN</button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -87,9 +97,9 @@
       </div>
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content container">
-        <p class="eyebrow">Maison d'hôtes &amp; Gîtes</p>
-        <h1>Nos hébergements</h1>
-        <p>7 façons de séjourner à Château Puygrenier — du week-end en tête-à-tête au séjour en famille.</p>
+        <p class="eyebrow" data-i18n="lodging.hero.eyebrow">Maison d'hôtes &amp; Gîtes</p>
+        <h1 data-i18n="lodging.hero.title">Nos hébergements</h1>
+        <p data-i18n="lodging.hero.subtitle">7 façons de séjourner à Château Puygrenier — du week-end en tête-à-tête au séjour en famille.</p>
       </div>
       <button class="carousel-control prev" id="prev-slide" aria-label="Image précédente">&#10094;</button>
       <button class="carousel-control next" id="next-slide" aria-label="Image suivante">&#10095;</button>
@@ -116,9 +126,9 @@
     ══════════════════════════════════════════════ -->
     <div class="container">
       <div class="units-section-divider">
-        <p class="section-label">Maison d'hôtes</p>
-        <h2>5 suites avec petit-déjeuner inclus</h2>
-        <p>
+        <p class="section-label" data-i18n="lodging.suites.label">Maison d'hôtes</p>
+        <h2 data-i18n="lodging.suites.title">5 suites avec petit-déjeuner inclus</h2>
+        <p data-i18n="lodging.suites.text">
           Chaque suite dispose de sa salle de bain et WC privatifs. Le petit-déjeuner,
           préparé chaque matin avec des produits locaux, est inclus dans tous les séjours.
         </p>
@@ -160,7 +170,7 @@
 
           <div class="unit-detail-info">
             <h2>Suite Margaux &amp; Saint-Émilion</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="lodging.margaux.tagline">
               Deux suites communicantes, une seule location. L'espace idéal pour deux couples
               ou une famille qui veut de l'intimité sans se séparer.
             </p>
@@ -168,9 +178,9 @@
               <span class="unit-badge">4 personnes</span>
               <span class="unit-badge">~50 m²</span>
               <span class="unit-badge">RDC</span>
-              <span class="unit-badge">Accès extérieur privatif</span>
+              <span class="unit-badge" data-i18n="lodging.margaux.badge.acces">Accès extérieur privatif</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.margaux.amenities">
               <li>2 lits queen size</li>
               <li>2 SDB &amp; WC privatifs</li>
               <li>WC + lavabo commun entre suites</li>
@@ -180,7 +190,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Petit-déjeuner inclus</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -214,7 +224,7 @@
 
           <div class="unit-detail-info">
             <h2>Suite Sauternes</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="lodging.sauternes.tagline">
               La plus spacieuse du deuxième étage. Un lit queen size, un lit d'appoint, de la lumière
               naturelle et une climatisation réversible pour toutes les saisons.
             </p>
@@ -224,7 +234,7 @@
               <span class="unit-badge">2e étage</span>
               <span class="unit-badge">Climatisation PAC</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.sauternes.amenities">
               <li>Lit queen size</li>
               <li>Lit 1 place</li>
               <li>SDB &amp; WC privatifs</li>
@@ -234,7 +244,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Petit-déjeuner inclus</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -276,7 +286,7 @@
 
           <div class="unit-detail-info">
             <h2>Suite Puygrenier</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="lodging.puygrenier.tagline">
               La suite signature du château. Vue de deux côtés, lit king size,
               deux canapés convertibles — de la lumière du matin jusqu'au soir.
             </p>
@@ -284,10 +294,10 @@
               <span class="unit-badge">4 personnes</span>
               <span class="unit-badge">~50 m²</span>
               <span class="unit-badge">1er étage</span>
-              <span class="unit-badge">Vue double exposition</span>
+              <span class="unit-badge" data-i18n="lodging.puygrenier.badge.view">Vue double exposition</span>
               <span class="unit-badge">Climatisation PAC</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.puygrenier.amenities">
               <li>Lit king size</li>
               <li>2 canapés convertibles (2 pl. chacun)</li>
               <li>SDB &amp; WC privatifs</li>
@@ -297,7 +307,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Petit-déjeuner inclus</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -331,7 +341,7 @@
 
           <div class="unit-detail-info">
             <h2>Suite Pomerol</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="lodging.pomerol.tagline">
               Élégante et intimiste. Tout le confort en format cosy, avec salle de bain
               privative et climatisation réversible.
             </p>
@@ -341,7 +351,7 @@
               <span class="unit-badge">2e étage</span>
               <span class="unit-badge">Climatisation PAC</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.pomerol.amenities">
               <li>Lit queen size</li>
               <li>SDB &amp; WC privatifs</li>
               <li>Climatisation réversible PAC</li>
@@ -351,7 +361,7 @@
               <li>Meubles de rangement</li>
               <li>Petit-déjeuner inclus</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -385,7 +395,7 @@
 
           <div class="unit-detail-info">
             <h2>Suite Puisseguin</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="lodging.puisseguin.tagline">
               Cosy et lumineuse. Le format idéal pour un séjour à deux, avec tout ce qu'il faut
               sans superflu.
             </p>
@@ -395,7 +405,7 @@
               <span class="unit-badge">2e étage</span>
               <span class="unit-badge">Climatisation PAC</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.puisseguin.amenities">
               <li>Lit queen size</li>
               <li>SDB &amp; WC privatifs</li>
               <li>Climatisation réversible PAC</li>
@@ -405,7 +415,7 @@
               <li>Meubles de rangement</li>
               <li>Petit-déjeuner inclus</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -417,9 +427,9 @@
     ══════════════════════════════════════════════ -->
     <div class="container">
       <div class="units-section-divider" style="border-top: 2px solid var(--color-terracotta); padding-top: 2.5rem;">
-        <p class="section-label">Gîtes</p>
-        <h2>2 gîtes indépendants avec cuisine équipée</h2>
-        <p>
+        <p class="section-label" data-i18n="lodging.gites.label">Gîtes</p>
+        <h2 data-i18n="lodging.gites.title">2 gîtes indépendants avec cuisine équipée</h2>
+        <p data-i18n="lodging.gites.text">
           Accès totalement indépendant, cuisine équipée, espace privatif. Le petit-déjeuner
           n'est pas inclus mais reste disponible en option sur demande.
         </p>
@@ -461,7 +471,7 @@
 
           <div class="unit-detail-info">
             <h2>Gîte Pécharmant</h2>
-            <p class="unit-tagline">
+            <p class="unit-tagline" data-i18n="lodging.pecharment.tagline">
               Le gîte idéal pour les familles ou groupes d'amis. Deux niveaux,
               accès totalement indépendant, cuisine équipée et espace de vie à vous seuls.
             </p>
@@ -471,7 +481,7 @@
               <span class="unit-badge unit-badge--gite">RDC + étage</span>
               <span class="unit-badge unit-badge--gite">Accès indépendant</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.pecharment.amenities">
               <li>2 chambres (lit queen size + lit simple chacune)</li>
               <li>Salon / séjour avec canapés</li>
               <li>Cuisine entièrement équipée</li>
@@ -481,7 +491,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Petit-déjeuner en option</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -529,7 +539,7 @@
               <span class="unit-badge unit-badge--gite">Plain-pied</span>
               <span class="unit-badge unit-badge--gite">Accès indépendant</span>
             </div>
-            <ul class="unit-amenities">
+            <ul class="unit-amenities" data-i18n-html="lodging.montravel.amenities">
               <li>Lit en mezzanine</li>
               <li>Salle de bain indépendante</li>
               <li>Cuisine entièrement équipée</li>
@@ -539,7 +549,7 @@
               <li>Meubles de rangement</li>
               <li>Petit-déjeuner en option</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact">Demander les disponibilités</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
           </div>
 
         </div>
@@ -552,15 +562,15 @@
     <section class="section section-surface">
       <div class="container">
         <div class="unit-cta-band">
-          <p class="section-label">Réservation</p>
-          <h2>Prêt à poser vos dates ?</h2>
-          <p>
+          <p class="section-label" data-i18n="lodging.cta.label">Réservation</p>
+          <h2 data-i18n="lodging.cta.title">Prêt à poser vos dates ?</h2>
+          <p data-i18n="lodging.cta.text">
             Dites-nous quand, combien vous serez et quelle unité vous attire —
             on revient vers vous en moins de 24h.
           </p>
           <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-            <a class="btn btn-primary" href="index.html#contact">Nous contacter</a>
-            <a class="btn btn-outline" href="index.html">Retour à l'accueil</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="lodging.cta.btn1">Nous contacter</a>
+            <a class="btn btn-outline" href="index.html" data-i18n="lodging.cta.btn2">Retour à l'accueil</a>
           </div>
         </div>
       </div>
@@ -570,10 +580,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <p data-i18n="footer.copyright">© 2026 Château Puygrenier. Tous droits réservés.</p>
       <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="mentions-legales.html" data-i18n="footer.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a>
       </div>
     </div>
   </footer>

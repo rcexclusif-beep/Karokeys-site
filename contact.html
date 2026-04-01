@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="translations.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <a class="skip-link" href="#main-content" data-i18n="nav.skip">Aller au contenu</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -23,18 +24,27 @@
              width="120" height="48">
       </a>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu" data-i18n-label="nav.toggle.open">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="hebergements.html">Hébergements</a>
-        <a href="experiences.html">Expériences</a>
-        <a href="destination.html">Destination</a>
-        <a href="contact.html" class="nav-cta" aria-current="page">Réserver</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="hebergements.html" data-i18n="nav.lodging">Hébergements</a>
+        <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
+        <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="contact.html" class="nav-cta" aria-current="page" data-i18n="nav.book">Réserver</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-face">
+            <span id="lang-current-text">FR</span>
+            <span class="lang-arrow">▾</span>
+          </div>
+          <div class="lang-dropdown">
+            <button class="lang-option" id="lang-option-btn" data-lang="en">EN</button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -53,9 +63,9 @@
       </div>
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content container">
-        <p class="eyebrow">Contact &amp; Réservation</p>
-        <h1>Une question&nbsp;?<br>On répond en&nbsp;24h.</h1>
-        <p>Pas de formulaire complexe — juste un message, et on s'occupe du reste.</p>
+        <p class="eyebrow" data-i18n="contact.hero.eyebrow">Contact &amp; Réservation</p>
+        <h1 data-i18n-html="contact.hero.title">Une question&nbsp;?<br>On répond en&nbsp;24h.</h1>
+        <p data-i18n="contact.hero.subtitle">Pas de formulaire complexe — juste un message, et on s'occupe du reste.</p>
       </div>
     </section>
 
@@ -67,34 +77,34 @@
 
         <!-- Infos + coordonnées -->
         <div>
-          <p class="section-label">Nous contacter</p>
-          <h2>Votre séjour commence ici</h2>
-          <p>
+          <p class="section-label" data-i18n="contact.info.label">Nous contacter</p>
+          <h2 data-i18n="contact.info.title">Votre séjour commence ici</h2>
+          <p data-i18n="contact.info.text">
             Disponibilités, demandes spéciales, privatisation du domaine —
             écrivez-nous ou appelez, nous adaptons chaque séjour.
           </p>
           <ul class="contact-list">
-            <li>Téléphone : <a href="tel:+33000000000">+33 (0)0 00 00 00 00</a></li>
+            <li><span data-i18n="contact.phone">Téléphone</span> : <a href="tel:+33000000000">+33 (0)0 00 00 00 00</a></li>
             <li>Email : <a href="mailto:contact@chateaupuygrenier.fr">contact@chateaupuygrenier.fr</a></li>
-            <li>Adresse : Dordogne / Gironde, France</li>
+            <li><span data-i18n="contact.address">Adresse</span> : Dordogne / Gironde, France</li>
           </ul>
         </div>
 
         <!-- Formulaire -->
         <form class="contact-form" action="#" method="post" novalidate>
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" placeholder="Votre nom" required autocomplete="name">
+          <label for="name" data-i18n="contact.form.name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Votre nom" required autocomplete="name" data-i18n-placeholder="contact.form.name.ph">
 
-          <label for="email">Email</label>
+          <label for="email" data-i18n="contact.form.email">Email</label>
           <input id="email" name="email" type="email" placeholder="votre@email.com" required autocomplete="email">
 
           <div class="form-row">
             <div>
-              <label for="dates">Dates envisagées</label>
-              <input id="dates" name="dates" type="text" placeholder="ex : 12 au 15 juillet">
+              <label for="dates" data-i18n="contact.form.dates">Dates envisagées</label>
+              <input id="dates" name="dates" type="text" placeholder="ex : 12 au 15 juillet" data-i18n-placeholder="contact.form.dates.ph">
             </div>
             <div>
-              <label for="guests">Nombre de personnes</label>
+              <label for="guests" data-i18n="contact.form.guests">Nombre de personnes</label>
               <select id="guests" name="guests">
                 <option value="">–</option>
                 <option value="1">1</option>
@@ -107,24 +117,24 @@
             </div>
           </div>
 
-          <label for="hebergement">Hébergement souhaité</label>
+          <label for="hebergement" data-i18n="contact.form.lodging">Hébergement souhaité</label>
           <select id="hebergement" name="hebergement">
-            <option value="">Je ne sais pas encore</option>
+            <option value="" data-i18n="contact.form.lodging.unknown">Je ne sais pas encore</option>
             <option value="margaux">Suite Margaux</option>
             <option value="saint-emilion">Suite Saint-Émilion</option>
-            <option value="margaux-saint-emilion">Suite Margaux &amp; Saint-Émilion (communicantes)</option>
+            <option value="margaux-saint-emilion" data-i18n="contact.form.lodging.both">Suite Margaux &amp; Saint-Émilion (communicantes)</option>
             <option value="sauternes">Suite Sauternes</option>
             <option value="puisseguin">Suite Puisseguin</option>
             <option value="fronsac">Suite Fronsac</option>
             <option value="gite-cognac">Gîte Cognac</option>
             <option value="gite-armagnac">Gîte Armagnac</option>
-            <option value="domaine-entier">Domaine entier (privatisation)</option>
+            <option value="domaine-entier" data-i18n="contact.form.lodging.domain">Domaine entier (privatisation)</option>
           </select>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Votre demande, vos questions..." required></textarea>
+          <label for="message" data-i18n="contact.form.msg">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre demande, vos questions..." required data-i18n-placeholder="contact.form.msg.ph"></textarea>
 
-          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Envoyer ma demande</button>
         </form>
 
       </div>
@@ -135,15 +145,15 @@
     ══════════════════════════════════════════════ -->
     <section id="faq" class="section" aria-label="Questions fréquentes">
       <div class="container">
-        <p class="section-label">Questions fréquentes</p>
-        <h2>Tout ce que vous voulez savoir</h2>
+        <p class="section-label" data-i18n="contact.faq.label">Questions fréquentes</p>
+        <h2 data-i18n="contact.faq.title">Tout ce que vous voulez savoir</h2>
 
         <div class="faq-list" role="list">
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Quelles sont les heures d'arrivée et de départ&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q1">Quelles sont les heures d'arrivée et de départ&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a1">
                 L'arrivée se fait à partir de <strong>16h</strong> et le départ avant
                 <strong>11h</strong>. En dehors de ces horaires, n'hésitez pas à nous contacter —
                 nous faisons notre possible pour accommoder des horaires différents selon
@@ -153,9 +163,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Le petit-déjeuner est-il inclus&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q2">Le petit-déjeuner est-il inclus&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a2">
                 Le petit-déjeuner est inclus dans le tarif de toutes les
                 <strong>suites de la maison d'hôtes</strong>. Pour les <strong>gîtes
                 Cognac et Armagnac</strong>, la formule est en self-catering — cuisine
@@ -165,9 +175,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">La piscine et le spa sont-ils accessibles à tous&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q3">La piscine et le spa sont-ils accessibles à tous&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a3">
                 Oui. La piscine extérieure et le spa (jacuzzi, sauna, hammam) sont
                 inclus et accessibles à tous les hébergements. Des plages horaires
                 peuvent être organisées en cas de forte occupation du domaine pour
@@ -177,9 +187,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Y a-t-il une connexion WiFi&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q4">Y a-t-il une connexion WiFi&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a4">
                 Oui, le WiFi haut débit est inclus dans tous les hébergements,
                 à l'intérieur comme dans les espaces extérieurs du domaine.
               </p>
@@ -187,9 +197,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Les animaux de compagnie sont-ils acceptés&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q5">Les animaux de compagnie sont-ils acceptés&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a5">
                 Contactez-nous directement pour en discuter. L'acceptation dépend
                 de l'hébergement choisi et des autres résidents présents pendant
                 votre séjour.
@@ -198,9 +208,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Quelle est la capacité totale du domaine&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q6">Quelle est la capacité totale du domaine&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a6">
                 Le domaine peut accueillir jusqu'à <strong>20 personnes</strong> en
                 combinant les 5 suites de la maison d'hôtes et les 2 gîtes.
                 Pour les événements privatisés (mariages, séminaires, week-ends
@@ -210,9 +220,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Peut-on privatiser l'intégralité du domaine&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q7">Peut-on privatiser l'intégralité du domaine&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a7">
                 Absolument. La privatisation complète est possible pour mariages,
                 anniversaires, séminaires ou week-ends en famille ou entre amis.
                 Contactez-nous pour que nous construisions ensemble la formule
@@ -222,9 +232,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">Quelles sont les conditions d'annulation&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q8">Quelles sont les conditions d'annulation&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a8">
                 Les conditions d'annulation varient selon le canal de réservation
                 (Booking, Airbnb, réservation directe). Pour les réservations
                 directes, les conditions vous sont communiquées lors de la
@@ -234,9 +244,9 @@
           </details>
 
           <details class="faq-item" role="listitem">
-            <summary class="faq-question">La table d'hôtes est-elle disponible tous les soirs&nbsp;?</summary>
+            <summary class="faq-question" data-i18n="faq.q9">La table d'hôtes est-elle disponible tous les soirs&nbsp;?</summary>
             <div class="faq-answer">
-              <p>
+              <p data-i18n-html="faq.a9">
                 La table d'hôtes est proposée sur réservation, idéalement la veille
                 au plus tard. Elle n'est pas disponible tous les soirs — merci de
                 préciser votre intérêt lors de votre demande de séjour.
@@ -252,10 +262,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <p data-i18n="footer.copyright">© 2026 Château Puygrenier. Tous droits réservés.</p>
       <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="mentions-legales.html" data-i18n="footer.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a>
       </div>
     </div>
   </footer>
