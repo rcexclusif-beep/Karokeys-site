@@ -325,3 +325,51 @@ if (slides.length > 0) {
 		}
 	});
 }());
+
+// ══════════════════════════════════════════════
+// CALENDAR & FORM PREFILL
+// ══════════════════════════════════════════════
+window.addEventListener('load', function () {
+	// Préremplir le select hébergement depuis l'URL
+	var urlParams = new URLSearchParams(window.location.search);
+	var unit = urlParams.get('unit');
+	if (unit) {
+		var select = document.getElementById('hebergement');
+		if (select) {
+			select.value = unit;
+		}
+	}
+
+	// Rediriger vers la page de confirmation locale après soumission Formsubmit
+	var form = document.querySelector('form[action*="formsubmit.co"]');
+	if (form) {
+		var nextInput = form.querySelector('input[name="_next"]');
+		if (nextInput) {
+			nextInput.value = window.location.origin + '/confirmation.html';
+		}
+	}
+
+	// Initialiser Flatpickr sur le champ dates
+	var datesInput = document.getElementById('dates');
+	if (datesInput && window.flatpickr) {
+		console.log('Flatpickr loaded, initializing...');
+		flatpickr(datesInput, {
+			mode: "range",
+			dateFormat: "d/m/Y",
+			minDate: "today",
+			locale: {
+				firstDayOfWeek: 1, // Lundi
+				weekdays: {
+					shorthand: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+					longhand: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+				},
+				months: {
+					shorthand: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'],
+					longhand: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+				}
+			}
+		});
+	} else {
+		console.log('Flatpickr not loaded or dates input not found');
+	}
+});

@@ -324,7 +324,7 @@ a {
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 12, 10, 0.12) 0%, var(--color-overlay) 100%);
+  background: linear-gradient(180deg, rgba(10, 12, 10, 0.25) 0%, rgba(18, 23, 18, 0.50) 100%);
 }
 
 .hero-content {
@@ -337,11 +337,13 @@ a {
 .hero-content h1 {
   color: #fff;
   max-width: 14ch;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero-content p {
   max-width: 60ch;
   font-size: 1.02rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .eyebrow {
@@ -349,6 +351,7 @@ a {
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   margin-bottom: var(--space-2);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-actions {
@@ -541,15 +544,16 @@ a {
     position: static;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     border: 0;
     background: transparent;
   }
 
   .main-nav a {
     border: 0;
-    padding: 10px 14px;
+    padding: 9px 12px;
     border-radius: 999px;
+    font-size: 0.95rem;
   }
 
   .main-nav .nav-cta {
@@ -743,6 +747,12 @@ a {
   background: #f0e8db;
   border-color: #c8b49a;
   color: #7a5c3e;
+}
+
+.unit-badge--breakfast {
+  background: #e8f0e8;
+  border-color: #b8d8b8;
+  color: #2f6b4f;
 }
 
 .units-cta-wrapper {
@@ -1020,12 +1030,14 @@ a {
 .page-hero-content h1 {
   color: #fff;
   margin-bottom: var(--space-1);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .page-hero-content p {
   color: rgba(255, 255, 255, 0.82);
   max-width: 52ch;
   margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* ═══════════════════════════════════════════════════════

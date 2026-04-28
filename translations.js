@@ -34,6 +34,7 @@ window.TRANSLATIONS = {
     'nav.lodging':        'Hébergements',
     'nav.experiences':    'Expériences',
     'nav.destination':    'Destination',
+    'nav.spirit':         'L’esprit Puygrenier',
     'nav.book':           'Réserver',
     'nav.toggle.open':    'Ouvrir le menu',
     'nav.toggle.close':   'Fermer le menu',
@@ -65,7 +66,7 @@ window.TRANSLATIONS = {
     // Section Hébergements
     'index.lodging.label':    'Hébergements',
     'index.lodging.title':    'Choisissez votre façon de séjourner.',
-    'index.lodging.intro':    'Des suites de maison d\'hôtes aux gîtes indépendants — chaque unité a son caractère, son espace, sa lumière.',
+    'index.lodging.intro':    'Des suites de maison d\'hôtes aux gîtes indépendants, chaque unité a son caractère, son espace et sa lumière.',
     'index.lodging.cta':      'Voir tous les hébergements en détail',
     'index.lodge.discover':   'Découvrir →',
     'index.margaux.badge':    'Suite — RDC',
@@ -78,7 +79,7 @@ window.TRANSLATIONS = {
     // Section Sur place
     'index.exp.label':        'Sur place',
     'index.exp.title':        'Tout pour ne pas avoir besoin de partir.',
-    'index.exp.intro':        'Piscine, table d\'hôtes, spa avec vue, vie de la ferme, pique-nique terroir — les à-côtés qui font la différence entre une nuit et un vrai séjour.',
+    'index.exp.intro':        'Piscine, table d\'hôtes, spa avec vue, vie de la ferme, pique-nique terroir, les à-côtés qui font la différence entre une nuit et un vrai séjour.',
     'index.piscine.h3':       'Piscine',
     'index.piscine.desc':     'Accès libre pour tous les hébergements. Se poser au bord de l\'eau, rien de plus.',
     'index.piscine.badge':    'Inclus',
@@ -96,7 +97,7 @@ window.TRANSLATIONS = {
     // Section Destination
     'index.dest.label':       'Destination',
     'index.dest.title':       'Deux régions.<br>Un point de chute idéal.',
-    'index.dest.text':        'Posés entre le Périgord et les vignobles bordelais, vous êtes à portée de tout — sans jamais avoir à vous presser.',
+    'index.dest.text':        'Posés entre le Périgord et les vignobles bordelais, vous êtes à portée de tout, sans jamais avoir à vous presser.',
     'index.dest.d1.title':    'Vignobles de Bordeaux',
     'index.dest.d1.desc':     'Saint-Émilion, Pomerol, Sauternes à 45 min',
     'index.dest.d2.title':    'Périgord & Dordogne',
@@ -109,17 +110,17 @@ window.TRANSLATIONS = {
     'index.testim.label':     'Témoignages',
     'index.testim.title':     'Ce que nos invités en disent.',
     'index.testim.intro':     'Quelques mots de ceux qui ont séjourné à Château Puygrenier.',
-    'index.testim1.text':     '« Un endroit hors du temps. Le spa avec vue sur le parc, le petit-déjeuner fait maison, l\'accueil de la famille propriétaire — on ne voulait plus repartir. »',
+    'index.testim1.text':     '« Un endroit hors du temps. Le spa avec vue sur le parc, le petit-déjeuner fait maison, l\'accueil de la famille propriétaire, on ne voulait plus repartir. »',
     'index.testim1.date':     'Suite Puygrenier — juillet 2025',
     'index.testim2.text':     '« Idéal pour les enfants. Ils ont adoré le poulailler et les chèvres. Les adultes ont profité de la piscine en toute liberté. Un vrai séjour en famille, dans un cadre exceptionnel. »',
     'index.testim2.date':     'Gîte Pécharmant — août 2025',
-    'index.testim3.text':     '« La table d\'hôtes le soir, les vins du terroir, le calme absolu — on est repartis avec l\'envie de revenir dès l\'année prochaine. »',
+    'index.testim3.text':     '« La table d\'hôtes le soir, les vins du terroir, le calme absolu, on est repartis avec l\'envie de revenir dès l\'année prochaine. »',
     'index.testim3.date':     'Suite Margaux — mai 2025',
 
     // Section Contact
     'index.contact.label':    'Contact & réservation',
     'index.contact.title':    'Une question\u00a0? Vos dates\u00a0?',
-    'index.contact.text':     'On répond en moins de 24h. Pas de formulaire complexe — juste un message, et on s\'occupe du reste.',
+    'index.contact.text':     'Nous répondons en moins de 24h. Pas de formulaire complexe, juste un message, et nous nous occupons du reste.',
     'index.contact.phone':    'Téléphone :',
     'index.contact.addr':     'Adresse : Dordogne / Gironde, France',
     'form.name.label':        'Nom',
@@ -138,7 +139,7 @@ window.TRANSLATIONS = {
 
     'lodging.hero.eyebrow':   'Maison d\'hôtes & Gîtes',
     'lodging.hero.title':     'Nos hébergements',
-    'lodging.hero.subtitle':  '7 façons de séjourner à Château Puygrenier — du week-end en tête-à-tête au séjour en famille.',
+    'lodging.hero.subtitle':  '7 façons de séjourner à Château Puygrenier, du week-end en tête-à-tête au séjour en famille.',
 
     // Section suites
     'lodging.suites.label':   'Maison d\'hôtes',
@@ -184,7 +185,7 @@ window.TRANSLATIONS = {
     // CTA final hébergements
     'lodging.cta.label':  'Réservation',
     'lodging.cta.title':  'Prêt à poser vos dates ?',
-    'lodging.cta.text':   'Dites-nous quand, combien vous serez et quelle unité vous attire — on revient vers vous en moins de 24h.',
+    'lodging.cta.text':   'Dites-nous quand, combien vous serez et quelle unité vous attire, on revient vers vous en moins de 24h.',
     'lodging.cta.btn1':   'Nous contacter',
     'lodging.cta.btn2':   'Retour à l\'accueil',
 
@@ -194,7 +195,7 @@ window.TRANSLATIONS = {
 
     'exp.hero.eyebrow':          'Sur place',
     'exp.hero.title':            'Tout pour ne pas avoir besoin de partir.',
-    'exp.hero.subtitle':         'Piscine, spa, table d\'hôtes, vie de la ferme, pique-nique terroir — sept façons de prolonger le plaisir sans quitter le domaine.',
+    'exp.hero.subtitle':         'Piscine, spa, table d\'hôtes, vie de la ferme, pique-nique terroir, sept façons de prolonger le plaisir sans quitter le domaine.',
 
     'exp.piscine.label':         'Inclus pour tous',
     'exp.piscine.tagline':       'Accès libre pour tous les hébergements, sans supplément. Se poser au bord de l\'eau, sans avoir à rien planifier.',
@@ -256,7 +257,7 @@ window.TRANSLATIONS = {
     // CTA final expériences
     'exp.cta.label':   'Réservation',
     'exp.cta.title':   'Prêt à vivre l\'expérience\u00a0?',
-    'exp.cta.text':    'Parlez-nous de votre projet de séjour — on s\'occupe du reste.',
+    'exp.cta.text':    'Parlez-nous de votre projet de séjour, nous nous occupons du reste.',
     'exp.cta.btn1':    'Nous contacter',
     'exp.cta.btn2':    'Voir les hébergements',
 
@@ -266,11 +267,11 @@ window.TRANSLATIONS = {
 
     'dest.hero.eyebrow':      'Périgord & Bordelais',
     'dest.hero.title':        'Deux régions.<br>Un point de chute idéal.',
-    'dest.hero.subtitle':     'Posés entre le Périgord Pourpre et les vignobles bordelais, vous êtes à portée de tout — sans jamais avoir à vous presser.',
+    'dest.hero.subtitle':     'Posés entre le Périgord Pourpre et les vignobles bordelais, vous êtes à portée de tout, sans jamais avoir à vous presser.',
 
     'dest.domaine.label':     'Le cadre',
     'dest.domaine.title':     'Un domaine de caractère, loin de l\'agitation.',
-    'dest.domaine.tagline':   'Château Puygrenier s\'étend sur plusieurs hectares de nature préservée — parc arboré, prairies, potager — avec une vue dégagée des deux côtés du bâtiment.',
+    'dest.domaine.tagline':   'Château Puygrenier s\'étend sur plusieurs hectares de nature préservée, parc arboré, prairies, potager, avec une vue dégagée des deux côtés du bâtiment.',
     'dest.domaine.amenities': '<li>Parc arboré et espaces verts</li><li>Prairies avec chevaux et chèvres naines</li><li>Potager du domaine</li><li>Piscine extérieure</li><li>Spa &amp; sauna avec vue panoramique</li><li>15 km de chemins et sentiers alentour</li>',
     'dest.domaine.cta':       'Réserver un séjour',
 
@@ -293,7 +294,7 @@ window.TRANSLATIONS = {
     'dest.bordeaux.desc':     'Cité du Vin, quais de la Garonne, restaurants — 77 km · 1h10',
 
     'dest.gastro.label':      'Gastronomie & marchés',
-    'dest.gastro.title':      'Truffes, foie gras, vins de terroir — à portée de table.',
+    'dest.gastro.title':      'Truffes, foie gras, vins de terroir, à portée de table.',
     'dest.gastro.tagline':    'Le Périgord Pourpre est une des grandes tables de France. Marchés paysans, fermes en direct, producteurs de truffes et vignerons indépendants — tout se trouve à quelques lieues du château.',
     'dest.marches.title':     'Marchés paysans',
     'dest.marches.desc':      'Sainte-Foy (sam.), Bergerac (mer. & sam.), Eymet (jeu.), Issigeac (dim.) — foie gras, canard, produits du terroir',
@@ -307,7 +308,7 @@ window.TRANSLATIONS = {
 
     'dest.acces.label':       'Accès',
     'dest.acces.title':       'Facile depuis Bordeaux, Paris ou Londres.',
-    'dest.acces.intro':       'En voiture depuis Bordeaux, en avion sur Bergerac ou Bordeaux-Mérignac, ou en TGV jusqu\'à Bordeaux puis une heure de route — l\'arrivée fait déjà partie du voyage.',
+    'dest.acces.intro':       'En voiture depuis Bordeaux, en avion sur Bergerac ou Bordeaux-Mérignac, ou en TGV jusqu\'à Bordeaux puis une heure de route, l\'arrivée fait déjà partie du voyage.',
     'dest.acces.h3':          'Distances & temps de trajet',
     'dest.acces.note':        'L\'adresse GPS exacte vous est communiquée à la confirmation de réservation.',
     'dest.acces.cta':         'Contacter pour réserver',
@@ -315,7 +316,7 @@ window.TRANSLATIONS = {
 
     'dest.cta.label':         'Prêt à venir ?',
     'dest.cta.title':         'Réservez votre séjour.',
-    'dest.cta.text':          'On répond en moins de 24h. Envoyez-nous vos dates et le nombre de personnes — on s\'occupe du reste.',
+    'dest.cta.text':          'On répond en moins de 24h. Envoyez-nous vos dates et le nombre de personnes, on s\'occupe du reste.',
     'dest.cta.btn1':          'Vérifier mes dates',
     'dest.cta.btn2':          'Voir les hébergements',
 
@@ -325,11 +326,11 @@ window.TRANSLATIONS = {
 
     'contact.hero.eyebrow':          'Contact & Réservation',
     'contact.hero.title':            'Une question\u00a0?<br>On répond en\u00a024h.',
-    'contact.hero.subtitle':         'Pas de formulaire complexe — juste un message, et on s\'occupe du reste.',
+    'contact.hero.subtitle':         'Pas de formulaire complexe, juste un message, et nous nous occupons du reste.',
 
     'contact.info.label':            'Nous contacter',
     'contact.info.title':            'Votre séjour commence ici',
-    'contact.info.text':             'Disponibilités, demandes spéciales, privatisation du domaine — écrivez-nous ou appelez, nous adaptons chaque séjour.',
+    'contact.info.text':             'Disponibilités, demandes spéciales, privatisation du domaine. Écrivez-nous ou appelez, nous adaptons chaque séjour.',
     'contact.phone':                 'Téléphone :',
     'contact.address':               'Adresse : Dordogne / Gironde, France',
 
@@ -351,9 +352,9 @@ window.TRANSLATIONS = {
     'contact.faq.title':  'Tout ce que vous voulez savoir',
 
     'faq.q1': 'Quelles sont les heures d\'arrivée et de départ\u00a0?',
-    'faq.a1': 'L\'arrivée se fait à partir de <strong>16h</strong> et le départ avant <strong>11h</strong>. En dehors de ces horaires, n\'hésitez pas à nous contacter — nous faisons notre possible pour accommoder des horaires différents selon les disponibilités.',
+    'faq.a1': 'L\'arrivée se fait à partir de <strong>16h</strong> et le départ avant <strong>11h</strong>. En dehors de ces horaires, n\'hésitez pas à nous contacter, nous faisons notre possible pour accommoder des horaires différents selon les disponibilités.',
     'faq.q2': 'Le petit-déjeuner est-il inclus\u00a0?',
-    'faq.a2': 'Le petit-déjeuner est inclus dans le tarif de toutes les <strong>suites de la maison d\'hôtes</strong>. Pour les <strong>gîtes Cognac et Armagnac</strong>, la formule est en self-catering — cuisine entièrement équipée à disposition.',
+    'faq.a2': 'Le petit-déjeuner est inclus dans le tarif de toutes les <strong>suites de la maison d\'hôtes</strong>. Pour les <strong>gîtes Cognac et Armagnac</strong>, la formule est en self-catering, cuisine entièrement équipée à disposition.',
     'faq.q3': 'La piscine et le spa sont-ils accessibles à tous\u00a0?',
     'faq.a3': 'Oui. La piscine extérieure et le spa (jacuzzi, sauna, hammam) sont inclus et accessibles à tous les hébergements. Des plages horaires peuvent être organisées en cas de forte occupation du domaine pour garantir la tranquillité de chacun.',
     'faq.q4': 'Y a-t-il une connexion WiFi\u00a0?',
@@ -367,7 +368,7 @@ window.TRANSLATIONS = {
     'faq.q8': 'Quelles sont les conditions d\'annulation\u00a0?',
     'faq.a8': 'Les conditions d\'annulation varient selon le canal de réservation (Booking, Airbnb, réservation directe). Pour les réservations directes, les conditions vous sont communiquées lors de la confirmation. N\'hésitez pas à nous contacter pour plus de détails.',
     'faq.q9': 'La table d\'hôtes est-elle disponible tous les soirs\u00a0?',
-    'faq.a9': 'La table d\'hôtes est proposée sur réservation, idéalement la veille au plus tard. Elle n\'est pas disponible tous les soirs — merci de préciser votre intérêt lors de votre demande de séjour.',
+    'faq.a9': 'La table d\'hôtes est proposée sur réservation, idéalement la veille au plus tard. Elle n\'est pas disponible tous les soirs, merci de préciser votre intérêt lors de votre demande de séjour.',
   },
 
   /* ══════════════════════════════════════════════════════════════════════════
@@ -381,6 +382,7 @@ window.TRANSLATIONS = {
     'nav.lodging':        'Accommodations',
     'nav.experiences':    'Experiences',
     'nav.destination':    'Destination',
+    'nav.spirit':         'The Puygrenier Spirit',
     'nav.book':           'Book',
     'nav.toggle.open':    'Open menu',
     'nav.toggle.close':   'Close menu',
@@ -409,7 +411,7 @@ window.TRANSLATIONS = {
 
     'index.lodging.label':    'Accommodations',
     'index.lodging.title':    'Choose your way to stay.',
-    'index.lodging.intro':    'From guesthouse suites to independent cottages — each unit has its own character, space and light.',
+    'index.lodging.intro':    'From guesthouse suites to independent cottages, each unit has its own character, space and light.',
     'index.lodging.cta':      'View all accommodations in detail',
     'index.lodge.discover':   'Discover →',
     'index.margaux.badge':    'Suite — Ground floor',
@@ -421,7 +423,7 @@ window.TRANSLATIONS = {
 
     'index.exp.label':        'On site',
     'index.exp.title':        'Everything you need without ever having to leave.',
-    'index.exp.intro':        'Pool, dinner table, spa with a view, farm life, local picnic — the extras that make the difference between a night away and a real stay.',
+    'index.exp.intro':        'Pool, dinner table, spa with a view, farm life, local picnic, the extras that make the difference between a night away and a real stay.',
     'index.piscine.h3':       'Pool',
     'index.piscine.desc':     'Free access for all accommodations. Sitting by the water, nothing more.',
     'index.piscine.badge':    'Included',
@@ -438,7 +440,7 @@ window.TRANSLATIONS = {
 
     'index.dest.label':       'Destination',
     'index.dest.title':       'Two regions.<br>One perfect base.',
-    'index.dest.text':        'Nestled between the Périgord and Bordeaux vineyards, you are within reach of everything — without ever having to rush.',
+    'index.dest.text':        'Nestled between the Périgord and Bordeaux vineyards, you are within reach of everything, without ever having to rush.',
     'index.dest.d1.title':    'Bordeaux Vineyards',
     'index.dest.d1.desc':     'Saint-Émilion, Pomerol, Sauternes within 45 min',
     'index.dest.d2.title':    'Périgord & Dordogne',
@@ -450,16 +452,16 @@ window.TRANSLATIONS = {
     'index.testim.label':     'Testimonials',
     'index.testim.title':     'What our guests say.',
     'index.testim.intro':     'A few words from those who have stayed at Château Puygrenier.',
-    'index.testim1.text':     '« A timeless place. The spa overlooking the park, the homemade breakfast, the warm welcome from the owners — we didn\'t want to leave. »',
+    'index.testim1.text':     '« A timeless place. The spa overlooking the park, the homemade breakfast, the warm welcome from the owners, we didn\'t want to leave. »',
     'index.testim1.date':     'Suite Puygrenier — July 2025',
     'index.testim2.text':     '« Ideal for children. They loved the chicken coop and the goats. The adults enjoyed the pool in total freedom. A true family stay in an exceptional setting. »',
     'index.testim2.date':     'Gîte Pécharmant — August 2025',
-    'index.testim3.text':     '« The dinner table in the evening, the local wines, the absolute calm — we left already wanting to come back next year. »',
+    'index.testim3.text':     '« The dinner table in the evening, the local wines, the absolute calm, we left already wanting to come back next year. »',
     'index.testim3.date':     'Suite Margaux — May 2025',
 
     'index.contact.label':    'Contact & reservation',
     'index.contact.title':    'A question\u00a0? Your dates\u00a0?',
-    'index.contact.text':     'We reply within 24h. No complex form — just a message, and we\'ll take care of the rest.',
+    'index.contact.text':     'We reply within 24h. No complex form, just a message, and we\'ll take care of the rest.',
     'index.contact.phone':    'Phone:',
     'index.contact.addr':     'Address: Dordogne / Gironde, France',
     'form.name.label':        'Name',
@@ -478,7 +480,7 @@ window.TRANSLATIONS = {
 
     'lodging.hero.eyebrow':   'Guesthouse & Cottages',
     'lodging.hero.title':     'Our accommodations',
-    'lodging.hero.subtitle':  '7 ways to stay at Château Puygrenier — from a romantic weekend to a family stay.',
+    'lodging.hero.subtitle':  '7 ways to stay at Château Puygrenier, from a romantic weekend to a family stay.',
 
     'lodging.suites.label':   'Guesthouse',
     'lodging.suites.title':   '5 suites with breakfast included',
@@ -514,7 +516,7 @@ window.TRANSLATIONS = {
 
     'lodging.cta.label':  'Reservation',
     'lodging.cta.title':  'Ready to set your dates?',
-    'lodging.cta.text':   'Tell us when, how many you\'ll be and which unit appeals — we\'ll get back to you within 24h.',
+    'lodging.cta.text':   'Tell us when, how many you\'ll be and which unit appeals, we\'ll get back to you within 24h.',
     'lodging.cta.btn1':   'Contact us',
     'lodging.cta.btn2':   'Back to home',
 
@@ -524,7 +526,7 @@ window.TRANSLATIONS = {
 
     'exp.hero.eyebrow':          'On site',
     'exp.hero.title':            'Everything you need without ever having to leave.',
-    'exp.hero.subtitle':         'Pool, spa, dinner table, farm life, local picnic — seven ways to extend the pleasure without leaving the estate.',
+    'exp.hero.subtitle':         'Pool, spa, dinner table, farm life, local picnic, seven ways to extend the pleasure without leaving the estate.',
 
     'exp.piscine.label':         'Included for all',
     'exp.piscine.tagline':       'Free access for all accommodations, at no extra charge. Sitting by the water, nothing to plan.',
@@ -584,7 +586,7 @@ window.TRANSLATIONS = {
 
     'exp.cta.label':   'Reservation',
     'exp.cta.title':   'Ready to experience it\u00a0?',
-    'exp.cta.text':    'Tell us about your stay project — we\'ll take care of the rest.',
+    'exp.cta.text':    'Tell us about your stay project, we\'ll take care of the rest.',
     'exp.cta.btn1':    'Contact us',
     'exp.cta.btn2':    'View accommodations',
 
@@ -594,11 +596,11 @@ window.TRANSLATIONS = {
 
     'dest.hero.eyebrow':      'Périgord & Bordeaux',
     'dest.hero.title':        'Two regions.<br>One perfect base.',
-    'dest.hero.subtitle':     'Nestled between the Périgord Pourpre and the Bordeaux vineyards, you are within reach of everything — without ever having to rush.',
+    'dest.hero.subtitle':     'Nestled between the Périgord Pourpre and the Bordeaux vineyards, you are within reach of everything, without ever having to rush.',
 
     'dest.domaine.label':     'The setting',
     'dest.domaine.title':     'A characterful estate, far from the crowds.',
-    'dest.domaine.tagline':   'Château Puygrenier extends over several hectares of preserved nature — wooded park, meadows, kitchen garden — with open views on both sides of the building.',
+    'dest.domaine.tagline':   'Château Puygrenier extends over several hectares of preserved nature, wooded park, meadows, kitchen garden, with open views on both sides of the building.',
     'dest.domaine.amenities': '<li>Wooded park and green spaces</li><li>Meadows with horses and dwarf goats</li><li>Estate kitchen garden</li><li>Outdoor pool</li><li>Spa &amp; sauna with panoramic view</li><li>15 km of trails and footpaths nearby</li>',
     'dest.domaine.cta':       'Book a stay',
 
@@ -621,7 +623,7 @@ window.TRANSLATIONS = {
     'dest.bordeaux.desc':     'Cité du Vin, Garonne quays, restaurants — 77 km · 1h10',
 
     'dest.gastro.label':      'Food & markets',
-    'dest.gastro.title':      'Truffles, foie gras, local wines — within reach.',
+    'dest.gastro.title':      'Truffles, foie gras, local wines, within reach.',
     'dest.gastro.tagline':    'The Périgord Pourpre is one of France\'s great gastronomic regions. Farmers\' markets, direct farm purchases, truffle producers and independent winemakers — all within a short drive.',
     'dest.marches.title':     'Farmers\' markets',
     'dest.marches.desc':      'Sainte-Foy (Sat.), Bergerac (Wed. & Sat.), Eymet (Thu.), Issigeac (Sun.) — foie gras, duck, local produce',
@@ -635,7 +637,7 @@ window.TRANSLATIONS = {
 
     'dest.acces.label':       'Getting here',
     'dest.acces.title':       'Easy from Bordeaux, Paris or London.',
-    'dest.acces.intro':       'By car from Bordeaux, by plane to Bergerac or Bordeaux-Mérignac, or by TGV to Bordeaux then an hour\'s drive — the journey is already part of the experience.',
+    'dest.acces.intro':       'By car from Bordeaux, by plane to Bergerac or Bordeaux-Mérignac, or by TGV to Bordeaux then an hour\'s drive, the journey is already part of the experience.',
     'dest.acces.h3':          'Distances & travel times',
     'dest.acces.note':        'The exact GPS address is shared upon reservation confirmation.',
     'dest.acces.cta':         'Contact to book',
@@ -643,7 +645,7 @@ window.TRANSLATIONS = {
 
     'dest.cta.label':         'Ready to visit?',
     'dest.cta.title':         'Book your stay.',
-    'dest.cta.text':          'We reply within 24h. Send us your dates and the number of guests — we\'ll take care of the rest.',
+    'dest.cta.text':          'We reply within 24h. Send us your dates and the number of guests, we\'ll take care of the rest.',
     'dest.cta.btn1':          'Check availability',
     'dest.cta.btn2':          'View accommodations',
 
@@ -653,11 +655,11 @@ window.TRANSLATIONS = {
 
     'contact.hero.eyebrow':          'Contact & Reservation',
     'contact.hero.title':            'A question\u00a0?<br>We reply within\u00a024h.',
-    'contact.hero.subtitle':         'No complex form — just a message, and we\'ll take care of the rest.',
+    'contact.hero.subtitle':         'No complex form, just a message, and we\'ll take care of the rest.',
 
     'contact.info.label':            'Contact us',
     'contact.info.title':            'Your stay begins here',
-    'contact.info.text':             'Availability, special requests, full estate hire — write or call us, we adapt every stay.',
+    'contact.info.text':             'Availability, special requests, full estate hire. Write or call us, we adapt every stay.',
     'contact.phone':                 'Phone:',
     'contact.address':               'Address: Dordogne / Gironde, France',
 
@@ -679,9 +681,9 @@ window.TRANSLATIONS = {
     'contact.faq.title':  'Everything you want to know',
 
     'faq.q1': 'What are the check-in and check-out times?',
-    'faq.a1': 'Check-in is from <strong>4 pm</strong> and check-out before <strong>11 am</strong>. Outside these times, feel free to contact us — we do our best to accommodate different schedules depending on availability.',
+    'faq.a1': 'Check-in is from <strong>4 pm</strong> and check-out before <strong>11 am</strong>. Outside these times, feel free to contact us, we do our best to accommodate different schedules depending on availability.',
     'faq.q2': 'Is breakfast included?',
-    'faq.a2': 'Breakfast is included in the rate for all <strong>guesthouse suites</strong>. For the <strong>Cognac and Armagnac cottages</strong>, the arrangement is self-catering — with a fully equipped kitchen available.',
+    'faq.a2': 'Breakfast is included in the rate for all <strong>guesthouse suites</strong>. For the <strong>Cognac and Armagnac cottages</strong>, the arrangement is self-catering, with a fully equipped kitchen available.',
     'faq.q3': 'Are the pool and spa accessible to all?',
     'faq.a3': 'Yes. The outdoor pool and spa (jacuzzi, sauna, hammam) are included and accessible to all accommodations. Time slots may be arranged during busy periods to ensure everyone\'s peace and quiet.',
     'faq.q4': 'Is there WiFi?',
@@ -695,6 +697,6 @@ window.TRANSLATIONS = {
     'faq.q8': 'What are the cancellation conditions?',
     'faq.a8': 'Cancellation conditions vary by booking channel (Booking, Airbnb, direct reservation). For direct bookings, conditions are communicated at confirmation. Feel free to contact us for more details.',
     'faq.q9': 'Is the dinner table available every evening?',
-    'faq.a9': 'The dinner table is offered on reservation, ideally the day before at the latest. It is not available every evening — please mention your interest when submitting your stay request.',
+    'faq.a9': 'The dinner table is offered on reservation, ideally the day before at the latest. It is not available every evening, please mention your interest when submitting your stay request.',
   }
 };

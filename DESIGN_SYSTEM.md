@@ -87,7 +87,7 @@ Desktop:   > 1024px
 ```
 Button padding:      12px vertical, 24px horizontal
 Card padding:        24px
-Section padding:     64px (mobile), 112px (desktop)
+Section padding:     45px (mobile), 78px (desktop)  ← réduit -30% le 01/04/2026
 Form input margin:   16px bottom
 ```
 
@@ -221,7 +221,7 @@ Total page size:       <= 1700KB
 2. Paragraphes courts (2–4 lignes max sur desktop)
 3. Un seul CTA principal par zone écran
 4. Pas de texte décoratif sans valeur réservation/contact
-5. FR en priorité, EN plus tard si besoin
+5. FR en priorité, EN disponible — système i18n via `translations.js` + attributs `data-i18n`
 
 ---
 
@@ -236,3 +236,9 @@ Total page size:       <= 1700KB
 - [x] Objectifs optimisation images définis
 - [x] Comportement navigation défini
 - [x] Toutes les sections designées (V1 livrée)
+- [x] Carousel : transition 1400ms cubic-bezier(0.45, 0, 0.15, 1), intervalle 8s, z-index crossfade
+- [x] Nav active state : fond terracotta 12% opacité (`rgba(139,111,94,0.12)`), texte inherit (noir)
+- [x] Lang switcher FR/EN : dropdown hover terracotta, fond crème, positionné à droite du CTA Réserver
+- [x] Favicon : SVG monogramme "P" Georgia italic, #F7F4EE sur fond #3A4A35
+- [x] Système i18n : `translations.js` (57KB), moteur dans `script.js`, `data-i18n` sur 7 pages
+- [x] Espacement inter-sections réduit -30% (45px mobile / 78px desktop)

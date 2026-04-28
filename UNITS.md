@@ -9,6 +9,7 @@ Référence complète des 7 unités. À mettre à jour si changement.
 - **Maison d'hôtes** : max 5 chambres (unités), max 15 personnes → actuellement **5 unités / 15 personnes** ✓
 - Petit-déjeuner **obligatoire inclus** pour toutes les suites maison d'hôtes
 - **Gîtes** : réglementation séparée, petit-déjeuner non obligatoire
+- **Capacité totale domaine** : 22 personnes (15 suites + 6 gîte Pécharmant + 1 note: gîte Montravel = 2 mais partiellement comptabilisé)
 
 ---
 

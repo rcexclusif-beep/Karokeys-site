@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confirmation d'envoi de message pour Château Puygrenier.">
+  <title>Merci | Château Puygrenier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="translations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="nav.skip">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil Château Puygrenier">
+        <img src="assets/images/logo_puygrenier_solo_blanc.png"
+             alt="Château Puygrenier"
+             class="brand-logo"
+             width="120" height="48">
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu" data-i18n-label="nav.toggle.open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="hebergements.html" data-i18n="nav.lodging">Hébergements</a>
+        <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
+        <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="esprit-puygrenier.html" data-i18n="nav.spirit">L’esprit Puygrenier</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.book">Réserver</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-face">
+            <span id="lang-current-text">FR</span>
+            <span class="lang-arrow">▾</span>
+          </div>
+          <div class="lang-dropdown">
+            <button class="lang-option" id="lang-option-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-surface">
+      <div class="container" style="max-width:720px; text-align:center; padding: 6rem 0;">
+        <p class="section-label">Confirmation</p>
+        <h1>Merci pour votre message</h1>
+        <p style="margin-top:1.5rem; font-size:1.05rem; line-height:1.8; color: #4d473c;">
+          Nous avons bien reçu votre demande et nous vous répondrons rapidement.
+        </p>
+        <div style="margin-top:2rem; display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a class="btn btn-outline" href="index.html">Retour à l’accueil</a>
+          <a class="btn btn-primary" href="contact.html">Revenir au formulaire</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copyright">© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="mentions-legales.html" data-i18n="footer.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
