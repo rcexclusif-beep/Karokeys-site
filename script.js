@@ -80,7 +80,7 @@ function startAutoplay() {
 		return;
 	}
 
-	autoplayTimer = window.setInterval(nextSlide, 8000);
+	autoplayTimer = window.setInterval(nextSlide, 12000);
 }
 
 function stopAutoplay() {
