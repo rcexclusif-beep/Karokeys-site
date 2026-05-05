@@ -9,6 +9,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --ldg-psb-background: #ffffff;
+      --ldg-psb-border-radius: 0.42em;
+      --ldg-psb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+      --ldg-psb-padding: 14px;
+      --ldg-psb-input-background: #ffffff;
+      --ldg-psb-button-border-radius: 3.58em;
+      --ldg-psb-color-primary: #b68a52;
+      --ldg-psb-color-primary-lighter: #dbc5a9;
+      --ldg-psb-color-primary-darker: #5b4529;
+      --ldg-psb-color-primary-contrast: #333333;
+      --ldg-semantic-color-primary: #b68a52;
+      --ldg-semantic-color-primary-lighter: #dbc5a9;
+      --ldg-semantic-color-primary-darker: #5b4529;
+      --ldg-semantic-color-primary-contrast: #333333;
+      --ldg-component-modal-z-index: 999;
+    }
+    #lodgify-search-bar { width: 100%; }
+  </style>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script src="translations.js" defer></script>
 </head>
@@ -57,8 +77,8 @@
     ══════════════════════════════════════════════ -->
     <section class="page-hero" aria-label="En-tête destination">
       <div class="page-hero-media">
-        <img src="assets/images/Ext Facade - IMG_20260228_132639.jpg"
-             alt="Château Puygrenier — façade"
+        <img src="assets/images/Photo principale.jpg"
+             alt="Vue principale du Château Puygrenier"
              loading="eager"
              fetchpriority="high">
       </div>
@@ -92,22 +112,22 @@
 
           <div class="unit-detail-gallery" data-lb-group="lb-domaine">
             <figure class="gallery-main">
-              <img src="assets/images/Ext Facade - IMG_20260228_132708.jpg"
-                   alt="Façade du Château Puygrenier"
+              <img src="assets/images/photo principale 2.jpg"
+                   alt="Vue principale 2 du Château Puygrenier"
                    loading="lazy">
             </figure>
             <div class="gallery-thumbs gallery-thumbs--3">
               <figure>
-                <img src="assets/images/Ext Parc - IMG_20260228_132713.jpg"
-                     alt="Parc du domaine" loading="lazy">
+                <img src="assets/images/piscine jolie.jpg"
+                     alt="Piscine du Château Puygrenier" loading="lazy">
               </figure>
               <figure>
-                <img src="assets/images/Ext Arrière - IMG_20260228_120357.jpg"
-                     alt="Arrière du château" loading="lazy">
+                <img src="assets/images/Photo principale.jpg"
+                     alt="Vue principale du Château Puygrenier" loading="lazy">
               </figure>
               <figure>
-                <img src="assets/images/Ext Pré - IMG_20260228_120428.jpg"
-                     alt="Le pré du domaine, cheval et animaux" loading="lazy">
+                <img src="assets/images/photo principale 2.jpg"
+                     alt="Vue principale 2 du Château Puygrenier" loading="lazy">
               </figure>
             </div>
           </div>
@@ -132,7 +152,38 @@
               <li>Spa &amp; sauna avec vue panoramique</li>
               <li>15 km de chemins et sentiers alentour</li>
             </ul>
-            <a class="btn btn-primary" href="index.html#contact" data-i18n="dest.domaine.cta">Réserver un séjour</a>
+            <div class="lodgify-search-card">
+              <div
+                id="lodgify-search-bar"
+                data-website-id="651415"
+                data-language-code="fr"
+                data-search-page-url='https://chateaupuygrenier.lodgify.com/fr/toutes-les-proprietes'
+                data-dates-check-in-label='Arrivée'
+                data-dates-check-out-label='Départ'
+                data-guests-counter-label='Invités'
+                data-guests-input-singular-label='{{NumberOfGuests}} invité'
+                data-guests-input-plural-label='{{NumberOfGuests}} invités'
+                data-location-input-label='Emplacement'
+                data-search-button-label='Rechercher'
+                data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} nuit","other":"Minimum de {minStay} nuits"}'
+                data-guests-breakdown-label='Invités'
+                data-adults-label='{"one":"adulte","other":"adultes"}'
+                data-adults-description='Âges {minAge} ou plus'
+                data-children-label='{"one":"enfant","other":"enfants"}'
+                data-children-description='Âges {minAge} - {maxAge}'
+                data-children-not-allowed-label='Non adapté aux enfants'
+                data-infants-label='{"one":"bébé","other":"bébés"}'
+                data-infants-description='Moins de {maxAge}'
+                data-infants-not-allowed-label='Non adapté aux bébés'
+                data-pets-label='{"one":"animal de compagnie","other":"animaux de compagnie"}'
+                data-pets-not-allowed-label='Non autorisé'
+                data-done-label='Terminé'
+                data-new-tab="true"
+                data-version="stable"
+                data-has-guests-breakdown
+              ></div>
+              <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
+            </div>
           </div>
 
         </div>

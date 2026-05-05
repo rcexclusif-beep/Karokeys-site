@@ -439,7 +439,22 @@ a {
 }
 
 .section {
-  padding-block: 45px;
+  padding-block: 24px;
+}
+
+.section-searchbar {
+  padding-block: 4px;
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+
+.section-searchbar .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-searchbar + .section {
+  padding-top: 16px;
 }
 
 .section-surface {

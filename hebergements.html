@@ -9,7 +9,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --ldg-bnb-background: #ffffff;
+      --ldg-bnb-border-radius: 0.42em;
+      --ldg-bnb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+      --ldg-bnb-padding: 14px;
+      --ldg-bnb-input-background: #ffffff;
+      --ldg-bnb-button-border-radius: 3.58em;
+      --ldg-bnb-color-primary: #b68a52;
+      --ldg-bnb-color-primary-lighter: #dbc5a9;
+      --ldg-bnb-color-primary-darker: #5b4529;
+      --ldg-bnb-color-primary-contrast: #333333;
+      --ldg-component-calendar-cell-selection-bg-color: #b68a52;
+      --ldg-component-calendar-cell-selection-color: #333333;
+      --ldg-component-calendar-cell-selected-bg-color: #dbc5a9;
+      --ldg-component-calendar-cell-selected-color: #333333;
+      --ldg-bnb-font-family: inherit;
+    }
+  </style>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="lodgify-config.js"></script>
   <script src="translations.js" defer></script>
 </head>
 <body>
@@ -189,7 +209,7 @@
               <li>Sèche-cheveux</li>
               <li>Shampoing, savon, serviettes</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=margaux" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797565"></div>
           </div>
 
         </div>
@@ -243,7 +263,7 @@
               <li>Sèche-cheveux</li>
               <li>Shampoing, savon, serviettes</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=sauternes" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797564"></div>
           </div>
 
         </div>
@@ -306,7 +326,7 @@
               <li>Sèche-cheveux</li>
               <li>Shampoing, savon, serviettes</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=puygrenier" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797566"></div>
           </div>
 
         </div>
@@ -360,7 +380,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Meubles de rangement</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=pomerol" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797568"></div>
           </div>
 
         </div>
@@ -414,7 +434,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Meubles de rangement</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=puisseguin" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797567"></div>
           </div>
 
         </div>
@@ -490,7 +510,7 @@
               <li>Shampoing, savon, serviettes</li>
               <li>Petit-déjeuner en option</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=pecharment" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797562"></div>
           </div>
 
         </div>
@@ -548,7 +568,7 @@
               <li>Meubles de rangement</li>
               <li>Petit-déjeuner en option</li>
             </ul>
-            <a class="btn btn-primary" href="contact.html?unit=montravel" target="_blank" data-i18n="lodging.cta.avail">Demander les disponibilités</a>
+            <div data-lodgify-rental-id="797563"></div>
           </div>
 
         </div>
@@ -588,6 +608,7 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <script src="lodgify-book-now-box.js" defer></script>
 
   <!-- ══ LIGHTBOX ══ -->
   <div id="lightbox" class="lb" role="dialog" aria-modal="true" aria-label="Visionneuse de photos" hidden>
