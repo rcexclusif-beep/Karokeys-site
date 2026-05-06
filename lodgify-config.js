@@ -5,37 +5,37 @@ const LODGIFY_RENTALS = [
   {
     id: '797562',
     name: 'Gîte Pecharmant',
-    slug: 'gite-pecharmant-6-pers-chateau-piscine-spa'
+    slug: 'gite-pecharmant'
   },
   {
     id: '797563',
     name: 'Gîte Montravel',
-    slug: 'gite-montravel-2-pers-chateau-piscine-spa'
+    slug: 'gite-montravel'
   },
   {
     id: '797564',
     name: 'Suite Sauternes',
-    slug: 'suite-sauternes-chateau-piscine-et-spa'
+    slug: 'suite-sauternes'
   },
   {
     id: '797565',
     name: 'Double Suite St Émilion',
-    slug: 'double-suite-st-emilion-4-pers-spa-piscine'
+    slug: 'suite-st-emilion'
   },
   {
     id: '797566',
     name: 'Suite Puygrenier',
-    slug: 'suite-puygrenier-4-pers-chateau-piscine-spa'
+    slug: 'suite-puygrenier'
   },
   {
     id: '797567',
     name: 'Suite Puisseguin',
-    slug: 'suite-puisseguin-chateau-spa-piscine'
+    slug: 'suite-puisseguin'
   },
   {
     id: '797568',
     name: 'Suite Pomerol',
-    slug: 'suite-pomerol-chateau-puygrenier-spa-piscine'
+    slug: 'suite-pomerol'
   }
 ];
 

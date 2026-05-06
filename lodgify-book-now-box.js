@@ -86,7 +86,7 @@
   id="lodgify-book-now-box"
   data-rental-id="${rentalId}"
   data-website-id="${LODGIFY_WEBSITE_ID}"
-  data-slug="${rentalData.slug}"
+  data-slug="chateaupuygrenier"
   data-language-code="${LODGIFY_LANGUAGE_CODE}"
   data-new-tab="true"
   data-version="stable"
