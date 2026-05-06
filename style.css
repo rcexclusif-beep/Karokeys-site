@@ -521,6 +521,9 @@ a {
 .contact-form textarea {
   resize: vertical;
   min-height: 130px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 .site-footer {
@@ -600,6 +603,7 @@ a {
 
   .contact-grid {
     grid-template-columns: 1.1fr 1fr;
+    align-items: center;
   }
 
   .section {

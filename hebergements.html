@@ -26,6 +26,28 @@
       --ldg-component-calendar-cell-selected-bg-color: #dbc5a9;
       --ldg-component-calendar-cell-selected-color: #333333;
       --ldg-bnb-font-family: inherit;
+
+      --ldg-psb-background: #ffffff;
+      --ldg-psb-border-radius: 0.42em;
+      --ldg-psb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+      --ldg-psb-padding: 14px;
+      --ldg-psb-input-background: #ffffff;
+      --ldg-psb-button-border-radius: 3.58em;
+      --ldg-psb-color-primary: #b68a52;
+      --ldg-psb-color-primary-lighter: #dbc5a9;
+      --ldg-psb-color-primary-darker: #5b4529;
+      --ldg-psb-color-primary-contrast: #333333;
+    }
+
+    /* Search bar mobile : visible uniquement < 768px */
+    .mobile-search-bar {
+      display: none;
+      padding: 20px 0;
+      background: var(--ldg-bnb-background, #fff);
+    }
+    @media (max-width: 767px) {
+      .mobile-search-bar { display: block; }
+      [data-lodgify-rental-id] { display: none !important; }
     }
   </style>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -124,6 +146,42 @@
       <button class="carousel-control next" id="next-slide" aria-label="Image suivante">&#10095;</button>
       <div class="carousel-dots" id="carousel-dots" aria-label="Sélection des images"></div>
     </section>
+
+    <!-- ══════════════════════════════════════════════
+         BARRE DE RECHERCHE MOBILE (visible uniquement sur mobile)
+    ══════════════════════════════════════════════ -->
+    <section class="mobile-search-bar" aria-label="Recherche de disponibilités">
+      <div class="container">
+        <div id="lodgify-search-bar-mobile"
+          data-website-id="651415"
+          data-language-code="fr"
+          data-search-page-url="https://chateaupuygrenier.lodgify.com/fr/toutes-les-proprietes"
+          data-dates-check-in-label="Arrivée"
+          data-dates-check-out-label="Départ"
+          data-guests-counter-label="Invités"
+          data-guests-input-singular-label="{{NumberOfGuests}} invité"
+          data-guests-input-plural-label="{{NumberOfGuests}} invités"
+          data-location-input-label="Emplacement"
+          data-search-button-label="Rechercher"
+          data-guests-breakdown-label="Invités"
+          data-adults-label='{"one":"adulte","other":"adultes"}'
+          data-adults-description="Âges {minAge} ou plus"
+          data-children-label='{"one":"enfant","other":"enfants"}'
+          data-children-description="Âges {minAge} - {maxAge}"
+          data-children-not-allowed-label="Non adapté aux enfants"
+          data-infants-label='{"one":"bébé","other":"bébés"}'
+          data-infants-description="Moins de {maxAge}"
+          data-infants-not-allowed-label="Non adapté aux bébés"
+          data-pets-label='{"one":"animal de compagnie","other":"animaux de compagnie"}'
+          data-pets-not-allowed-label="Non autorisé"
+          data-done-label="Terminé"
+          data-new-tab="true"
+          data-version="stable"
+          data-has-guests-breakdown
+        ></div>
+      </div>
+    </section>
+    <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
 
     <!-- ══════════════════════════════════════════════
          NAVIGATION RAPIDE
