@@ -34,7 +34,6 @@ window.TRANSLATIONS = {
     'nav.lodging':        'Hébergements',
     'nav.experiences':    'Expériences',
     'nav.destination':    'Destination',
-    'nav.spirit':         'L\'esprit du Château Puygrenier',
     'nav.book':           'Réserver',
     'nav.toggle.open':    'Ouvrir le menu',
     'nav.toggle.close':   'Fermer le menu',
@@ -170,7 +169,7 @@ window.TRANSLATIONS = {
     // Section gîtes
     'lodging.gites.label':           'Gîtes',
     'lodging.gites.title':           '2 gîtes indépendants avec cuisine équipée',
-    'lodging.gites.text':            'Accès totalement indépendant, cuisine équipée, espace privatif. Le petit-déjeuner est disponible en option sur demande.',
+    'lodging.gites.text':            'Accès totalement indépendant, cuisine équipée, espace privatif. Le petit-déjeuner est disponible en option.',
 
     // Gîte Pécharmant
     'lodging.pecharment.tagline':    'Un gîte sur deux niveaux, entièrement indépendant. Cuisine, salon et chambres séparées. Les familles et groupes d\'amis s\'y posent à leur rythme.',
@@ -196,7 +195,7 @@ window.TRANSLATIONS = {
     'exp.hero.subtitle':         'Piscine, spa, table d\'hôtes, vie de la ferme, pique-nique terroir, sept façons de prolonger le plaisir sans quitter le domaine.',
 
     'exp.piscine.label':         'Inclus pour tous',
-    'exp.piscine.tagline':       'Accès libre pour tous les hébergements, sans supplément. Se poser au bord de l\'eau, sans avoir à rien planifier.',
+    'exp.piscine.tagline':       'Accès libre pour tous les hébergements, sans supplément. Se poser au bord de l\'eau, sans rien avoir à planifier.',
     'exp.piscine.amenities':     '<li>Accès sans réservation</li><li>Disponible pour les 7 hébergements</li><li>Cadre naturel préservé</li><li>Transats et espace détente</li>',
     'exp.piscine.cta':           'Réserver un séjour',
 
@@ -219,13 +218,13 @@ window.TRANSLATIONS = {
 
     'exp.piquenique.label':      'Sur commande la veille · service payant',
     'exp.piquenique.tagline':    'Un panier en osier isotherme, garni de produits du terroir local, à emporter le matin pour déjeuner dans les vignes, au bord de la Dordogne ou à l\'ombre des chênes du domaine.',
-    'exp.piquenique.amenities':  '<li>Panier en osier isotherme fourni</li><li>Fromages et charcuteries régionaux</li><li>Pain artisanal, fruits de saison</li><li>Légumes du potager du domaine</li><li>Formule avec vin du château disponible</li><li>Menu variable selon les arrivages de la semaine</li><li>Commande à passer la veille</li>',
+    'exp.piquenique.amenities':  '<li>Pain artisanal et fruits de saison</li><li>Fromages et charcuteries régionaux</li><li>Sélection de produits du terroir périgourdin</li><li>Formule avec vin du château disponible</li>',
     'exp.piquenique.cta':        'Commander un panier',
 
-    'exp.ferme.label':           'Accès libre · inclus dans tous les séjours',
-    'exp.ferme.tagline':         'Poules, cheval, chèvres naines et potager. Le domaine vit et respire. Un cadre rare pour les enfants, un retour aux sources pour les adultes.',
-    'exp.ferme.amenities':       '<li>Poulailler en accès libre</li><li>Possibilité de ramasser les œufs (selon saison)</li><li>Potager du domaine (produits utilisés en cuisine)</li><li>1 cheval dans la prairie</li><li>4 chèvres naines accessibles</li><li>Accompagnement par les propriétaires sur demande</li>',
-    'exp.ferme.cta':             'Nous contacter',
+    'exp.ferme.label':           'Inclus · familles bienvenues',
+    'exp.ferme.tagline':         'Un parc verdoyant avec chevaux, chèvres naines et jeux pour enfants. Inclus dans tous les séjours, pour petits et grands.',
+    'exp.ferme.amenities':       '<li>4 chèvres naines en liberté</li><li>Cheval dans la prairie</li><li>Jeux pour enfants</li><li>Accompagnement par les propriétaires sur demande</li>',
+    'exp.ferme.cta':             'En savoir plus',
 
     'exp.reception.label':       'Sur réservation · espace privatisable',
     'exp.reception.tagline':     '80 m² pour réunir vos proches, organiser une soirée thématique, une projection de film ou une soirée jeux. Le château devient votre terrain de jeu.',
@@ -239,6 +238,7 @@ window.TRANSLATIONS = {
     'exp.table.th1':             'Service',
     'exp.table.th2':             'Suites (maison d\'hôtes)',
     'exp.table.th3':             'Gîtes',
+    'exp.table.th4':             'Prix',
     'exp.table.pool':            'Piscine',
     'exp.table.breakfast':       'Petit-déjeuner',
     'exp.table.dinner':          'Table d\'hôtes (dîner)',
@@ -293,11 +293,11 @@ window.TRANSLATIONS = {
 
     'dest.gastro.label':      'Gastronomie & marchés',
     'dest.gastro.title':      'Truffes, foie gras, vins de terroir, à portée de table.',
-    'dest.gastro.tagline':    'Le Périgord Pourpre est une des grandes tables de France. Marchés paysans, fermes en direct, producteurs de truffes et vignerons indépendants, tout se trouve à quelques lieues du château.',
+    'dest.gastro.tagline':    'Le Périgord Pourpre est une des grandes tables de France. Marchés paysans, fermes en direct, producteurs de truffes et vignerons indépendants — tout se trouve à quelques kilomètres du château.',
     'dest.marches.title':     'Marchés paysans',
     'dest.marches.desc':      'Sainte-Foy (sam.), Bergerac (mer. & sam.), Eymet (jeu.), Issigeac (dim.) : foie gras, canard, produits du terroir',
     'dest.truffes.title':     'Truffes noires',
-    'dest.truffes.desc':      'Périgord Noir en saison (jan.–mars), marchés à la truffe',
+    'dest.truffes.desc':      'Périgord Noir en saison (jan.–mars) — comptez 1h30 de route, une excursion qui vaut le détour',
     'dest.surplace.title':    'Sur place',
     'dest.surplace.desc':     'Table d\'hôtes le soir, petit-déjeuner maison, panier terroir sur commande',
     'dest.restaurants.title': 'Restaurants alentour',
@@ -380,7 +380,6 @@ window.TRANSLATIONS = {
     'nav.lodging':        'Accommodations',
     'nav.experiences':    'Experiences',
     'nav.destination':    'Destination',
-    'nav.spirit':         'The Spirit of Château Puygrenier',
     'nav.book':           'Book',
     'nav.toggle.open':    'Open menu',
     'nav.toggle.close':   'Close menu',
@@ -502,7 +501,7 @@ window.TRANSLATIONS = {
 
     'lodging.gites.label':           'Cottages',
     'lodging.gites.title':           '2 independent cottages with equipped kitchen',
-    'lodging.gites.text':            'Fully independent access, equipped kitchen, private space. Breakfast is available as an option on request.',
+    'lodging.gites.text':            'Fully independent access, equipped kitchen, private space. Breakfast is available as an option.',
 
     'lodging.pecharment.tagline':    'A fully independent cottage on two floors. Kitchen, living room and separate bedrooms. Families and groups settle in and make it their own.',
     'lodging.pecharment.amenities':  '<li>2 bedrooms (1 queen size bed + 1 single bed)</li><li>Lounge / living room with sofas</li><li>Fully equipped kitchen</li><li>Private bathroom</li><li>Television</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Breakfast on request</li>',
@@ -548,13 +547,13 @@ window.TRANSLATIONS = {
 
     'exp.piquenique.label':      'Pre-ordered the day before · paid service',
     'exp.piquenique.tagline':    'An insulated wicker basket filled with local produce, to take out in the morning for lunch among the vines, by the Dordogne river or in the shade of the estate\'s oak trees.',
-    'exp.piquenique.amenities':  '<li>Insulated wicker basket provided</li><li>Regional cheeses and charcuterie</li><li>Artisan bread, seasonal fruit</li><li>Vegetables from the estate garden</li><li>Formula with château wine available</li><li>Menu varies with weekly arrivals</li><li>Order the day before</li>',
+    'exp.piquenique.amenities':  '<li>Artisan bread and seasonal fruit</li><li>Regional cheeses and charcuterie</li><li>Selection of Périgord local produce</li><li>Formula with château wine available</li>',
     'exp.piquenique.cta':        'Order a basket',
 
-    'exp.ferme.label':           'Free access · included in all stays',
-    'exp.ferme.tagline':         'Chickens, horse, dwarf goats and vegetable garden. The estate lives and breathes. A rare setting for children, a return to roots for adults.',
-    'exp.ferme.amenities':       '<li>Chicken coop freely accessible</li><li>Possibility to collect eggs (seasonal)</li><li>Estate vegetable garden (produce used in cooking)</li><li>1 horse in the meadow</li><li>4 dwarf goats accessible</li><li>Guided by the owners on request</li>',
-    'exp.ferme.cta':             'Contact us',
+    'exp.ferme.label':           'Included · families welcome',
+    'exp.ferme.tagline':         'A lush park with horses, dwarf goats and children\'s play area. Included in all stays, for young and old alike.',
+    'exp.ferme.amenities':       '<li>4 dwarf goats roaming freely</li><li>Horse in the meadow</li><li>Children\'s play area</li><li>Guided by the owners on request</li>',
+    'exp.ferme.cta':             'Find out more',
 
     'exp.reception.label':       'On request · privatisable space',
     'exp.reception.tagline':     '80 m² to gather your loved ones, organise a themed evening, a film screening or a games night. The château becomes your playground.',
@@ -567,6 +566,7 @@ window.TRANSLATIONS = {
     'exp.table.th1':             'Service',
     'exp.table.th2':             'Suites (guesthouse)',
     'exp.table.th3':             'Cottages',
+    'exp.table.th4':             'Price',
     'exp.table.pool':            'Pool',
     'exp.table.breakfast':       'Breakfast',
     'exp.table.dinner':          'Dinner table',
@@ -620,11 +620,11 @@ window.TRANSLATIONS = {
 
     'dest.gastro.label':      'Food & markets',
     'dest.gastro.title':      'Truffles, foie gras, local wines, within reach.',
-    'dest.gastro.tagline':    'The Périgord Pourpre is one of France\'s great gastronomic regions. Farmers\' markets, direct farm purchases, truffle producers and independent winemakers, all within a short drive.',
+    'dest.gastro.tagline':    'The Périgord Pourpre is one of France\'s great gastronomic regions. Farmers\' markets, farm shops, truffle producers and independent winemakers — all within a few kilometres of the château.',
     'dest.marches.title':     'Farmers\' markets',
     'dest.marches.desc':      'Sainte-Foy (Sat.), Bergerac (Wed. & Sat.), Eymet (Thu.), Issigeac (Sun.) : foie gras, duck, local produce',
     'dest.truffes.title':     'Black truffles',
-    'dest.truffes.desc':      'Périgord Noir in season (Jan.–Mar.), truffle markets',
+    'dest.truffes.desc':      'Périgord Noir in season (Jan.–Mar.) — allow 1h30 by road, a detour well worth making',
     'dest.surplace.title':    'On site',
     'dest.surplace.desc':     'Dinner table in the evening, homemade breakfast, picnic basket on order',
     'dest.restaurants.title': 'Restaurants nearby',
