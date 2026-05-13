@@ -3,7 +3,7 @@
   --color-accent: #b68a52;
   --color-bg: #f7f4ee;
   --color-surface: #fbf8f2;
-  --color-text: #2b2620;
+  --color-text: #5a5450;
   --color-muted: #6f665b;
   --color-terracotta: #8b6f5e;
   --color-border: #d9cfbe;
@@ -93,8 +93,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(8px);
-  background: rgba(247, 244, 238, 0.92);
+  background: rgba(247, 244, 238, 0.96);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -180,8 +179,14 @@ a {
 
 .nav-cta {
   color: #1f1a14;
-  background: #e9dcc6;
+  background: var(--color-accent);
   font-weight: 600;
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 /* ── Language Switcher ──────────────────────────────────────────────────── */
@@ -270,6 +275,10 @@ a {
 
 /* Sur mobile : switcher intégré dans le menu déplié */
 @media (max-width: 767px) {
+  .hero-actions {
+    justify-content: center;
+  }
+
   .lang-switcher {
     margin: 4px 0 0;
     justify-content: center;
@@ -301,6 +310,7 @@ a {
   min-height: 85vh;
   display: grid;
   align-items: end;
+  padding-bottom: 6vh;
 }
 
 .slides {
@@ -324,33 +334,38 @@ a {
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 12, 10, 0.25) 0%, rgba(18, 23, 18, 0.50) 100%);
+  background: linear-gradient(180deg, rgba(10, 12, 10, 0.18) 0%, rgba(18, 23, 18, 0.42) 100%);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   color: #fff;
-  padding-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  padding-top: var(--space-3);
 }
 
 .hero-content h1 {
   color: #fff;
-  max-width: 14ch;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  max-width: 38ch;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  line-height: 1.2;
 }
 
 .hero-content p {
-  max-width: 60ch;
-  font-size: 1.02rem;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  max-width: 56ch;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
 }
 
 .eyebrow {
   text-transform: uppercase;
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  margin-bottom: var(--space-2);
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.6rem;
+  max-width: 40ch;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -367,7 +382,7 @@ a {
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 600;
-  transition: transform 180ms ease, background-color 180ms ease;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 .btn-primary {
@@ -378,7 +393,9 @@ a {
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background: #9f7542;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
   transform: translateY(-1px);
 }
 
@@ -574,9 +591,7 @@ a {
     font-size: 0.95rem;
   }
 
-  .main-nav .nav-cta {
-    background: var(--color-accent);
-  }
+
 
   .hero,
   .hero-carousel {
@@ -783,14 +798,15 @@ a {
    OUTLINE BUTTON
 ═══════════════════════════════════════════════════════ */
 .btn-outline {
-  background: transparent;
-  color: var(--color-primary);
-  border: 1.5px solid var(--color-primary);
+  background: var(--color-accent);
+  color: #1f1a14;
+  border: 1.5px solid var(--color-accent);
 }
 
 .btn-outline:hover,
 .btn-outline:focus-visible {
   background: var(--color-primary);
+  border-color: var(--color-primary);
   color: #fff;
   transform: translateY(-1px);
 }
