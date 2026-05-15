@@ -90,7 +90,7 @@ window.TRANSLATIONS = {
     'index.resto.desc':       'Cuisine maison, produits du terroir et longues soirées d\'été autour de la table.',
     'index.resto.badge':      'À la carte',
     'index.ferme.h3':         'Vie de la ferme',
-    'index.ferme.desc':       'Poules, potager, chèvres naines et cheval participent naturellement à la vie du domaine.',
+    'index.ferme.desc':       'Chèvres naines et cheval participent naturellement à la vie du domaine.',
     'index.ferme.badge':      'Inclus',
     'index.exp.cta':          'Découvrir l\'expérience complète',
 
@@ -433,7 +433,7 @@ window.TRANSLATIONS = {
     'index.resto.desc':       'Home cooking, local produce and long summer evenings around the table.',
     'index.resto.badge':      'À la carte',
     'index.ferme.h3':         'Farm life',
-    'index.ferme.desc':       'Chickens, vegetable garden, dwarf goats and a horse are naturally part of daily life on the estate.',
+    'index.ferme.desc':       'Dwarf goats and a horse are naturally part of daily life on the estate.',
     'index.ferme.badge':      'Included',
     'index.exp.cta':          'Discover the full experience',
 

@@ -1035,6 +1035,14 @@ a {
   overflow: hidden;
 }
 
+.page-hero--large {
+  min-height: 234vh;
+}
+
+.page-hero--large .slide-media img {
+  object-position: center center;
+}
+
 .page-hero-media {
   position: absolute;
   inset: 0;
@@ -1298,6 +1306,9 @@ a {
   }
   .page-hero {
     min-height: 52vh;
+  }
+  .page-hero--large {
+    min-height: 70vh;
   }
 
   .jump-nav {
