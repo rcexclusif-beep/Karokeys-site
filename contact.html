@@ -79,6 +79,7 @@
         <a href="hebergements.html" data-i18n="nav.lodging">Hébergements</a>
         <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
         <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="evenements.html" data-i18n="nav.events">Événements</a>
         <a href="contact.html" class="nav-cta" data-i18n="nav.book">Réserver</a>
         <div class="lang-switcher" id="lang-switcher">
           <div class="lang-face">
@@ -163,15 +164,24 @@
             </p>
             <ul class="contact-list">
               <li><span data-i18n="contact.phone">Téléphone</span> : <a href="tel:+33669231555">+336 69 23 15 55</a></li>
-              <li>Email : <a href="mailto:contact@chateeaupuygrenier.fr">contact@chateeaupuygrenier.fr</a></li>
-              <li><span data-i18n="contact.address">Adresse</span> : 2028 Avenue du Docteur Deseymeris, 33220 Villefranche-de-Lonchat</li>
+              <li>Email : <a href="mailto:contact@chateaupuygrenier.fr">contact@chateaupuygrenier.fr</a></li>
+              <li><span data-i18n="contact.address">Adresse</span> : 2028 Avenue du Docteur Deseymeris, 24610 Villefranche-de-Lonchat</li>
             </ul>
           </div>
 
-          <form class="contact-form" action="https://formsubmit.co/contact@chateaupuygrenier.fr" method="post" novalidate>
+          <form id="evenementiel" class="contact-form" action="https://formsubmit.co/contact@chateaupuygrenier.fr" method="post" novalidate>
             <input type="hidden" name="_next" value="confirmation.html">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="Nouveau message depuis Château Puygrenier">
+
+            <label for="type_demande">Type de demande</label>
+            <select id="type_demande" name="type_demande">
+              <option value="sejour">Réservation séjour</option>
+              <option value="evenementiel">Événementiel — mariage, anniversaire, EVG/EVJF</option>
+              <option value="privatisation">Privatisation du domaine</option>
+              <option value="autre">Autre demande</option>
+            </select>
+
             <label for="name" data-i18n="contact.form.name">Nom</label>
             <input id="name" name="name" type="text" placeholder="Votre nom" required autocomplete="name" data-i18n-placeholder="contact.form.name.ph">
 
@@ -248,7 +258,7 @@
               <p data-i18n-html="faq.a2">
                 Le petit-déjeuner est inclus dans le tarif de toutes les
                 <strong>suites de la maison d'hôtes</strong>. Pour les <strong>gîtes
-                Cognac et Armagnac</strong>, la formule est en self-catering, cuisine
+                Pécharmant et Montravel</strong>, la formule est en self-catering, cuisine
                 entièrement équipée à disposition.
               </p>
             </div>
@@ -258,7 +268,7 @@
             <summary class="faq-question" data-i18n="faq.q3">La piscine et le spa sont-ils accessibles à tous&nbsp;?</summary>
             <div class="faq-answer">
               <p data-i18n-html="faq.a3">
-                Oui. La piscine extérieure et le spa (jacuzzi, sauna, hammam) sont
+                Oui. La piscine extérieure et le spa (jacuzzi, sauna) sont
                 inclus et accessibles à tous les hébergements. Des plages horaires
                 peuvent être organisées en cas de forte occupation du domaine pour
                 garantir la tranquillité de chacun.

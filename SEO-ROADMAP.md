@@ -13,7 +13,7 @@ Contient : nom, adresse, coordonnées GPS, téléphone, email, équipements, che
 
 **Schéma complet — tous les champs renseignés :**
 - `url` → `https://chateaupuygrenier.fr`
-- `streetAddress` → `2028 Avenue du Docteur Deseymeris, 33220 Villefranche-de-Lonchat`
+- `streetAddress` → `2028 Avenue du Docteur Deseymeris, 24610 Villefranche-de-Lonchat`
 - `image` → `https://chateaupuygrenier.fr/assets/images/Photo%20principale.jpg` ✅
 - `ratingValue` → `4.8` / 48 avis
 - `priceRange` → `"À partir de 80 € / nuit"`
@@ -102,7 +102,7 @@ Le formulaire de contact sur `index.html` a `action="#"` — les messages ne par
 **Impact : modéré — SEO local**
 
 Actuellement "Dordogne / Gironde, France" — trop vague pour Google Maps et le référencement local.
-Remplacer par l'adresse complète : `[Numéro] [Rue], 33220 Villefranche-de-Lonchat, Dordogne`.
+Remplacer par l'adresse complète : `[Numéro] [Rue], 24610 Villefranche-de-Lonchat, Dordogne`.
 À mettre dans : footer de toutes les pages, section contact de index.html, page contact.html.
 
 ---

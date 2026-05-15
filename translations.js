@@ -34,6 +34,7 @@ window.TRANSLATIONS = {
     'nav.lodging':        'Hébergements',
     'nav.experiences':    'Expériences',
     'nav.destination':    'Destination',
+    'nav.events':         'Événements',
     'nav.book':           'Réserver',
     'nav.toggle.open':    'Ouvrir le menu',
     'nav.toggle.close':   'Fermer le menu',
@@ -119,7 +120,7 @@ window.TRANSLATIONS = {
     'index.contact.title':    'Une question\u00a0?',
     'index.contact.text':     'Nous répondons en moins de 24h. Pas de formulaire complexe, juste un message, et nous nous occupons du reste.',
     'index.contact.phone':    'Téléphone :',
-    'index.contact.addr':     'Adresse : 2028 Avenue du Docteur Deseymeris, 33220 Villefranche-de-Lonchat',
+    'index.contact.addr':     'Adresse : 2028 Avenue du Docteur Deseymeris, 24610 Villefranche-de-Lonchat',
     'form.name.label':        'Nom',
     'form.email.label':       'Email',
     'form.dates.label':       'Dates envisagées',
@@ -146,7 +147,7 @@ window.TRANSLATIONS = {
     // Double Suite St-Émilion
     'lodging.margaux.tagline':       'Deux suites communicantes, une seule location. L\'espace idéal pour deux couples ou une famille qui veut de l\'intimité sans se séparer.',
     'lodging.margaux.badge.acces':   'Accès extérieur privatif',
-    'lodging.margaux.amenities':     '<li>2 lits queen size</li><li>2 SDB privatives &amp; WC privatifs</li><li>WC + lavabo commun entre suites</li><li>2 télévisions</li><li>Sèche-cheveux</li><li>Shampoing, savon, serviettes</li><li>Petit-déjeuner inclus</li>',
+    'lodging.margaux.amenities':     '<li>2 lits queen size</li><li>2 SDB privatives &amp; WC privatifs</li><li>2 télévisions</li><li>Sèche-cheveux</li><li>Shampoing, savon, serviettes</li><li>Petit-déjeuner inclus</li>',
     'lodging.cta.avail':             'Demander les disponibilités',
 
     // Suite Sauternes
@@ -160,11 +161,11 @@ window.TRANSLATIONS = {
 
     // Suite Pomerol
     'lodging.pomerol.tagline':       'Élégante et intimiste. Une suite à taille humaine pour un séjour à deux, dans un cadre soigné et calme.',
-    'lodging.pomerol.amenities':     '<li>Lit queen size</li><li>SDB privative &amp; WC privatif</li><li>Télévision</li><li>Sèche-cheveux</li><li>Shampoing, savon, serviettes</li><li>Meubles de rangement</li><li>Petit-déjeuner inclus</li>',
+    'lodging.pomerol.amenities':     '<li>Lit queen size</li><li>SDB privative &amp; WC privatif</li><li>Télévision</li><li>Sèche-cheveux</li><li>Shampoing, savon, serviettes</li><li>Petit-déjeuner inclus</li>',
 
     // Suite Puisseguin
     'lodging.puisseguin.tagline':    'Cosy et lumineuse. Le format idéal pour un séjour à deux, avec tout ce qu\'il faut sans superflu.',
-    'lodging.puisseguin.amenities':  '<li>Lit queen size</li><li>SDB privative &amp; WC privatif</li><li>Télévision</li><li>Sèche-cheveux</li><li>Shampoing, savon, serviettes</li><li>Meubles de rangement</li><li>Petit-déjeuner inclus</li>',
+    'lodging.puisseguin.amenities':  '<li>Lit queen size</li><li>SDB privative &amp; WC privatif</li><li>Télévision</li><li>Sèche-cheveux</li><li>Shampoing, savon, serviettes</li><li>Petit-déjeuner inclus</li>',
 
     // Section gîtes
     'lodging.gites.label':           'Gîtes',
@@ -217,7 +218,7 @@ window.TRANSLATIONS = {
     'exp.petitdej.cta':          'Nous contacter',
 
     'exp.piquenique.label':      'Sur commande la veille · service payant',
-    'exp.piquenique.tagline':    'Un panier en osier isotherme, garni de produits du terroir local, à emporter le matin pour déjeuner dans les vignes, au bord de la Dordogne ou à l\'ombre des chênes du domaine.',
+    'exp.piquenique.tagline':    'Un panier en osier isotherme, garni de produits du terroir local, à emporter le matin pour déjeuner dans les vignes, au bord de la Dordogne ou à l\'ombre des platanes du domaine.',
     'exp.piquenique.amenities':  '<li>Pain artisanal et fruits de saison</li><li>Fromages et charcuteries régionaux</li><li>Sélection de produits du terroir périgourdin</li><li>Formule avec vin du château disponible</li>',
     'exp.piquenique.cta':        'Commander un panier',
 
@@ -330,7 +331,7 @@ window.TRANSLATIONS = {
     'contact.info.title':            'Votre séjour commence ici',
     'contact.info.text':             'Disponibilités, demandes spéciales, privatisation du domaine. Écrivez-nous ou appelez, nous adaptons chaque séjour.',
     'contact.phone':                 'Téléphone :',
-    'contact.address':               'Adresse : 2028 Avenue du Docteur Deseymeris, 33220 Villefranche-de-Lonchat',
+    'contact.address':               'Adresse : 2028 Avenue du Docteur Deseymeris, 24610 Villefranche-de-Lonchat',
 
     'contact.form.name':             'Nom',
     'contact.form.email':            'Email',
@@ -352,9 +353,9 @@ window.TRANSLATIONS = {
     'faq.q1': 'Quelles sont les heures d\'arrivée et de départ\u00a0?',
     'faq.a1': 'L\'arrivée se fait à partir de <strong>16h</strong> et le départ avant <strong>11h</strong>. En dehors de ces horaires, n\'hésitez pas à nous contacter, nous faisons notre possible pour accommoder des horaires différents selon les disponibilités.',
     'faq.q2': 'Le petit-déjeuner est-il inclus\u00a0?',
-    'faq.a2': 'Le petit-déjeuner est inclus dans le tarif de toutes les <strong>suites de la maison d\'hôtes</strong>. Pour les <strong>gîtes Cognac et Armagnac</strong>, la formule est en self-catering, cuisine entièrement équipée à disposition.',
+    'faq.a2': 'Le petit-déjeuner est inclus dans le tarif de toutes les <strong>suites de la maison d\'hôtes</strong>. Pour les <strong>gîtes Pécharmant et Montravel</strong>, la formule est en self-catering, cuisine entièrement équipée à disposition.',
     'faq.q3': 'La piscine et le spa sont-ils accessibles à tous\u00a0?',
-    'faq.a3': 'Oui. La piscine extérieure et le spa (jacuzzi, sauna, hammam) sont inclus et accessibles à tous les hébergements. Des plages horaires peuvent être organisées en cas de forte occupation du domaine pour garantir la tranquillité de chacun.',
+    'faq.a3': 'Oui. La piscine extérieure et le spa (jacuzzi, sauna) sont inclus et accessibles à tous les hébergements. Des plages horaires peuvent être organisées en cas de forte occupation du domaine pour garantir la tranquillité de chacun.',
     'faq.q4': 'Y a-t-il une connexion WiFi\u00a0?',
     'faq.a4': 'Oui, le WiFi haut débit est inclus dans tous les hébergements, à l\'intérieur comme dans les espaces extérieurs du domaine.',
     'faq.q5': 'Les animaux de compagnie sont-ils acceptés\u00a0?',
@@ -380,6 +381,7 @@ window.TRANSLATIONS = {
     'nav.lodging':        'Accommodations',
     'nav.experiences':    'Experiences',
     'nav.destination':    'Destination',
+    'nav.events':         'Events',
     'nav.book':           'Book',
     'nav.toggle.open':    'Open menu',
     'nav.toggle.close':   'Close menu',
@@ -458,7 +460,7 @@ window.TRANSLATIONS = {
     'index.contact.title':    'A question ?',
     'index.contact.text':     'We reply within 24h. No complex form, just a message, and we\'ll take care of the rest.',
     'index.contact.phone':    'Phone:',
-    'index.contact.addr':     'Address: 2028 Avenue du Docteur Deseymeris, 33220 Villefranche-de-Lonchat',
+    'index.contact.addr':     'Address: 2028 Avenue du Docteur Deseymeris, 24610 Villefranche-de-Lonchat',
     'form.name.label':        'Name',
     'form.email.label':       'Email',
     'form.dates.label':       'Intended dates',
@@ -483,7 +485,7 @@ window.TRANSLATIONS = {
 
     'lodging.margaux.tagline':       'Two connecting suites, one rental. The ideal space for two couples or a family who want privacy without being apart.',
     'lodging.margaux.badge.acces':   'Private outdoor access',
-    'lodging.margaux.amenities':     '<li>2 queen size beds</li><li>2 en-suite bathrooms &amp; WC</li><li>Shared WC + washbasin between suites</li><li>2 televisions</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Breakfast included</li>',
+    'lodging.margaux.amenities':     '<li>2 queen size beds</li><li>2 en-suite bathrooms &amp; WC</li><li>2 televisions</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Breakfast included</li>',
     'lodging.cta.avail':             'Check availability',
 
     'lodging.sauternes.tagline':     'The most spacious on the second floor. A queen size bed, an extra bed, natural light and reversible air conditioning for all seasons.',
@@ -494,10 +496,10 @@ window.TRANSLATIONS = {
     'lodging.puygrenier.amenities':  '<li>King size bed</li><li>2 single beds</li><li>En-suite bathroom &amp; WC</li><li>Television</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Breakfast included</li>',
 
     'lodging.pomerol.tagline':       'Elegant and intimate. A perfectly sized suite for two, in a refined and peaceful setting.',
-    'lodging.pomerol.amenities':     '<li>Queen size bed</li><li>En-suite bathroom &amp; WC</li><li>Television</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Storage furniture</li><li>Breakfast included</li>',
+    'lodging.pomerol.amenities':     '<li>Queen size bed</li><li>En-suite bathroom &amp; WC</li><li>Television</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Breakfast included</li>',
 
     'lodging.puisseguin.tagline':    'Cosy and bright. The ideal format for a couples\' stay, with everything you need and nothing superfluous.',
-    'lodging.puisseguin.amenities':  '<li>Queen size bed</li><li>En-suite bathroom &amp; WC</li><li>Television</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Storage furniture</li><li>Breakfast included</li>',
+    'lodging.puisseguin.amenities':  '<li>Queen size bed</li><li>En-suite bathroom &amp; WC</li><li>Television</li><li>Hairdryer</li><li>Shampoo, soap, towels</li><li>Breakfast included</li>',
 
     'lodging.gites.label':           'Cottages',
     'lodging.gites.title':           '2 independent cottages with equipped kitchen',
@@ -546,7 +548,7 @@ window.TRANSLATIONS = {
     'exp.petitdej.cta':          'Contact us',
 
     'exp.piquenique.label':      'Pre-ordered the day before · paid service',
-    'exp.piquenique.tagline':    'An insulated wicker basket filled with local produce, to take out in the morning for lunch among the vines, by the Dordogne river or in the shade of the estate\'s oak trees.',
+    'exp.piquenique.tagline':    'An insulated wicker basket filled with local produce, to take out in the morning for lunch among the vines, by the Dordogne river or in the shade of the estate\'s plane trees.',
     'exp.piquenique.amenities':  '<li>Artisan bread and seasonal fruit</li><li>Regional cheeses and charcuterie</li><li>Selection of Périgord local produce</li><li>Formula with château wine available</li>',
     'exp.piquenique.cta':        'Order a basket',
 
@@ -657,7 +659,7 @@ window.TRANSLATIONS = {
     'contact.info.title':            'Your stay begins here',
     'contact.info.text':             'Availability, special requests, full estate hire. Write or call us, we adapt every stay.',
     'contact.phone':                 'Phone:',
-    'contact.address':               'Address: 2028 Avenue du Docteur Deseymeris, 33220 Villefranche-de-Lonchat',
+    'contact.address':               'Address: 2028 Avenue du Docteur Deseymeris, 24610 Villefranche-de-Lonchat',
 
     'contact.form.name':             'Name',
     'contact.form.email':            'Email',
@@ -679,9 +681,9 @@ window.TRANSLATIONS = {
     'faq.q1': 'What are the check-in and check-out times?',
     'faq.a1': 'Check-in is from <strong>4 pm</strong> and check-out before <strong>11 am</strong>. Outside these times, feel free to contact us, we do our best to accommodate different schedules depending on availability.',
     'faq.q2': 'Is breakfast included?',
-    'faq.a2': 'Breakfast is included in the rate for all <strong>guesthouse suites</strong>. For the <strong>Cognac and Armagnac cottages</strong>, the arrangement is self-catering, with a fully equipped kitchen available.',
+    'faq.a2': 'Breakfast is included in the rate for all <strong>guesthouse suites</strong>. For the <strong>Pécharmant and Montravel cottages</strong>, the arrangement is self-catering, with a fully equipped kitchen available.',
     'faq.q3': 'Are the pool and spa accessible to all?',
-    'faq.a3': 'Yes. The outdoor pool and spa (jacuzzi, sauna, hammam) are included and accessible to all accommodations. Time slots may be arranged during busy periods to ensure everyone\'s peace and quiet.',
+    'faq.a3': 'Yes. The outdoor pool and spa (jacuzzi, sauna) are included and accessible to all accommodations. Time slots may be arranged during busy periods to ensure everyone\'s peace and quiet.',
     'faq.q4': 'Is there WiFi?',
     'faq.a4': 'Yes, high-speed WiFi is included in all accommodations, both indoors and across the estate\'s outdoor areas.',
     'faq.q5': 'Are pets welcome?',

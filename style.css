@@ -1545,7 +1545,11 @@ a {
 }
 
 .lb-close {
-  display: none;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
 }
 
 .lb-prev,
@@ -1555,6 +1559,102 @@ a {
   width: 46px;
   height: 46px;
   font-size: 2rem;
+}
+
+/* ═══════════════════════════════════════════════════════
+   IMAGE PLACEHOLDER
+═══════════════════════════════════════════════════════ */
+.img-placeholder {
+  background: #E8E3DB;
+  border: 2px dashed #D9CFBE;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #B5ADA2;
+  font-size: 0.85rem;
+  font-style: italic;
+  width: 100%;
+}
+
+.gallery-main .img-placeholder {
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-thumbs .img-placeholder {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+}
+
+/* ═══════════════════════════════════════════════════════
+   STATS BAND — Événements
+═══════════════════════════════════════════════════════ */
+.stats-band {
+  background: var(--color-primary);
+  padding: var(--space-4) 0;
+}
+
+.stats-band-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.stat-item {
+  color: #fff;
+}
+
+.stat-item .stat-number {
+  display: block;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-item .stat-label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 768px) {
+  .stats-band-inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   ÉVÉNEMENTS — CTA final
+═══════════════════════════════════════════════════════ */
+.event-cta-section {
+  background: var(--color-surface);
+  padding: var(--space-5) 0;
+  text-align: center;
+}
+
+.event-cta-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.event-cta-section p {
+  max-width: 55ch;
+  margin: 0 auto var(--space-4);
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.event-cta-buttons {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .lb-prev { left: 10px; }
