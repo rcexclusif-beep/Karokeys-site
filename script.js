@@ -224,9 +224,6 @@ if (slides.length > 0) {
 // ══════════════════════════════════════════════
 (function () {
 	var revealEls = document.querySelectorAll(".reveal");
-	var unitDetails = document.querySelectorAll(".unit-detail");
-
-	if (!revealEls.length && !unitDetails.length) return;
 
 	if (!("IntersectionObserver" in window)) {
 		revealEls.forEach(function (el) { el.classList.add("is-visible"); });
@@ -247,10 +244,24 @@ if (slides.length > 0) {
 
 	revealEls.forEach(function (el) { observer.observe(el); });
 
-	// Reveal automatique sur les fiches hébergements / expériences
-	unitDetails.forEach(function (el) {
-		el.classList.add("reveal");
-		observer.observe(el);
+	// Auto-reveal sur tous les éléments structurants de chaque page
+	var autoSelectors = [
+		".unit-detail",
+		".unit-card",
+		".experience-card",
+		".stats-band",
+		".unit-cta-band",
+		".event-cta-section",
+		".destination-section",
+		".jump-nav"
+	];
+	autoSelectors.forEach(function (sel) {
+		document.querySelectorAll(sel).forEach(function (el) {
+			if (!el.classList.contains("reveal")) {
+				el.classList.add("reveal");
+				observer.observe(el);
+			}
+		});
 	});
 }());
 
