@@ -3,7 +3,7 @@
   --color-accent: #b68a52;
   --color-bg: #f7f4ee;
   --color-surface: #fbf8f2;
-  --color-text: #5a5450;
+  --color-text: #2e2a26;
   --color-muted: #6f665b;
   --color-terracotta: #8b6f5e;
   --color-border: #d9cfbe;
@@ -62,6 +62,37 @@ h3 {
   font-size: clamp(1.25rem, 2.8vw, 1.875rem);
 }
 
+main h2::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: 0.55rem;
+}
+
+.page-hero h2::after,
+.hero-carousel h2::after,
+.hero h2::after {
+  display: none;
+}
+
+main h2 + p {
+  font-style: italic;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--color-muted);
+}
+
+.page-hero h2 + p,
+.hero-carousel h2 + p,
+.hero h2 + p {
+  font-style: normal;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
 p {
   margin-top: 0;
 }
@@ -93,8 +124,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(247, 244, 238, 0.96);
-  border-bottom: 1px solid var(--color-border);
+  background: #3a4a35;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-inner {
@@ -115,20 +146,18 @@ a {
   height: 44px;
   width: auto;
   display: block;
-  /* Logo blanc rendu visible sur fond clair */
-  filter: brightness(0) opacity(0.82);
+  opacity: 0.9;
   transition: opacity 180ms ease;
 }
 
 .brand:hover .brand-logo,
 .brand:focus-visible .brand-logo {
   opacity: 1;
-  filter: brightness(0) opacity(1);
 }
 
 .menu-toggle {
-  border: 1px solid var(--color-border);
-  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-sm);
   width: 44px;
   height: 44px;
@@ -143,7 +172,7 @@ a {
 .menu-toggle span {
   width: 18px;
   height: 2px;
-  background: var(--color-primary);
+  background: #fff;
 }
 
 .main-nav {
@@ -153,8 +182,8 @@ a {
   right: 0;
   display: none;
   flex-direction: column;
-  background: #f7f4ee;
-  border-bottom: 1px solid var(--color-border);
+  background: #3a4a35;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .main-nav.is-open {
@@ -164,17 +193,18 @@ a {
 .main-nav a {
   padding: 14px 16px;
   text-decoration: none;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .main-nav a:hover,
 .main-nav a:focus-visible {
-  background: #eee7d8;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .main-nav a[aria-current="page"] {
-  background: rgba(139, 111, 94, 0.12);
-  color: inherit;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
 }
 
 .nav-cta {
@@ -209,7 +239,7 @@ a {
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   font-weight: 600;
-  color: var(--color-cream);
+  color: rgba(255, 255, 255, 0.88);
   transition: background 200ms;
   white-space: nowrap;
 }
@@ -275,6 +305,11 @@ a {
 
 /* Sur mobile : switcher intégré dans le menu déplié */
 @media (max-width: 767px) {
+  .chateau-location {
+    letter-spacing: 0.02em;
+    font-size: 0.75rem;
+  }
+
   .hero-actions {
     justify-content: center;
   }
@@ -296,8 +331,11 @@ a {
     color: var(--color-forest, #3a4a35);
     padding: 4px 10px;
   }
+  .lang-option {
+    color: rgba(255, 255, 255, 0.88);
+  }
   .lang-face {
-    color: var(--color-forest, #3a4a35) !important;
+    color: rgba(255, 255, 255, 0.88) !important;
   }
 }
 
@@ -463,6 +501,8 @@ a {
   padding-block: 4px;
   margin-top: -24px;
   margin-bottom: -24px;
+  position: relative;
+  z-index: 1;
 }
 
 .section-searchbar .container {
@@ -481,8 +521,9 @@ a {
 .section-label {
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  color: var(--color-terracotta);
-  font-size: 0.8rem;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 600;
   margin-bottom: var(--space-2);
 }
 
@@ -910,7 +951,7 @@ a {
   margin-bottom: 0;
 }
 
-.destination-content > p {
+.destination-content > p:not(.section-label) {
   color: var(--color-muted);
   margin: 0;
 }
@@ -1036,7 +1077,7 @@ a {
 }
 
 .page-hero--large {
-  min-height: 234vh;
+  min-height: 60vh;
 }
 
 .page-hero--large .slide-media img {
@@ -1140,7 +1181,7 @@ a {
   margin-bottom: var(--space-1);
 }
 
-.units-section-divider p {
+.units-section-divider p:not(.section-label) {
   color: var(--color-muted);
   max-width: 72ch;
   margin: 0;
@@ -1271,6 +1312,10 @@ a {
 
 .unit-cta-band h2 {
   margin-bottom: var(--space-2);
+}
+
+.unit-cta-band h2::after {
+  display: none;
 }
 
 .unit-cta-band p {
@@ -1654,6 +1699,10 @@ a {
   margin-bottom: var(--space-2);
 }
 
+.event-cta-section h2::after {
+  display: none;
+}
+
 .event-cta-section p {
   max-width: 55ch;
   margin: 0 auto var(--space-4);
@@ -1783,6 +1832,10 @@ a {
 
 .destination-cta h2 {
   margin-bottom: var(--space-2);
+}
+
+.destination-cta h2::after {
+  display: none;
 }
 
 .destination-cta p {
