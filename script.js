@@ -338,6 +338,16 @@ if (slides.length > 0) {
 }());
 
 // ══════════════════════════════════════════════
+// HEADER COMPACT AU SCROLL
+// ══════════════════════════════════════════════
+(function () {
+	window.addEventListener('scroll', function () {
+		document.body.classList.toggle('is-scrolled', window.scrollY > 60);
+	}, { passive: true });
+}());
+
+
+// ══════════════════════════════════════════════
 // CALENDAR & FORM PREFILL
 // ══════════════════════════════════════════════
 window.addEventListener('load', function () {
