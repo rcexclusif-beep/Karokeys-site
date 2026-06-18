@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TTZZLQVM');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La carte des boissons de Château Puygrenier — eaux, jus premium, bières, vins, champagne, cocktails et spiritueux. Prix TTC.">
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Château Puygrenier">
+  <meta property="og:title"       content="La Carte | Château Puygrenier">
+  <meta property="og:description" content="Sélection de boissons à savourer sur la terrasse, au bord de la piscine ou au SPA. Prix TTC.">
+  <meta property="og:image"       content="https://www.chateaupuygrenier.fr/assets/images/Photo%20principale.jpg">
+  <meta property="og:url"         content="https://www.chateaupuygrenier.fr/carte.html">
+  <meta property="og:locale"      content="fr_FR">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="La Carte | Château Puygrenier">
+  <meta name="twitter:description" content="Sélection de boissons à savourer sur la terrasse, au bord de la piscine ou au SPA. Prix TTC.">
+  <meta name="twitter:image"       content="https://www.chateaupuygrenier.fr/assets/images/Photo%20principale.jpg">
+  <link rel="canonical" href="https://www.chateaupuygrenier.fr/carte.html">
+  <title>La Carte | Château Puygrenier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    /* ═══════════════════════════════════════════════════════
+       CARTE.HTML — Styles spécifiques à la page des boissons
+    ═══════════════════════════════════════════════════════ */
+
+    /* Hero texte — sobre, centré, sans photo */
+    .carte-hero {
+      padding: 60px 0 48px;
+      text-align: center;
+      background: linear-gradient(168deg, #f9f6f0 0%, var(--color-bg) 55%, #f0eade 100%);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .carte-hero-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.68rem;
+      color: var(--color-terracotta);
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .carte-hero h1 {
+      font-style: italic;
+      font-size: clamp(3.4rem, 10vw, 6rem);
+      color: var(--color-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .carte-divider {
+      border: none;
+      width: 52px;
+      height: 2px;
+      background: var(--color-accent);
+      margin: 0 auto 1.5rem;
+    }
+
+    .carte-hero-tagline {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      color: var(--color-muted);
+      max-width: 50ch;
+      margin: 0 auto 1.25rem;
+      line-height: 1.65;
+    }
+
+    .carte-hero-intro {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      max-width: 46ch;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* Jump nav — pleine largeur pour que le scroll horizontal fonctionne */
+    .jump-nav-inner {
+      padding-left: max(1rem, calc((100vw - var(--container-max)) / 2));
+    }
+
+    /* Lien actif dans la nav interne */
+    .jump-nav-inner a.is-active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-accent);
+    }
+
+    /* Sections */
+    .carte-section {
+      padding-block: 40px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    #spiritueux {
+      border-bottom: none;
+    }
+
+    .carte-section-header {
+      margin-bottom: 28px;
+    }
+
+    /* Tagline de la section vins — hérite de main h2+p, on réduit la taille */
+    .carte-section-header h2 + p {
+      font-size: 0.98rem;
+      margin-top: 4px;
+    }
+
+    /* Sous-catégorie */
+    .carte-subtitle {
+      margin: 28px 0 8px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--color-terracotta);
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .carte-subtitle:first-child {
+      margin-top: 0;
+    }
+
+    /* Liste d'items */
+    .carte-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .carte-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.25rem;
+      padding: 10px 0;
+      border-bottom: 1px dotted rgba(217, 207, 190, 0.6);
+    }
+
+    .carte-item:last-child {
+      border-bottom: none;
+    }
+
+    .carte-item-name {
+      flex: 1;
+      font-size: 0.96rem;
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    /* Précision secondaire dans le nom (ex: ACE, % alcool) */
+    .carte-item-sub {
+      display: block;
+      font-size: 0.78rem;
+      font-style: italic;
+      color: var(--color-muted);
+      margin-top: 2px;
+      font-weight: 400;
+    }
+
+    .carte-item-price {
+      flex-shrink: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      white-space: nowrap;
+    }
+
+    .carte-item-note {
+      margin: 7px 0 0;
+      font-size: 0.82rem;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Bloc final */
+    .carte-closing {
+      padding: 56px 0 64px;
+      text-align: center;
+      background: linear-gradient(168deg, #f0eade 0%, var(--color-bg) 100%);
+    }
+
+    .carte-closing h2 {
+      font-style: italic;
+    }
+
+    .carte-closing h2::after {
+      margin: 0.55rem auto 0;
+    }
+
+    .carte-closing p {
+      color: var(--color-muted);
+      max-width: 46ch;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    .carte-disclaimer {
+      display: block;
+      font-size: 0.78rem;
+      color: #b8b0a5;
+      font-style: italic;
+      margin-top: 1.75rem;
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      .carte-hero {
+        padding: 88px 0 72px;
+      }
+
+      .carte-section {
+        padding-block: 60px;
+      }
+
+      .carte-closing {
+        padding: 72px 0 80px;
+      }
+    }
+  </style>
+  <script src="translations.js" defer></script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTZZLQVM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil Château Puygrenier">
+        <img src="assets/images/logo_puygrenier_solo_blanc.png"
+             alt="Château Puygrenier"
+             class="brand-logo"
+             width="120" height="48">
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu" data-i18n-label="nav.toggle.open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="hebergements.html" data-i18n="nav.lodging">Hébergements</a>
+        <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
+        <a href="destination.html" data-i18n="nav.destination">Destination</a>
+        <a href="evenements.html" data-i18n="nav.events">Événements</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.book">Réserver</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-face">
+            <span id="lang-current-text">FR</span>
+            <span class="lang-arrow">▾</span>
+          </div>
+          <div class="lang-dropdown">
+            <button class="lang-option" id="lang-option-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════ -->
+    <section class="carte-hero" aria-label="Introduction de la carte">
+      <div class="container">
+        <p class="carte-hero-eyebrow">Château Puygrenier</p>
+        <h1>La Carte</h1>
+        <hr class="carte-divider" aria-hidden="true">
+        <p class="carte-hero-tagline">Une sélection de boissons à savourer sur la terrasse, au bord de la piscine ou au SPA.</p>
+        <p class="carte-hero-intro">Tous nos prix sont indiqués TTC. N'hésitez pas à nous solliciter pour être conseillés selon vos envies du moment.</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         NAVIGATION INTERNE
+         Pleine largeur (sans .container) pour que
+         overflow-x: auto fonctionne correctement
+    ══════════════════════════════════════════════ -->
+    <nav class="jump-nav" aria-label="Navigation par catégorie">
+      <div class="jump-nav-inner">
+        <a href="#eaux-softs">Eaux &amp; Softs</a>
+        <a href="#jus-premium">Jus premium</a>
+        <a href="#bieres">Bières</a>
+        <a href="#vins">Vins</a>
+        <a href="#champagne">Champagne</a>
+        <a href="#cocktails">Cocktails &amp; Apéritifs</a>
+        <a href="#spiritueux">Spiritueux &amp; Digestifs</a>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 1 — EAUX & SOFTS
+    ══════════════════════════════════════════════ -->
+    <section id="eaux-softs" class="carte-section" aria-labelledby="titre-eaux">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-eaux">Eaux &amp; Softs</h2>
+        </div>
+
+        <p class="carte-subtitle">Eaux</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Abatilles Plate 75cl</span>
+            <span class="carte-item-price">5,50 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Abatilles Gazeuse 75cl</span>
+            <span class="carte-item-price">5,50 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Softs</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Coca-Cola, Coca-Cola Zéro, Orangina, Schweppes Tonic, Perrier, Ice Tea Pêche, Limonade</span>
+            <span class="carte-item-price">3,50 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 2 — JUS PREMIUM
+    ══════════════════════════════════════════════ -->
+    <section id="jus-premium" class="carte-section section-surface" aria-labelledby="titre-jus">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-jus">Jus premium Rauch</h2>
+        </div>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">
+              Pomme, Orange, Fraise, Ananas, ACE
+              <em class="carte-item-sub">(orange, carotte &amp; citron)</em>
+            </span>
+            <span class="carte-item-price">4 €</span>
+          </li>
+        </ul>
+        <p class="carte-item-note">Servis en bouteille individuelle 20cl.</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 3 — BIÈRES
+    ══════════════════════════════════════════════ -->
+    <section id="bieres" class="carte-section" aria-labelledby="titre-bieres">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-bieres">Bières</h2>
+        </div>
+
+        <p class="carte-subtitle">Pression Pelican Blonde, 7.5%</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Demi 25cl</span>
+            <span class="carte-item-price">4,50 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Pinte 50cl</span>
+            <span class="carte-item-price">8 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Bouteilles</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">
+              Brassée 24 Blonde 33cl 5%
+              <em class="carte-item-sub">(bière locale)</em>
+            </span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Hoegaarden Blanche 33cl 4.9%</span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Leffe Blonde 25cl 6,6%</span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">
+              Brassée 24 IPA 33cl 6%
+              <em class="carte-item-sub">(bière locale)</em>
+            </span>
+            <span class="carte-item-price">5,50 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Desperados 25cl 5.9%</span>
+            <span class="carte-item-price">5,50 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 4 — VINS
+    ══════════════════════════════════════════════ -->
+    <section id="vins" class="carte-section section-surface" aria-labelledby="titre-vins">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-vins">Vins</h2>
+          <p>Nos vins sont conservés dans l'ancienne cave du château.</p>
+        </div>
+
+        <p class="carte-subtitle">Au verre 12cl</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Le Rolly Blanc</span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Rosé d'Enfer</span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Château Pipeau Saint-Émilion</span>
+            <span class="carte-item-price">9 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Blancs</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Le Rolly Blanc 50cl</span>
+            <span class="carte-item-price">14 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Rosés</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Rosé d'Enfer</span>
+            <span class="carte-item-price">18 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Jolie Fille Rosé</span>
+            <span class="carte-item-price">18 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Rouges</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Château Le Rolly Rouge 37,5cl</span>
+            <span class="carte-item-price">11 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Raisin de la Colère</span>
+            <span class="carte-item-price">22 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Pécharmant</span>
+            <span class="carte-item-price">24 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Clos l'Apogée</span>
+            <span class="carte-item-price">35 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Château Pipeau Saint-Émilion Grand Cru</span>
+            <span class="carte-item-price">45 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Moelleux</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Monbazillac Château La Rayre</span>
+            <span class="carte-item-price">32 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 5 — CHAMPAGNE
+    ══════════════════════════════════════════════ -->
+    <section id="champagne" class="carte-section" aria-labelledby="titre-champagne">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-champagne">Champagne</h2>
+        </div>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Paul Romain Blanc de Blancs</span>
+            <span class="carte-item-price">65 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 6 — COCKTAILS & APÉRITIFS
+    ══════════════════════════════════════════════ -->
+    <section id="cocktails" class="carte-section section-surface" aria-labelledby="titre-cocktails">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-cocktails">Cocktails &amp; Apéritifs</h2>
+        </div>
+
+        <p class="carte-subtitle">Cocktails</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Aperol Spritz</span>
+            <span class="carte-item-price">9 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Gin Tonic</span>
+            <span class="carte-item-price">9 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Tequila Sunrise</span>
+            <span class="carte-item-price">9 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Moscow Mule</span>
+            <span class="carte-item-price">8 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Whisky Ginger</span>
+            <span class="carte-item-price">8 €</span>
+          </li>
+        </ul>
+
+        <p class="carte-subtitle">Apéritifs</p>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Ricard</span>
+            <span class="carte-item-price">4 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Martini 6cl</span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Kir</span>
+            <span class="carte-item-price">5 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 7 — SPIRITUEUX & DIGESTIFS
+    ══════════════════════════════════════════════ -->
+    <section id="spiritueux" class="carte-section" aria-labelledby="titre-spiritueux">
+      <div class="container">
+        <div class="carte-section-header">
+          <h2 id="titre-spiritueux">Spiritueux &amp; Digestifs</h2>
+        </div>
+        <ul class="carte-items">
+          <li class="carte-item">
+            <span class="carte-item-name">Get 27 4cl</span>
+            <span class="carte-item-price">7 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Jack Daniel's 4cl</span>
+            <span class="carte-item-price">8 €</span>
+          </li>
+          <li class="carte-item">
+            <span class="carte-item-name">Chivas Regal 15 ans 4cl</span>
+            <span class="carte-item-price">12 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         BLOC FINAL
+    ══════════════════════════════════════════════ -->
+    <section class="carte-closing" aria-label="Message de fin">
+      <div class="container">
+        <h2>Une envie particulière&nbsp;?</h2>
+        <p>N'hésitez pas à nous solliciter, nous serons ravis de vous conseiller selon le moment, la météo ou votre repas.</p>
+        <span class="carte-disclaimer">Carte susceptible d'évoluer selon les arrivages et disponibilités.</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <!-- Navigation interne : highlight de la section active + centrage auto du lien -->
+  <script>
+    (function () {
+      var links = Array.from(document.querySelectorAll('.jump-nav-inner a[href^="#"]'));
+      if (!links.length) return;
+
+      var sections = links.map(function (l) {
+        return document.getElementById(l.getAttribute('href').slice(1));
+      }).filter(Boolean);
+
+      var navInner = document.querySelector('.jump-nav-inner');
+
+      function activate(id) {
+        links.forEach(function (link) {
+          var active = link.getAttribute('href') === '#' + id;
+          link.classList.toggle('is-active', active);
+          if (active && navInner) {
+            var offset = link.offsetLeft - navInner.clientWidth / 2 + link.offsetWidth / 2;
+            navInner.scrollTo({ left: offset, behavior: 'smooth' });
+          }
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) activate(entry.target.id);
+          });
+        }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+
+        sections.forEach(function (s) { observer.observe(s); });
+      }
+    }());
+  </script>
+</body>
+</html>
