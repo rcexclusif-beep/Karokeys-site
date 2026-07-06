@@ -1,0 +1,9 @@
+{
+  "name": "puygrenier-stripe-checkout",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fonction serverless Vercel : creation de sessions de paiement Stripe pour la carte du Chateau Puygrenier",
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}

@@ -897,6 +897,10 @@
     (function () {
       'use strict';
 
+      // À remplacer par l'URL Vercel une fois l'API de paiement déployée
+      // (voir stripe-checkout/README.md) — ex : "https://puygrenier-carte-api.vercel.app/api/create-checkout-session"
+      var CHECKOUT_API_URL = 'https://REPLACE-ME.vercel.app/api/create-checkout-session';
+
       var cart = Object.create(null);
 
       var bar, barCount, barTotal, panel, panelItems, panelTotal, overlay;
@@ -1031,15 +1035,36 @@
         panel.classList.contains('is-open') ? closePanel() : openPanel();
       }
 
-      // ── Checkout (Stripe à brancher) ───────────
+      // ── Checkout (Stripe) ───────────────────────
       function checkout() {
         var items = Object.entries(cart).map(function (e) {
-          return { id: e[0], name: e[1].name, price: e[1].price, qty: e[1].qty };
+          return { id: e[0], qty: e[1].qty };
         });
-        // TODO: fetch('/api/checkout', { method:'POST', body: JSON.stringify({ items }) })
-        //   .then(r => r.json()).then(d => window.location = d.url);
-        alert('Paiement bientôt disponible — Stripe en cours de configuration.\n\nCommande : ' +
-          items.map(function (i) { return i.qty + '× ' + i.name; }).join(', '));
+        if (!items.length) return;
+
+        var btn = document.getElementById('panel-checkout');
+        var originalLabel = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Redirection...';
+
+        fetch(CHECKOUT_API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: items }),
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            if (data && data.url) {
+              window.location = data.url;
+            } else {
+              throw new Error(data && data.error);
+            }
+          })
+          .catch(function () {
+            alert('Le paiement en ligne est momentanément indisponible. Merci de nous contacter directement.');
+            btn.disabled = false;
+            btn.textContent = originalLabel;
+          });
       }
 
       // ── Helpers ────────────────────────────────
