@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree *)",
+      "Bash(curl -s -i -X POST https://karokeys-site-4m24bd38b-karokeys.vercel.app/api/create-checkout-session -H 'Content-Type: application/json' -H 'Origin: https://www.chateaupuygrenier.fr' -d '{\"items\":[{\"id\":\"coca-cola\",\"qty\":2}]}')"
+    ]
+  }
+}

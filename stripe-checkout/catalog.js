@@ -3,7 +3,7 @@
 // Le client n'envoie que l'id + la quantite ; le prix vient toujours d'ici.
 module.exports = {
   'spa-1h30': { name: 'Accès Spa 1h30', price: 35 },
-  'planche-apero': { name: 'Planche apéro du jour', price: 13 },
+  'planche-apero': { name: 'Planche apéro du jour', price: 15 },
 
   'abatilles-plate': { name: 'Abatilles Plate 75cl', price: 5.50 },
   'abatilles-gazeuse': { name: 'Abatilles Gazeuse 75cl', price: 5.50 },
@@ -21,26 +21,21 @@ module.exports = {
   'jus-ananas': { name: 'Jus Ananas Rauch 20cl', price: 4 },
   'jus-ace': { name: 'Jus ACE Rauch 20cl', price: 4 },
 
-  'biere-demi': { name: 'Demi Pélican Blonde 25cl', price: 4.50 },
-  'biere-pinte': { name: 'Pinte Pélican Blonde 50cl', price: 8 },
   'brassee24-blonde': { name: 'Brassée 24 Blonde 33cl', price: 5 },
   'hoegaarden': { name: 'Hoegaarden Blanche 33cl', price: 5 },
-  'leffe': { name: 'Leffe Blonde 25cl', price: 5 },
   'brassee24-ipa': { name: 'Brassée 24 IPA 33cl', price: 5.50 },
-  'desperados': { name: 'Desperados 25cl', price: 5.50 },
 
-  'rolly-blanc-verre': { name: 'Le Rolly Blanc — verre 12cl', price: 5 },
-  'rose-enfer-verre': { name: "Rosé d'Enfer — verre 12cl", price: 5 },
-  'pipeau-verre': { name: 'Château Pipeau Saint-Émilion — verre 12cl', price: 9 },
-  'rolly-blanc-50cl': { name: 'Le Rolly Blanc 50cl', price: 14 },
-  'rose-enfer-btl': { name: "Rosé d'Enfer 75cl", price: 18 },
-  'jolie-fille': { name: 'Jolie Fille Rosé 75cl', price: 18 },
-  'rolly-rouge': { name: 'Château Le Rolly Rouge 37,5cl', price: 11 },
-  'raisin-colere': { name: 'Raisin de la Colère 75cl', price: 22 },
-  'pecharmant': { name: 'Pécharmant 75cl', price: 24 },
-  'clos-apogee': { name: "Clos l'Apogée 75cl", price: 35 },
-  'pipeau-gc': { name: 'Château Pipeau Saint-Émilion Grand Cru 75cl', price: 45 },
-  'monbazillac': { name: 'Monbazillac Château La Rayre 75cl', price: 32 },
+  'rolly-blanc-verre': { name: 'Essentiel 2025 — Château le Rauly — verre 12cl', price: 6 },
+  'raisin-colere-verre': { name: 'Les Raisins de la Colère 2022 — Château Aurore — verre 12cl', price: 7 },
+  'rolly-blanc-50cl': { name: 'Essentiel 2025 — Château le Rauly 50cl', price: 14 },
+  'rose-enfer-btl': { name: "Rosé d'Enfer 2025 — Producteurs Plaimont 75cl", price: 18 },
+  'jolie-fille': { name: 'Jolies Filles 2025 — Château Yssole 75cl', price: 18 },
+  'rolly-rouge': { name: 'Tradition 2018 — Château le Rauly 37,5cl', price: 12 },
+  'raisin-colere': { name: 'Les Raisins de la Colère 2022 — Château Aurore 75cl', price: 22 },
+  'pecharmant': { name: 'La Cuisse de Pécharmille 2023 75cl', price: 24 },
+  'clos-apogee': { name: "Clos l'Apogée 2023 75cl", price: 35 },
+  'pipeau-gc': { name: 'Château Pipeau 2020 75cl', price: 45 },
+  'monbazillac': { name: 'Château La Rayre 75cl', price: 32 },
 
   'champagne-paul-romain': { name: 'Champagne Paul Romain Blanc de Blancs 75cl', price: 65 },
 

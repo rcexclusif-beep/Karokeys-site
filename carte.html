@@ -98,6 +98,7 @@
     .carte-items { list-style: none; padding: 0; margin: 0; }
     .carte-item {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
@@ -105,6 +106,15 @@
       border-bottom: 1px dotted rgba(217, 207, 190, 0.6);
     }
     .carte-item:last-child { border-bottom: none; }
+    .carte-item-desc {
+      flex: 0 0 100%;
+      order: 3;
+      margin: 2px 0 0;
+      font-size: 0.82rem;
+      font-style: italic;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
     .carte-item-name {
       flex: 1;
       font-size: 0.96rem;
@@ -425,14 +435,14 @@
 </head>
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTZZLQVM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <a class="skip-link" href="#main-content" data-i18n="nav.skip">Aller au contenu</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Retour à l'accueil Château Puygrenier">
         <img src="assets/images/logo_puygrenier_solo_blanc.png" alt="Château Puygrenier" class="brand-logo" width="120" height="48">
       </a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu" data-i18n-label="nav.toggle.open">
         <span></span><span></span><span></span>
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
@@ -455,23 +465,23 @@
     <section class="carte-hero" aria-label="Introduction de la carte">
       <div class="container">
         <p class="carte-hero-eyebrow">Château Puygrenier</p>
-        <h1>La Carte</h1>
+        <h1 data-i18n="carte.hero.title">La Carte</h1>
         <hr class="carte-divider" aria-hidden="true">
-        <p class="carte-hero-tagline">Une sélection de boissons à savourer sur la terrasse, au bord de la piscine ou au SPA.</p>
-        <p class="carte-hero-intro">Tous nos prix sont indiqués TTC. Ajoutez vos articles au panier et réglez directement depuis cette page.</p>
+        <p class="carte-hero-tagline" data-i18n="carte.hero.tagline">Une sélection de boissons à savourer sur la terrasse, au bord de la piscine ou au SPA.</p>
+        <p class="carte-hero-intro" data-i18n="carte.hero.intro">Tous nos prix sont indiqués TTC. Ajoutez vos articles au panier et réglez directement depuis cette page.</p>
       </div>
     </section>
 
     <nav class="jump-nav" aria-label="Navigation par catégorie">
       <div class="jump-nav-inner">
-        <a href="#spa-apero">Spa &amp; Apéro</a>
-        <a href="#eaux-softs">Eaux &amp; Softs</a>
-        <a href="#jus-premium">Jus premium</a>
-        <a href="#bieres">Bières</a>
-        <a href="#vins">Vins</a>
-        <a href="#champagne">Champagne</a>
-        <a href="#cocktails">Cocktails</a>
-        <a href="#spiritueux">Spiritueux</a>
+        <a href="#spa-apero" data-i18n="carte.nav.spa">Spa &amp; Apéro</a>
+        <a href="#eaux-softs" data-i18n="carte.nav.eaux">Eaux &amp; Softs</a>
+        <a href="#jus-premium" data-i18n="carte.nav.jus">Jus premium</a>
+        <a href="#bieres" data-i18n="carte.nav.bieres">Bières</a>
+        <a href="#vins" data-i18n="carte.nav.vins">Vins</a>
+        <a href="#champagne" data-i18n="carte.nav.champagne">Champagne</a>
+        <a href="#cocktails" data-i18n="carte.nav.cocktails">Cocktails</a>
+        <a href="#spiritueux" data-i18n="carte.nav.spiritueux">Spiritueux</a>
       </div>
     </nav>
 
@@ -479,8 +489,8 @@
     <section id="spa-apero" class="carte-section" aria-labelledby="titre-spa">
       <div class="container">
         <div class="carte-section-header">
-          <h2 id="titre-spa">Spa &amp; Apéro</h2>
-          <p>À commander depuis la terrasse, le bord de piscine ou directement au spa.</p>
+          <h2 id="titre-spa" data-i18n="carte.spa.h2">Spa &amp; Apéro</h2>
+          <p data-i18n="carte.spa.intro">À commander depuis la terrasse, le bord de piscine ou directement au spa.</p>
         </div>
         <ul class="carte-items">
           <li class="carte-item spa-highlight"
@@ -488,34 +498,34 @@
               data-name="Accès Spa 1h30"
               data-price="35">
             <span class="carte-item-name">
-              Accès Spa 1h30
-              <em class="carte-item-sub">Jacuzzi, sauna — accès privatif</em>
+              <span data-i18n="carte.item.spa-1h30.name">Accès Spa 1h30</span>
+              <em class="carte-item-sub" data-i18n="carte.item.spa-1h30.sub">Jacuzzi, sauna — accès privatif</em>
             </span>
             <div class="carte-item-right">
               <span class="carte-item-price">35 €</span>
-              <button class="add-btn" aria-label="Ajouter Accès Spa 1h30">+</button>
+              <button class="add-btn" aria-label="Ajouter Accès Spa 1h30" data-i18n-label="carte.item.spa-1h30.aria">+</button>
               <div class="qty-ctrl" hidden>
-                <button class="qty-btn qty-minus" aria-label="Retirer un">−</button>
+                <button class="qty-btn qty-minus" aria-label="Retirer un" data-i18n-label="carte.aria.removeOne">−</button>
                 <span class="qty-num">0</span>
-                <button class="qty-btn qty-plus" aria-label="Ajouter un">+</button>
+                <button class="qty-btn qty-plus" aria-label="Ajouter un" data-i18n-label="carte.aria.addOne">+</button>
               </div>
             </div>
           </li>
           <li class="carte-item spa-highlight"
               data-cart-id="planche-apero"
               data-name="Planche apéro du jour"
-              data-price="13">
+              data-price="15">
             <span class="carte-item-name">
-              Planche apéro du jour
-              <em class="carte-item-sub">13 € / personne — selon arrivage</em>
+              <span data-i18n="carte.item.planche-apero.name">Planche apéro du jour</span>
+              <em class="carte-item-sub" data-i18n="carte.item.planche-apero.sub">15 € / personne — selon arrivage</em>
             </span>
             <div class="carte-item-right">
-              <span class="carte-item-price">13 €</span>
-              <button class="add-btn" aria-label="Ajouter Planche apéro">+</button>
+              <span class="carte-item-price">15 €</span>
+              <button class="add-btn" aria-label="Ajouter Planche apéro" data-i18n-label="carte.item.planche-apero.aria">+</button>
               <div class="qty-ctrl" hidden>
-                <button class="qty-btn qty-minus" aria-label="Retirer un">−</button>
+                <button class="qty-btn qty-minus" aria-label="Retirer un" data-i18n-label="carte.aria.removeOne">−</button>
                 <span class="qty-num">0</span>
-                <button class="qty-btn qty-plus" aria-label="Ajouter un">+</button>
+                <button class="qty-btn qty-plus" aria-label="Ajouter un" data-i18n-label="carte.aria.addOne">+</button>
               </div>
             </div>
           </li>
@@ -526,57 +536,57 @@
     <!-- ══ EAUX & SOFTS ══ -->
     <section id="eaux-softs" class="carte-section section-surface" aria-labelledby="titre-eaux">
       <div class="container">
-        <div class="carte-section-header"><h2 id="titre-eaux">Eaux &amp; Softs</h2></div>
+        <div class="carte-section-header"><h2 id="titre-eaux" data-i18n="carte.eaux.h2">Eaux &amp; Softs</h2></div>
 
-        <p class="carte-subtitle">Eaux</p>
+        <p class="carte-subtitle" data-i18n="carte.eaux.sub1">Eaux</p>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="abatilles-plate" data-name="Abatilles Plate 75cl" data-price="5.50">
             <span class="carte-item-name">Abatilles Plate 75cl</span>
             <div class="carte-item-right">
               <span class="carte-item-price">5,50 €</span>
-              <button class="add-btn" aria-label="Ajouter">+</button>
-              <div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div>
+              <button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button>
+              <div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div>
             </div>
           </li>
           <li class="carte-item" data-cart-id="abatilles-gazeuse" data-name="Abatilles Gazeuse 75cl" data-price="5.50">
             <span class="carte-item-name">Abatilles Gazeuse 75cl</span>
             <div class="carte-item-right">
               <span class="carte-item-price">5,50 €</span>
-              <button class="add-btn" aria-label="Ajouter">+</button>
-              <div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div>
+              <button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button>
+              <div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div>
             </div>
           </li>
         </ul>
 
-        <p class="carte-subtitle">Softs</p>
+        <p class="carte-subtitle" data-i18n="carte.eaux.sub2">Softs</p>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="coca-cola" data-name="Coca-Cola 33cl" data-price="3.50">
             <span class="carte-item-name">Coca-Cola 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="coca-zero" data-name="Coca-Cola Zéro 33cl" data-price="3.50">
             <span class="carte-item-name">Coca-Cola Zéro 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="orangina" data-name="Orangina 33cl" data-price="3.50">
             <span class="carte-item-name">Orangina 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="schweppes" data-name="Schweppes Tonic 33cl" data-price="3.50">
             <span class="carte-item-name">Schweppes Tonic 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="perrier" data-name="Perrier 33cl" data-price="3.50">
             <span class="carte-item-name">Perrier 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="ice-tea" data-name="Ice Tea Pêche 33cl" data-price="3.50">
-            <span class="carte-item-name">Ice Tea Pêche 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name" data-i18n="carte.item.ice-tea.name">Ice Tea Pêche 33cl</span>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="limonade" data-name="Limonade 33cl" data-price="3.50">
-            <span class="carte-item-name">Limonade 33cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name" data-i18n="carte.item.limonade.name">Limonade 33cl</span>
+            <div class="carte-item-right"><span class="carte-item-price">3,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
         </ul>
       </div>
@@ -585,27 +595,27 @@
     <!-- ══ JUS PREMIUM ══ -->
     <section id="jus-premium" class="carte-section" aria-labelledby="titre-jus">
       <div class="container">
-        <div class="carte-section-header"><h2 id="titre-jus">Jus premium Rauch</h2></div>
+        <div class="carte-section-header"><h2 id="titre-jus" data-i18n="carte.jus.h2">Jus premium Rauch</h2></div>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="jus-pomme" data-name="Jus Pomme Rauch 20cl" data-price="4">
-            <span class="carte-item-name">Pomme <em class="carte-item-sub">20cl</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name"><span data-i18n="carte.item.jus-pomme.name">Pomme</span> <em class="carte-item-sub">20cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="jus-orange" data-name="Jus Orange Rauch 20cl" data-price="4">
             <span class="carte-item-name">Orange <em class="carte-item-sub">20cl</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="jus-fraise" data-name="Jus Fraise Rauch 20cl" data-price="4">
-            <span class="carte-item-name">Fraise <em class="carte-item-sub">20cl</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name"><span data-i18n="carte.item.jus-fraise.name">Fraise</span> <em class="carte-item-sub">20cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="jus-ananas" data-name="Jus Ananas Rauch 20cl" data-price="4">
-            <span class="carte-item-name">Ananas <em class="carte-item-sub">20cl</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name"><span data-i18n="carte.item.jus-ananas.name">Ananas</span> <em class="carte-item-sub">20cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="jus-ace" data-name="Jus ACE Rauch 20cl" data-price="4">
-            <span class="carte-item-name">ACE <em class="carte-item-sub">orange, carotte &amp; citron — 20cl</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name">ACE <em class="carte-item-sub" data-i18n="carte.item.jus-ace.sub">orange, carotte &amp; citron — 20cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
         </ul>
       </div>
@@ -614,41 +624,21 @@
     <!-- ══ BIÈRES ══ -->
     <section id="bieres" class="carte-section section-surface" aria-labelledby="titre-bieres">
       <div class="container">
-        <div class="carte-section-header"><h2 id="titre-bieres">Bières</h2></div>
+        <div class="carte-section-header"><h2 id="titre-bieres" data-i18n="carte.bieres.h2">Bières</h2></div>
 
-        <p class="carte-subtitle">Pression — Pélican Blonde 7,5%</p>
-        <ul class="carte-items">
-          <li class="carte-item" data-cart-id="biere-demi" data-name="Demi Pélican Blonde 25cl" data-price="4.50">
-            <span class="carte-item-name">Demi 25cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">4,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
-          </li>
-          <li class="carte-item" data-cart-id="biere-pinte" data-name="Pinte Pélican Blonde 50cl" data-price="8">
-            <span class="carte-item-name">Pinte 50cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
-          </li>
-        </ul>
-
-        <p class="carte-subtitle">Bouteilles</p>
+        <p class="carte-subtitle" data-i18n="carte.bieres.sub2">Bouteilles</p>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="brassee24-blonde" data-name="Brassée 24 Blonde 33cl" data-price="5">
-            <span class="carte-item-name">Brassée 24 Blonde 33cl <em class="carte-item-sub">bière locale — 5%</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name">Brassée 24 Blonde 33cl <em class="carte-item-sub" data-i18n="carte.item.brassee24-blonde.sub">bière locale — 5%</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="hoegaarden" data-name="Hoegaarden Blanche 33cl" data-price="5">
             <span class="carte-item-name">Hoegaarden Blanche 33cl <em class="carte-item-sub">4,9%</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
-          </li>
-          <li class="carte-item" data-cart-id="leffe" data-name="Leffe Blonde 25cl" data-price="5">
-            <span class="carte-item-name">Leffe Blonde 25cl <em class="carte-item-sub">6,6%</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="brassee24-ipa" data-name="Brassée 24 IPA 33cl" data-price="5.50">
-            <span class="carte-item-name">Brassée 24 IPA 33cl <em class="carte-item-sub">bière locale — 6%</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">5,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
-          </li>
-          <li class="carte-item" data-cart-id="desperados" data-name="Desperados 25cl" data-price="5.50">
-            <span class="carte-item-name">Desperados 25cl <em class="carte-item-sub">5,9%</em></span>
-            <div class="carte-item-right"><span class="carte-item-price">5,50 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name">Brassée 24 IPA 33cl <em class="carte-item-sub" data-i18n="carte.item.brassee24-ipa.sub">bière locale — 6%</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">5,50 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
         </ul>
       </div>
@@ -658,75 +648,82 @@
     <section id="vins" class="carte-section" aria-labelledby="titre-vins">
       <div class="container">
         <div class="carte-section-header">
-          <h2 id="titre-vins">Vins</h2>
-          <p>Nos vins sont conservés dans l'ancienne cave du château.</p>
+          <h2 id="titre-vins" data-i18n="carte.vins.h2">Vins</h2>
+          <p data-i18n="carte.vins.intro">Nos vins sont conservés dans l'ancienne cave du château.</p>
         </div>
 
-        <p class="carte-subtitle">Au verre 12cl</p>
+        <p class="carte-subtitle" data-i18n="carte.vins.sub1">Au verre 12cl</p>
         <ul class="carte-items">
-          <li class="carte-item" data-cart-id="rolly-blanc-verre" data-name="Le Rolly Blanc — verre 12cl" data-price="5">
-            <span class="carte-item-name">Le Rolly Blanc</span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="rolly-blanc-verre" data-name="Essentiel 2025 — Château le Rauly — verre 12cl" data-price="6">
+            <span class="carte-item-name">Essentiel 2025 — Château le Rauly <em class="carte-item-sub">AOC Bergerac Sec · Blanc</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">6 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Vif et équilibré, aux notes de fruits exotiques (ananas, mangue, pamplemousse), avec une finale persistante sur les zestes d'agrumes.</p>
           </li>
-          <li class="carte-item" data-cart-id="rose-enfer-verre" data-name="Rosé d'Enfer — verre 12cl" data-price="5">
-            <span class="carte-item-name">Rosé d'Enfer</span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
-          </li>
-          <li class="carte-item" data-cart-id="pipeau-verre" data-name="Château Pipeau Saint-Émilion — verre 12cl" data-price="9">
-            <span class="carte-item-name">Château Pipeau Saint-Émilion</span>
-            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="raisin-colere-verre" data-name="Les Raisins de la Colère 2022 — Château Aurore — verre 12cl" data-price="7">
+            <span class="carte-item-name">Les Raisins de la Colère 2022 <em class="carte-item-sub">AOC Bordeaux Bio · Rouge</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">7 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Une cuvée libre qui bouscule les codes bordelais. Fruitée et gourmande.</p>
           </li>
         </ul>
 
-        <p class="carte-subtitle">Blancs</p>
+        <p class="carte-subtitle" data-i18n="carte.vins.sub2">Blancs</p>
         <ul class="carte-items">
-          <li class="carte-item" data-cart-id="rolly-blanc-50cl" data-name="Le Rolly Blanc 50cl" data-price="14">
-            <span class="carte-item-name">Le Rolly Blanc 50cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">14 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="rolly-blanc-50cl" data-name="Essentiel 2025 — Château le Rauly 50cl" data-price="14">
+            <span class="carte-item-name">Essentiel 2025 — Château le Rauly <em class="carte-item-sub">AOC Bergerac Sec · Blanc · 50 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">14 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Vif et équilibré, aux notes de fruits exotiques (ananas, mangue, pamplemousse), avec une finale persistante sur les zestes d'agrumes.</p>
           </li>
         </ul>
 
-        <p class="carte-subtitle">Rosés</p>
+        <p class="carte-subtitle" data-i18n="carte.vins.sub3">Rosés</p>
         <ul class="carte-items">
-          <li class="carte-item" data-cart-id="rose-enfer-btl" data-name="Rosé d'Enfer 75cl" data-price="18">
-            <span class="carte-item-name">Rosé d'Enfer 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">18 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="rose-enfer-btl" data-name="Rosé d'Enfer 2025 — Producteurs Plaimont 75cl" data-price="18">
+            <span class="carte-item-name">Rosé d'Enfer 2025 — Producteurs Plaimont <em class="carte-item-sub">AOP Saint-Mont · Rosé sec · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">18 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Robe pâle, fruits rouges frais (groseille, cassis, framboise). Rond et désaltérant.</p>
           </li>
-          <li class="carte-item" data-cart-id="jolie-fille" data-name="Jolie Fille Rosé 75cl" data-price="18">
-            <span class="carte-item-name">Jolie Fille Rosé 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">18 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="jolie-fille" data-name="Jolies Filles 2025 — Château Yssole 75cl" data-price="18">
+            <span class="carte-item-name">Jolies Filles 2025 — Château Yssole <em class="carte-item-sub">IGP Méditerranée · Rosé · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">18 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Un rosé de Provence pâle, frais et léger, aux notes de fruits rouges.</p>
           </li>
         </ul>
 
-        <p class="carte-subtitle">Rouges</p>
+        <p class="carte-subtitle" data-i18n="carte.vins.sub4">Rouges</p>
         <ul class="carte-items">
-          <li class="carte-item" data-cart-id="rolly-rouge" data-name="Château Le Rolly Rouge 37,5cl" data-price="11">
-            <span class="carte-item-name">Château Le Rolly Rouge 37,5cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">11 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="rolly-rouge" data-name="Tradition 2018 — Château le Rauly 37,5cl" data-price="12">
+            <span class="carte-item-name">Tradition 2018 — Château le Rauly <em class="carte-item-sub">AOC Bergerac · Rouge · 37,5 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">12 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Un rouge du Bergeracois fondu et souple, facile à boire.</p>
           </li>
-          <li class="carte-item" data-cart-id="raisin-colere" data-name="Raisin de la Colère 75cl" data-price="22">
-            <span class="carte-item-name">Raisin de la Colère 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">22 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="raisin-colere" data-name="Les Raisins de la Colère 2022 — Château Aurore 75cl" data-price="22">
+            <span class="carte-item-name">Les Raisins de la Colère 2022 — Château Aurore <em class="carte-item-sub">AOC Bordeaux · Rouge · Bio · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">22 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Une cuvée libre qui bouscule les codes bordelais. Fruitée et gourmande.</p>
           </li>
-          <li class="carte-item" data-cart-id="pecharmant" data-name="Pécharmant 75cl" data-price="24">
-            <span class="carte-item-name">Pécharmant 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">24 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="clos-apogee" data-name="Clos l'Apogée 2023 75cl" data-price="35">
+            <span class="carte-item-name">Clos l'Apogée 2023 <em class="carte-item-sub">AOC Lalande-de-Pomerol · Rouge · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">35 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Un Merlot de la rive droite bordelaise, rond, aux notes de fruits noirs.</p>
           </li>
-          <li class="carte-item" data-cart-id="clos-apogee" data-name="Clos l'Apogée 75cl" data-price="35">
-            <span class="carte-item-name">Clos l'Apogée 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">35 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="pecharmant" data-name="La Cuisse de Pécharmille 2023 75cl" data-price="24">
+            <span class="carte-item-name">La Cuisse de Pécharmille 2023 <em class="carte-item-sub">AOC Pécharmant · Rouge · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">24 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Robe profonde, fruits rouges mûrs, notes épicées et boisées. Structuré, idéal sur viandes rouges et plats en sauce.</p>
           </li>
-          <li class="carte-item" data-cart-id="pipeau-gc" data-name="Château Pipeau Saint-Émilion Grand Cru 75cl" data-price="45">
-            <span class="carte-item-name">Château Pipeau Saint-Émilion Grand Cru 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">45 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="pipeau-gc" data-name="Château Pipeau 2020 75cl" data-price="45">
+            <span class="carte-item-name">Château Pipeau 2020 <em class="carte-item-sub">AOC Saint-Émilion Grand Cru · Rouge · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">45 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Un Merlot de Saint-Émilion élevé en fût : fruits mûrs, cerise, notes de cacao. Ample et généreux.</p>
           </li>
         </ul>
 
-        <p class="carte-subtitle">Moelleux</p>
+        <p class="carte-subtitle" data-i18n="carte.vins.sub5">Liquoreux</p>
         <ul class="carte-items">
-          <li class="carte-item" data-cart-id="monbazillac" data-name="Monbazillac Château La Rayre 75cl" data-price="32">
-            <span class="carte-item-name">Monbazillac Château La Rayre 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">32 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="monbazillac" data-name="Château La Rayre 75cl" data-price="32">
+            <span class="carte-item-name">Château La Rayre <em class="carte-item-sub">AOC Monbazillac · Blanc liquoreux · 75 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">32 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Le grand liquoreux du Périgord : fruits confits et abricot sec, riche et gourmand.</p>
           </li>
         </ul>
       </div>
@@ -739,7 +736,7 @@
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="champagne-paul-romain" data-name="Champagne Paul Romain Blanc de Blancs 75cl" data-price="65">
             <span class="carte-item-name">Paul Romain Blanc de Blancs 75cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">65 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">65 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
         </ul>
       </div>
@@ -748,45 +745,46 @@
     <!-- ══ COCKTAILS & APÉRITIFS ══ -->
     <section id="cocktails" class="carte-section" aria-labelledby="titre-cocktails">
       <div class="container">
-        <div class="carte-section-header"><h2 id="titre-cocktails">Cocktails &amp; Apéritifs</h2></div>
+        <div class="carte-section-header"><h2 id="titre-cocktails" data-i18n="carte.cocktails.h2">Cocktails &amp; Apéritifs</h2></div>
 
         <p class="carte-subtitle">Cocktails</p>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="aperol-spritz" data-name="Aperol Spritz" data-price="9">
             <span class="carte-item-name">Aperol Spritz</span>
-            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="gin-tonic" data-name="Gin Tonic" data-price="9">
-            <span class="carte-item-name">Gin Tonic</span>
-            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name" data-i18n="carte.item.gin-tonic.name">Gin Tonic</span>
+            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="tequila-sunrise" data-name="Tequila Sunrise" data-price="9">
             <span class="carte-item-name">Tequila Sunrise</span>
-            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">9 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="moscow-mule" data-name="Moscow Mule" data-price="8">
             <span class="carte-item-name">Moscow Mule</span>
-            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="whisky-ginger" data-name="Whisky Ginger" data-price="8">
             <span class="carte-item-name">Whisky Ginger</span>
-            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
         </ul>
 
-        <p class="carte-subtitle">Apéritifs</p>
+        <p class="carte-subtitle" data-i18n="carte.cocktails.sub2">Apéritifs</p>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="ricard" data-name="Ricard" data-price="4">
             <span class="carte-item-name">Ricard</span>
-            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">4 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="martini" data-name="Martini 6cl" data-price="5">
             <span class="carte-item-name">Martini 6cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
-          <li class="carte-item" data-cart-id="kir" data-name="Kir" data-price="5">
-            <span class="carte-item-name">Kir</span>
-            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+          <li class="carte-item" data-cart-id="kir" data-name="Kir 12cl" data-price="5">
+            <span class="carte-item-name">Kir <em class="carte-item-sub">12 cl</em></span>
+            <div class="carte-item-right"><span class="carte-item-price">5 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
+            <p class="carte-item-desc">Bergerac sec du Château le Rauly et crème de cassis artisanale du Domaine Jacquiot.</p>
           </li>
         </ul>
       </div>
@@ -795,19 +793,19 @@
     <!-- ══ SPIRITUEUX ══ -->
     <section id="spiritueux" class="carte-section section-surface" aria-labelledby="titre-spiritueux">
       <div class="container">
-        <div class="carte-section-header"><h2 id="titre-spiritueux">Spiritueux &amp; Digestifs</h2></div>
+        <div class="carte-section-header"><h2 id="titre-spiritueux" data-i18n="carte.spirits.h2">Spiritueux &amp; Digestifs</h2></div>
         <ul class="carte-items">
           <li class="carte-item" data-cart-id="get27" data-name="Get 27 4cl" data-price="7">
             <span class="carte-item-name">Get 27 4cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">7 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">7 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="jack-daniels" data-name="Jack Daniel's 4cl" data-price="8">
             <span class="carte-item-name">Jack Daniel's 4cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <div class="carte-item-right"><span class="carte-item-price">8 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
           <li class="carte-item" data-cart-id="chivas" data-name="Chivas Regal 15 ans 4cl" data-price="12">
-            <span class="carte-item-name">Chivas Regal 15 ans 4cl</span>
-            <div class="carte-item-right"><span class="carte-item-price">12 €</span><button class="add-btn" aria-label="Ajouter">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter">+</button></div></div>
+            <span class="carte-item-name" data-i18n="carte.item.chivas.name">Chivas Regal 15 ans 4cl</span>
+            <div class="carte-item-right"><span class="carte-item-price">12 €</span><button class="add-btn" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button><div class="qty-ctrl" hidden><button class="qty-btn qty-minus" aria-label="Retirer" data-i18n-label="carte.aria.remove">−</button><span class="qty-num">0</span><button class="qty-btn qty-plus" aria-label="Ajouter" data-i18n-label="carte.aria.add">+</button></div></div>
           </li>
         </ul>
       </div>
@@ -815,9 +813,9 @@
 
     <section class="carte-closing" aria-label="Message de fin">
       <div class="container">
-        <h2>Une envie particulière&nbsp;?</h2>
-        <p>N'hésitez pas à nous solliciter, nous serons ravis de vous conseiller selon le moment, la météo ou votre repas.</p>
-        <span class="carte-disclaimer">Carte susceptible d'évoluer selon les arrivages et disponibilités.</span>
+        <h2 data-i18n="carte.closing.title">Une envie particulière&nbsp;?</h2>
+        <p data-i18n="carte.closing.text">N'hésitez pas à nous solliciter, nous serons ravis de vous conseiller selon le moment, la météo ou votre repas.</p>
+        <span class="carte-disclaimer" data-i18n="carte.closing.disclaimer">Carte susceptible d'évoluer selon les arrivages et disponibilités.</span>
       </div>
     </section>
 
@@ -829,26 +827,26 @@
   <!-- ══ CART PANEL ══ -->
   <div id="cart-panel" class="cart-panel" role="dialog" aria-modal="true" aria-label="Votre commande" hidden>
     <div class="cart-panel-head">
-      <h3>Votre commande</h3>
-      <button id="panel-close" class="cart-panel-close" aria-label="Fermer le panier">✕</button>
+      <h3 data-i18n="carte.cart.title">Votre commande</h3>
+      <button id="panel-close" class="cart-panel-close" aria-label="Fermer le panier" data-i18n-label="carte.cart.close">✕</button>
     </div>
     <div id="panel-items" class="cart-panel-body">
-      <p class="panel-empty">Votre panier est vide.</p>
+      <p class="panel-empty" data-i18n="carte.cart.empty">Votre panier est vide.</p>
     </div>
     <div class="cart-panel-foot">
       <div class="cart-panel-total">
         <span>Total</span>
         <span id="panel-total" class="cart-panel-total-amount">0,00 €</span>
       </div>
-      <button id="panel-checkout" class="btn btn-primary">Commander &amp; Payer</button>
+      <button id="panel-checkout" class="btn btn-primary" data-i18n="carte.cart.checkout">Commander &amp; Payer</button>
     </div>
   </div>
 
   <!-- ══ CART BAR ══ -->
-  <div id="cart-bar" class="cart-bar" role="button" tabindex="0" aria-label="Ouvrir le panier" aria-expanded="false">
+  <div id="cart-bar" class="cart-bar" role="button" tabindex="0" aria-label="Ouvrir le panier" aria-expanded="false" data-i18n-label="carte.cart.bar.open">
     <div class="cart-bar-left">
       <span class="cart-bar-icon">🛒</span>
-      <span class="cart-bar-label">Panier</span>
+      <span class="cart-bar-label" data-i18n="carte.cart.bar.label">Panier</span>
       <span id="cart-count" class="cart-badge">0</span>
     </div>
     <span id="cart-total" class="cart-bar-total">0,00 €</span>
@@ -856,10 +854,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Château Puygrenier. Tous droits réservés.</p>
+      <p data-i18n="footer.copyright">© 2026 Château Puygrenier. Tous droits réservés.</p>
       <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="mentions-legales.html" data-i18n="footer.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="footer.privacy">Politique de confidentialité</a>
       </div>
     </div>
   </footer>
@@ -899,6 +897,26 @@
 
       var CHECKOUT_API_URL = 'https://karokeys-site.vercel.app/api/create-checkout-session';
 
+      function t(key, fallback) {
+        var lang = localStorage.getItem('lang') || 'fr';
+        return (window.TRANSLATIONS && window.TRANSLATIONS[lang] && window.TRANSLATIONS[lang][key]) || fallback;
+      }
+
+      // Items whose displayed name differs in English (rest are brand names, identical in both languages)
+      var CART_NAME_EN = {
+        'ice-tea': 'Peach Ice Tea 33cl',
+        'limonade': 'Lemonade 33cl',
+        'jus-pomme': 'Apple 20cl',
+        'jus-fraise': 'Strawberry 20cl',
+        'jus-ananas': 'Pineapple 20cl',
+        'gin-tonic': 'Gin & Tonic',
+        'chivas': 'Chivas Regal 15 Year 4cl'
+      };
+      function cartDisplayName(el) {
+        var lang = localStorage.getItem('lang') || 'fr';
+        return (lang === 'en' && CART_NAME_EN[el.dataset.cartId]) || el.dataset.name;
+      }
+
       var cart = Object.create(null);
 
       var bar, barCount, barTotal, panel, panelItems, panelTotal, overlay;
@@ -932,7 +950,7 @@
       function add(id) {
         var el = document.querySelector('[data-cart-id="' + id + '"]');
         if (!el) return;
-        if (!cart[id]) cart[id] = { name: el.dataset.name, price: parseFloat(el.dataset.price), qty: 0 };
+        if (!cart[id]) cart[id] = { name: cartDisplayName(el), price: parseFloat(el.dataset.price), qty: 0 };
         cart[id].qty++;
         syncItemUI(id);
         syncBar();
@@ -979,7 +997,7 @@
       function renderPanel() {
         var entries = Object.entries(cart);
         if (!entries.length) {
-          panelItems.innerHTML = '<p class="panel-empty">Votre panier est vide.</p>';
+          panelItems.innerHTML = '<p class="panel-empty">' + t('carte.cart.empty', 'Votre panier est vide.') + '</p>';
           panelTotal.textContent = fmt(0);
           return;
         }
@@ -1043,7 +1061,7 @@
         var btn = document.getElementById('panel-checkout');
         var originalLabel = btn.textContent;
         btn.disabled = true;
-        btn.textContent = 'Redirection...';
+        btn.textContent = t('carte.cart.redirecting', 'Redirection...');
 
         fetch(CHECKOUT_API_URL, {
           method: 'POST',
@@ -1059,7 +1077,7 @@
             }
           })
           .catch(function () {
-            alert('Le paiement en ligne est momentanément indisponible. Merci de nous contacter directement.');
+            alert(t('carte.cart.error', 'Le paiement en ligne est momentanément indisponible. Merci de nous contacter directement.'));
             btn.disabled = false;
             btn.textContent = originalLabel;
           });

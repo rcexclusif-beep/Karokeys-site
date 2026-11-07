@@ -368,6 +368,165 @@ window.TRANSLATIONS = {
     'faq.a8': 'Les conditions d\'annulation varient selon le canal de réservation (Booking, Airbnb, réservation directe). Pour les réservations directes, les conditions vous sont communiquées lors de la confirmation. N\'hésitez pas à nous contacter pour plus de détails.',
     'faq.q9': 'La table d\'hôtes est-elle disponible tous les soirs\u00a0?',
     'faq.a9': 'La table d\'hôtes est proposée sur réservation, idéalement la veille au plus tard. Elle n\'est pas disponible tous les soirs, merci de préciser votre intérêt lors de votre demande de séjour.',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : index.html (complément — bloc à propos)
+    // ══════════════════════════════════════════════════════════════════════════
+    'index.esprit.label':    'L’ESPRIT PUYGRENIER',
+    'index.esprit.title':    'Une hospitalité simple,<br>pensée avec attention.',
+    'index.esprit.text1':    'Derrière Château Puygrenier, il y a Caroline et Romain, nous avons 26 ans et 31 ans. Après une première aventure dans l\'hébergement, nous avons choisi de continuer ce métier de cœur : accueillir, faire plaisir et créer des moments qui restent.',
+    'index.esprit.text2':    'Nous aimons partager de bons moments, faire découvrir une belle région, une bonne table et cette atmosphère où l\'on se sent naturellement à l\'aise. Notre façon de recevoir est chaleureuse et sans rigidité : être présent quand il le faut, tout en laissant chacun vivre son séjour à son rythme.',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : destination.html (compléments)
+    // ══════════════════════════════════════════════════════════════════════════
+    'dest.jumpnav.domaine':    'Le domaine',
+    'dest.jumpnav.perigord':   'Périgord & Dordogne',
+    'dest.jumpnav.vignobles':  'Vignobles de Bordeaux',
+    'dest.jumpnav.gastro':     'Gastronomie',
+    'dest.jumpnav.acces':      'Comment venir',
+
+    'dest.domaine2.label':            'Périgord · Gironde',
+    'dest.domaine2.title':            'À la croisée du Périgord et du Bordelais',
+    'dest.domaine2.tagline':          'Château Puygrenier occupe une position rare : à 20 minutes de Saint-Émilion et aux portes du Périgord Pourpre. Deux univers, deux cuisines, deux paysages — accessibles depuis la même terrasse.',
+    'dest.domaine2.gironde.label':    'Côté Gironde',
+    'dest.domaine2.gironde.vignobles':'Vignobles & châteaux viticoles',
+    'dest.domaine2.gironde.cuisine':  'Cuisine bordelaise',
+    'dest.domaine2.perigord.label':   'Côté Périgord',
+    'dest.domaine2.perigord.bastides':'Bastides médiévales',
+    'dest.domaine2.perigord.cuisine': 'Cuisine périgourdine',
+    'dest.domaine2.closing':          'Deux régions pour le prix d\'un séjour.',
+    'dest.domaine2.cta':              'Voir nos hébergements',
+
+    'dest.vignobles.guide.cta':       'Que faire à Saint-Émilion ? Guide complet →',
+
+    'dest.acces.saintemilion.time':       '~30 min en voiture (21 km)',
+    'dest.acces.bergerac.time':           '~55 min en voiture (40 km)',
+    'dest.acces.bordeaux.time':           '~1h10 en voiture (77 km)',
+    'dest.acces.perigueux.time':          '~1h en voiture (75 km)',
+    'dest.acces.paris.time':              '5h30 voiture · TGV Bordeaux + 1h10 route',
+    'dest.acces.aeroport-bergerac.time':  '~55 min (52 km)',
+    'dest.acces.aeroport-bordeaux.time':  '~1h15 (85 km)',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : evenements.html
+    // ══════════════════════════════════════════════════════════════════════════
+    'events.hero.eyebrow':    'Mariages · Anniversaires · EVG · EVJF',
+    'events.hero.title':      'Votre événement au Château Puygrenier.',
+    'events.hero.subtitle':   'Un domaine entier pour vous. 25 personnes en hébergement, 60 en salle de réception, au cœur du Périgord.',
+
+    'events.stat.lodging':    'hébergements',
+    'events.stat.guests':     'personnes en hébergement',
+    'events.stat.hall':       'personnes en salle',
+    'events.stat.private':    'domaine privatisable',
+
+    'events.mariage.label':      'Sur devis · Privatisation complète',
+    'events.mariage.title':      'Mariage',
+    'events.mariage.tagline':    'Hébergez vos proches sur place et célébrez dans notre salle de réception de 60 personnes, à la frontière de la Gironde et du Périgord.',
+    'events.mariage.badge1':     'Jusqu\'à 60 invités en salle',
+    'events.mariage.badge2':     '25 personnes hébergées',
+    'events.mariage.badge3':     'Salle + parc + piscine',
+    'events.mariage.amenities':  '<li>Salle de réception 80 m²</li><li>Cérémonie en extérieur possible</li><li>Service traiteur sur mesure</li><li>Spa &amp; sauna privatifs</li><li>Piscine &amp; grand parc</li><li>Stationnement sur place</li><li>Prestataires extérieurs bienvenus</li>',
+    'events.mariage.cta':        'Demander un devis mariage',
+
+    'events.anniv.label':      'Sur devis · Privatisation partielle ou complète',
+    'events.anniv.title':      'Anniversaire & Séjour de groupe',
+    'events.anniv.tagline':    'Privatisez le domaine pour un week-end entre amis ou en famille. Piscine, spa, service traiteur — tout est là.',
+    'events.anniv.badge1':     'Jusqu\'à 25 personnes',
+    'events.anniv.badge2':     'Week-end ou semaine',
+    'events.anniv.badge3':     'Animations sur mesure',
+    'events.anniv.amenities':  '<li>Privatisation totale du domaine</li><li>Salle de réception disponible</li><li>Piscine en accès libre</li><li>Spa &amp; sauna privatifs</li><li>Service traiteur</li>',
+    'events.anniv.cta':        'Demander un devis groupe',
+
+    'events.evg.label':      'Week-end privatisé · Tout inclus',
+    'events.evg.title':      'EVG & EVJF',
+    'events.evg.tagline':    'Un cadre d\'exception pour l\'EVG/EVJF parfait. Piscine, spa privatif, pique-nique dans les vignes, soirée sous les étoiles.',
+    'events.evg.badge1':     'Groupes de 6 à 25 pers.',
+    'events.evg.badge2':     'Week-end clé en main',
+    'events.evg.badge3':     'Périgord & Bordeaux à proximité',
+    'events.evg.amenities':  '<li>Piscine en accès privatif</li><li>Service traiteur sur demande</li><li>Activités sur mesure à la demande</li>',
+    'events.evg.cta':        'Organiser mon EVG / EVJF',
+
+    'events.cta.eyebrow':  'Un projet en tête ?',
+    'events.cta.title':    'Parlons de votre événement.',
+    'events.cta.text':     'Dites-nous votre date, votre nombre d\'invités et votre idée. Nous établissons un devis personnalisé sous 48h.',
+    'events.cta.btn1':     'Demander un devis',
+    'events.cta.btn2':     'Nous appeler',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : carte.html
+    // ══════════════════════════════════════════════════════════════════════════
+    'carte.hero.title':    'La Carte',
+    'carte.hero.tagline':  'Une sélection de boissons à savourer sur la terrasse, au bord de la piscine ou au SPA.',
+    'carte.hero.intro':    'Tous nos prix sont indiqués TTC. Ajoutez vos articles au panier et réglez directement depuis cette page.',
+
+    'carte.nav.spa':          'Spa & Apéro',
+    'carte.nav.eaux':         'Eaux & Softs',
+    'carte.nav.jus':          'Jus premium',
+    'carte.nav.bieres':       'Bières',
+    'carte.nav.vins':         'Vins',
+    'carte.nav.champagne':    'Champagne',
+    'carte.nav.cocktails':    'Cocktails',
+    'carte.nav.spiritueux':   'Spiritueux',
+
+    'carte.aria.add':        'Ajouter',
+    'carte.aria.remove':     'Retirer',
+    'carte.aria.addOne':     'Ajouter un',
+    'carte.aria.removeOne':  'Retirer un',
+
+    'carte.spa.h2':      'Spa & Apéro',
+    'carte.spa.intro':   'À commander depuis la terrasse, le bord de piscine ou directement au spa.',
+    'carte.item.spa-1h30.name':      'Accès Spa 1h30',
+    'carte.item.spa-1h30.sub':       'Jacuzzi, sauna — accès privatif',
+    'carte.item.spa-1h30.aria':      'Ajouter Accès Spa 1h30',
+    'carte.item.planche-apero.name': 'Planche apéro du jour',
+    'carte.item.planche-apero.sub':  '15 € / personne — selon arrivage',
+    'carte.item.planche-apero.aria': 'Ajouter Planche apéro',
+
+    'carte.eaux.h2':    'Eaux & Softs',
+    'carte.eaux.sub1':  'Eaux',
+    'carte.eaux.sub2':  'Softs',
+    'carte.item.ice-tea.name':   'Ice Tea Pêche 33cl',
+    'carte.item.limonade.name':  'Limonade 33cl',
+
+    'carte.jus.h2': 'Jus premium Rauch',
+    'carte.item.jus-pomme.name':  'Pomme',
+    'carte.item.jus-fraise.name': 'Fraise',
+    'carte.item.jus-ananas.name': 'Ananas',
+    'carte.item.jus-ace.sub':     'orange, carotte & citron — 20cl',
+
+    'carte.bieres.h2':   'Bières',
+    'carte.bieres.sub2': 'Bouteilles',
+    'carte.item.brassee24-blonde.sub': 'bière locale — 5%',
+    'carte.item.brassee24-ipa.sub':    'bière locale — 6%',
+
+    'carte.vins.h2':    'Vins',
+    'carte.vins.intro': 'Nos vins sont conservés dans l\'ancienne cave du château.',
+    'carte.vins.sub1':  'Au verre 12cl',
+    'carte.vins.sub2':  'Blancs',
+    'carte.vins.sub3':  'Rosés',
+    'carte.vins.sub4':  'Rouges',
+    'carte.vins.sub5':  'Liquoreux',
+
+    'carte.cocktails.h2':   'Cocktails & Apéritifs',
+    'carte.cocktails.sub2': 'Apéritifs',
+    'carte.item.gin-tonic.name': 'Gin Tonic',
+
+    'carte.spirits.h2': 'Spiritueux & Digestifs',
+    'carte.item.chivas.name': 'Chivas Regal 15 ans 4cl',
+
+    'carte.closing.title':      'Une envie particulière ?',
+    'carte.closing.text':       'N\'hésitez pas à nous solliciter, nous serons ravis de vous conseiller selon le moment, la météo ou votre repas.',
+    'carte.closing.disclaimer': 'Carte susceptible d\'évoluer selon les arrivages et disponibilités.',
+
+    'carte.cart.title':        'Votre commande',
+    'carte.cart.close':        'Fermer le panier',
+    'carte.cart.empty':        'Votre panier est vide.',
+    'carte.cart.checkout':     'Commander & Payer',
+    'carte.cart.bar.label':    'Panier',
+    'carte.cart.bar.open':     'Ouvrir le panier',
+    'carte.cart.redirecting':  'Redirection...',
+    'carte.cart.error':        'Le paiement en ligne est momentanément indisponible. Merci de nous contacter directement.',
   },
 
   /* ══════════════════════════════════════════════════════════════════════════
@@ -696,5 +855,164 @@ window.TRANSLATIONS = {
     'faq.a8': 'Cancellation conditions vary by booking channel (Booking, Airbnb, direct reservation). For direct bookings, conditions are communicated at confirmation. Feel free to contact us for more details.',
     'faq.q9': 'Is the dinner table available every evening?',
     'faq.a9': 'The dinner table is offered on reservation, ideally the day before at the latest. It is not available every evening, please mention your interest when submitting your stay request.',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : index.html (about section)
+    // ══════════════════════════════════════════════════════════════════════════
+    'index.esprit.label':    'THE PUYGRENIER SPIRIT',
+    'index.esprit.title':    'Simple hospitality,<br>thoughtfully delivered.',
+    'index.esprit.text1':    'Behind Château Puygrenier are Caroline and Romain, aged 26 and 31. After a first adventure in hospitality, we chose to keep doing this work we love: welcoming guests, creating pleasure and building moments that last.',
+    'index.esprit.text2':    'We love sharing good moments, introducing guests to a beautiful region, a good table and an atmosphere where everyone naturally feels at ease. Our way of hosting is warm and unstuffy: present when needed, while letting everyone enjoy their stay at their own pace.',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : destination.html (additions)
+    // ══════════════════════════════════════════════════════════════════════════
+    'dest.jumpnav.domaine':    'The estate',
+    'dest.jumpnav.perigord':   'Périgord & Dordogne',
+    'dest.jumpnav.vignobles':  'Bordeaux Vineyards',
+    'dest.jumpnav.gastro':     'Gastronomy',
+    'dest.jumpnav.acces':      'Getting here',
+
+    'dest.domaine2.label':            'Périgord · Gironde',
+    'dest.domaine2.title':            'Where the Périgord meets Bordeaux',
+    'dest.domaine2.tagline':          'Château Puygrenier occupies a rare position: 20 minutes from Saint-Émilion and at the gates of the Périgord Pourpre. Two worlds, two cuisines, two landscapes — all reachable from the same terrace.',
+    'dest.domaine2.gironde.label':    'The Gironde side',
+    'dest.domaine2.gironde.vignobles':'Vineyards & wine châteaux',
+    'dest.domaine2.gironde.cuisine':  'Bordeaux cuisine',
+    'dest.domaine2.perigord.label':   'The Périgord side',
+    'dest.domaine2.perigord.bastides':'Medieval bastide towns',
+    'dest.domaine2.perigord.cuisine': 'Périgord cuisine',
+    'dest.domaine2.closing':          'Two regions for the price of one stay.',
+    'dest.domaine2.cta':              'View our accommodations',
+
+    'dest.vignobles.guide.cta':       'What to do in Saint-Émilion? Full guide →',
+
+    'dest.acces.saintemilion.time':       '~30 min by car (21 km)',
+    'dest.acces.bergerac.time':           '~55 min by car (40 km)',
+    'dest.acces.bordeaux.time':           '~1h10 by car (77 km)',
+    'dest.acces.perigueux.time':          '~1h by car (75 km)',
+    'dest.acces.paris.time':              '5h30 by car · TGV to Bordeaux + 1h10 drive',
+    'dest.acces.aeroport-bergerac.time':  '~55 min (52 km)',
+    'dest.acces.aeroport-bordeaux.time':  '~1h15 (85 km)',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : evenements.html
+    // ══════════════════════════════════════════════════════════════════════════
+    'events.hero.eyebrow':    'Weddings · Birthdays · Bachelor & Bachelorette Parties',
+    'events.hero.title':      'Your event at Château Puygrenier.',
+    'events.hero.subtitle':   'An entire estate, just for you. 25 guests in accommodation, 60 in the event room, at the heart of the Périgord.',
+
+    'events.stat.lodging':    'accommodations',
+    'events.stat.guests':     'guests in accommodation',
+    'events.stat.hall':       'guests in the event room',
+    'events.stat.private':    'privatisable estate',
+
+    'events.mariage.label':      'On request · Full estate hire',
+    'events.mariage.title':      'Wedding',
+    'events.mariage.tagline':    'House your loved ones on site and celebrate in our 60-guest event room, on the border of the Gironde and the Périgord.',
+    'events.mariage.badge1':     'Up to 60 guests in the room',
+    'events.mariage.badge2':     '25 guests in accommodation',
+    'events.mariage.badge3':     'Room + grounds + pool',
+    'events.mariage.amenities':  '<li>80 m² event room</li><li>Outdoor ceremony possible</li><li>Bespoke catering service</li><li>Private spa &amp; sauna</li><li>Pool &amp; large grounds</li><li>On-site parking</li><li>Outside vendors welcome</li>',
+    'events.mariage.cta':        'Request a wedding quote',
+
+    'events.anniv.label':      'On request · Partial or full hire',
+    'events.anniv.title':      'Birthdays & Group Stays',
+    'events.anniv.tagline':    'Hire the estate for a weekend with friends or family. Pool, spa, catering — it\'s all here.',
+    'events.anniv.badge1':     'Up to 25 guests',
+    'events.anniv.badge2':     'Weekend or full week',
+    'events.anniv.badge3':     'Custom entertainment',
+    'events.anniv.amenities':  '<li>Full estate hire</li><li>Event room available</li><li>Free access to the pool</li><li>Private spa &amp; sauna</li><li>Catering service</li>',
+    'events.anniv.cta':        'Request a group quote',
+
+    'events.evg.label':      'Private weekend · All-inclusive',
+    'events.evg.title':      'Bachelor & Bachelorette Parties',
+    'events.evg.tagline':    'An exceptional setting for the perfect bachelor/bachelorette weekend. Pool, private spa, picnic among the vines, an evening under the stars.',
+    'events.evg.badge1':     'Groups of 6 to 25',
+    'events.evg.badge2':     'Turnkey weekend',
+    'events.evg.badge3':     'Périgord & Bordeaux nearby',
+    'events.evg.amenities':  '<li>Private pool access</li><li>Catering on request</li><li>Bespoke activities on request</li>',
+    'events.evg.cta':        'Organise my bachelor/bachelorette party',
+
+    'events.cta.eyebrow':  'Got a project in mind?',
+    'events.cta.title':    'Let\'s talk about your event.',
+    'events.cta.text':     'Tell us your date, your number of guests and your idea. We\'ll put together a personalised quote within 48h.',
+    'events.cta.btn1':     'Request a quote',
+    'events.cta.btn2':     'Call us',
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PAGE : carte.html
+    // ══════════════════════════════════════════════════════════════════════════
+    'carte.hero.title':    'The Menu',
+    'carte.hero.tagline':  'A selection of drinks to enjoy on the terrace, by the pool or at the spa.',
+    'carte.hero.intro':    'All prices include tax. Add items to your basket and pay directly from this page.',
+
+    'carte.nav.spa':          'Spa & Drinks',
+    'carte.nav.eaux':         'Water & Soft Drinks',
+    'carte.nav.jus':          'Premium Juices',
+    'carte.nav.bieres':       'Beers',
+    'carte.nav.vins':         'Wines',
+    'carte.nav.champagne':    'Champagne',
+    'carte.nav.cocktails':    'Cocktails',
+    'carte.nav.spiritueux':   'Spirits',
+
+    'carte.aria.add':        'Add',
+    'carte.aria.remove':     'Remove',
+    'carte.aria.addOne':     'Add one',
+    'carte.aria.removeOne':  'Remove one',
+
+    'carte.spa.h2':      'Spa & Drinks',
+    'carte.spa.intro':   'Order from the terrace, poolside or directly at the spa.',
+    'carte.item.spa-1h30.name':      'Spa Access 1h30',
+    'carte.item.spa-1h30.sub':       'Jacuzzi, sauna — private access',
+    'carte.item.spa-1h30.aria':      'Add Spa Access 1h30',
+    'carte.item.planche-apero.name': 'Aperitif Board of the Day',
+    'carte.item.planche-apero.sub':  '€15 / person — subject to availability',
+    'carte.item.planche-apero.aria': 'Add Aperitif Board',
+
+    'carte.eaux.h2':    'Water & Soft Drinks',
+    'carte.eaux.sub1':  'Water',
+    'carte.eaux.sub2':  'Soft Drinks',
+    'carte.item.ice-tea.name':   'Peach Ice Tea 33cl',
+    'carte.item.limonade.name':  'Lemonade 33cl',
+
+    'carte.jus.h2': 'Rauch Premium Juices',
+    'carte.item.jus-pomme.name':  'Apple',
+    'carte.item.jus-fraise.name': 'Strawberry',
+    'carte.item.jus-ananas.name': 'Pineapple',
+    'carte.item.jus-ace.sub':     'orange, carrot & lemon — 20cl',
+
+    'carte.bieres.h2':   'Beers',
+    'carte.bieres.sub2': 'Bottles',
+    'carte.item.brassee24-blonde.sub': 'local beer — 5%',
+    'carte.item.brassee24-ipa.sub':    'local beer — 6%',
+
+    'carte.vins.h2':    'Wines',
+    'carte.vins.intro': 'Our wines are kept in the château\'s historic cellar.',
+    'carte.vins.sub1':  'By the glass 12cl',
+    'carte.vins.sub2':  'Whites',
+    'carte.vins.sub3':  'Rosés',
+    'carte.vins.sub4':  'Reds',
+    'carte.vins.sub5':  'Sweet wines (liquoreux)',
+
+    'carte.cocktails.h2':   'Cocktails & Aperitifs',
+    'carte.cocktails.sub2': 'Aperitifs',
+    'carte.item.gin-tonic.name': 'Gin & Tonic',
+
+    'carte.spirits.h2': 'Spirits & Digestifs',
+    'carte.item.chivas.name': 'Chivas Regal 15 Year 4cl',
+
+    'carte.closing.title':      'Looking for something specific?',
+    'carte.closing.text':       'Feel free to ask — we\'ll be happy to recommend something based on the moment, the weather or your meal.',
+    'carte.closing.disclaimer': 'Menu subject to change based on availability and seasonal offerings.',
+
+    'carte.cart.title':        'Your order',
+    'carte.cart.close':        'Close basket',
+    'carte.cart.empty':        'Your basket is empty.',
+    'carte.cart.checkout':     'Order & Pay',
+    'carte.cart.bar.label':    'Basket',
+    'carte.cart.bar.open':     'Open basket',
+    'carte.cart.redirecting':  'Redirecting...',
+    'carte.cart.error':        'Online payment is temporarily unavailable. Please contact us directly.',
   }
 };
